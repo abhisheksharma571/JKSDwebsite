@@ -1,8 +1,7 @@
 
 import './App.css'
 import Navbar from './components/Navbar'
-import Carousel from './components/Carousel'
-import DataVisual from './components/DataVisual'
+import HiringPertners from './components/HiringPertners'
 import SelectedStudents from './components/SelectedStudents'
 
 function App() {
@@ -12,6 +11,7 @@ function App() {
       <div className='bg-backgound'>
       <Navbar />
       <SelectedStudents />
+      <HiringPertners />
       </div>
     </>
   )
