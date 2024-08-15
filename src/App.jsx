@@ -1,17 +1,29 @@
-import { useState } from 'react'
+
 import './App.css'
-import Services from'./components/Services'
+
+import Nav from './components/Nav'
+import HiringPertners from './components/HiringPertners'
+import SelectedStudents from './components/SelectedStudents'
 import Review from './components/Review'
+import ImageSlider from './components/ImageSlider'
+import Foot from './components/Foot'
+
+
 
 function App() {
 
   return (
     <>
-    <div className='bg-bgColor'> 
+
+      <div className='bg-backgound'>
+      <Nav />
+      <ImageSlider />
       <Services/>
+      <SelectedStudents />
       <Review/>
-    </div>
-      
+      <HiringPertners />
+      <Foot />
+      </div>
     </>
   )
 }
