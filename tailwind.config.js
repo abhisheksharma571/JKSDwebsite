@@ -10,9 +10,9 @@ export default {
         'custom': '850px', // Example custom breakpoint at 850px
       },
     colors: {
-      backgound: "#4F517D",
+      backgound: "#f8f8eb",
       orange: "#FFA75C",
-      cardscolor: "#D9D9D9"
+      cardscolor: "#eaf3ff"
     },
   },
   plugins: [],
