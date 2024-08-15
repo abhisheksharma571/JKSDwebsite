@@ -1,12 +1,17 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
+import Services from'./components/Services'
+import Review from './components/Review'
 
 function App() {
 
   return (
     <>
-      <Navbar />
+    <div className='bg-bgColor'> 
+      <Services/>
+      <Review/>
+    </div>
+      
     </>
   )
 }

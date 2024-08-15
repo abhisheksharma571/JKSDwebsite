@@ -5,8 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+    colors: {
+      bgColor: '#f8f8eb',
+      cardcolor: '#eaf3ff'
+    },
+    extend: {
+        
+      }
+    },
+    plugins: [],
+  }
+  
+
 
