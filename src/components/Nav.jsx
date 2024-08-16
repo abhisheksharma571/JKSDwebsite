@@ -14,7 +14,7 @@ function Nav() {
 
     return (
 
-        <header className="bg-white">
+        <header className="bg-white py-3">
             <nav className="flex justify-between items-center  w-[94%] h-12 mx-auto">
                 <div>
                     <img
