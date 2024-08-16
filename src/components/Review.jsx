@@ -43,11 +43,14 @@ const Review = () => {
     <>
     <div className='w-full max-w-[1500px]  mx-auto pb-10'>
         <div className='mt-20 flex flex-col m-4 px-10'>
+        <h1 className='text-2xl md:text-5xl font-bold text-orange text-center pt-10'>HAPPY CUSTOMERS & STUDENTS</h1>
+
             <Slider{...settings}>
             {data.map((d, index)=>(
+                
                 <div 
                 key={index}
-                className='bg-cardcolor h-[350px] w-[290px] text-black rounded-lg m-6 mx-6 sm:mx-4 md:mx-2 lg:mx-6'>
+                className=' h-[350px] w-[290px] text-black rounded-lg m-6 mx-6 sm:mx-4 md:mx-2 lg:mx-6'>
                     <div className='flex h-[50px] -mb-3'>
                     <img src={d.image1} alt="" />
                     </div>
