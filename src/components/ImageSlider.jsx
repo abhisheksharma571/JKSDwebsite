@@ -30,7 +30,7 @@ function ImageSlider() {
     };
 
     return (
-        <div className='max-w-[1550px] h-[270px] w-full m-auto relative group overflow-hidden'>
+        <div className='max-w-[1550px] h-[450px] w-full m-auto relative group overflow-hidden'>
             <div
                 className='flex w-full h-full transition-transform duration-700'
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}

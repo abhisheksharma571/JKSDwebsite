@@ -31,8 +31,8 @@ function SelectedStudents() {
     };
 
     return (
-        <div className="w-full max-w-[1300px] mx-auto pb-10">
-            <h1 className='text-2xl md:text-5xl font-bold text-orange text-center pt-10'>OUR SELECTED STUDENTS </h1>
+        <div className="w-full max-w-[1300px] mx-auto">
+            <h1 className='text-2xl md:text-5xl font-bold text-orange text-center pt-10'>OUR TRENDING COURSES</h1>
             <div className="mt-5 md:mt-10 [767px]:mt-0 px-10">
                 <Slider {...settings}>
                     {data.map((d, index) => (
