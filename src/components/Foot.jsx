@@ -13,7 +13,7 @@ import linkdin from '../assets/images/linkedin.png'
 import fb from '../assets/images/facebook.png'
 const Foot = () => {
     return (
-        <footer className=''>
+        <footer className='h-[30%] bg-red-600'>
             <div className='flex justify-around w-auto'>
                 <div className="logo  w-[30%] ">
                     <img className='h-14 pt-4 w-auto pl-6 ' src={image1} alt="" />

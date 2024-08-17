@@ -1,12 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
-
+// import Nav from './components/Nav'
+// import Foot from './components/Foot'
+import Type from './components/Type'
 function App() {
 
   return (
     <>
-      <Navbar />
+      {/* <Nav />
+      <Foot/> */}
+      <Type/>
     </>
   )
 }
