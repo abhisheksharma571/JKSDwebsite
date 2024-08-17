@@ -1,15 +1,22 @@
-import { useState } from 'react'
+
 import './App.css'
-// import Nav from './components/Nav'
-// import Foot from './components/Foot'
+
 import Type from './components/Type'
+import Navbar from './components/Navbar'
+import HiringPertners from './components/HiringPertners'
+import SelectedStudents from './components/SelectedStudents'
+
 function App() {
 
   return (
     <>
-      {/* <Nav />
-      <Foot/> */}
-      <Type/>
+      <div className='bg-backgound'>
+
+      <Navbar />
+      <Type />
+      <SelectedStudents />
+      <HiringPertners />
+      </div>
     </>
   )
 }
