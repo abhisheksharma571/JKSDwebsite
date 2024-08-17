@@ -8,6 +8,8 @@ import Review from './components/Review'
 import ImageSlider from './components/ImageSlider'
 import Foot from './components/Foot'
 import Services from './components/Services'
+import Adviser from'./components/Adviser'
+
 
 
 
@@ -23,6 +25,7 @@ function App() {
       <SelectedStudents />
       <Review/>
       <HiringPertners />
+      <Adviser />
       <Foot />
       </div>
     </>
