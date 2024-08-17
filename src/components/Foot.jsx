@@ -13,7 +13,9 @@ import linkdin from '../assets/images/linkedin.png'
 import fb from '../assets/images/facebook.png'
 const Foot = () => {
     return (
-        <footer className='h-[30%] bg-red-600'>
+
+        <footer className='bg-white pt-4'>
+
             <div className='flex justify-around w-auto'>
                 <div className="logo  w-[30%] ">
                     <img className='h-14 pt-4 w-auto pl-6 ' src={image1} alt="" />
@@ -30,7 +32,7 @@ const Foot = () => {
                 </div>
                 <div className='  w-[30%]  '>
                     <h1 className='text-center font-medium' >Company</h1>
-                    <div className='bg-orange-500 mt-2 mb-2 h-[3px] w-full' ></div>
+                    <div className='bg-orange mt-2 mb-2 h-[3px] w-full' ></div>
                     <div className='flex  flex-wrap justify-between'>
                         <div>
 
@@ -46,7 +48,7 @@ const Foot = () => {
                         </div>
                         <div className='text-center w-[80%] ml-6  items-center' >
                             <h1 className='text-center pt-4 font-medium ' >Join Us</h1>
-                            <div className='bg-orange-500 mt-2 mb-2 h-[3px] w-full ' ></div>
+                            <div className='bg-orange mt-2 mb-2 h-[3px] w-full ' ></div>
 
                             <div className='flex gap-5 pt-2  justify-center '>
 
@@ -84,7 +86,7 @@ const Foot = () => {
                 </div>
                 <div className=' '>
                     <h1 className='font-medium' >Product</h1>
-                    <div class="bg-orange-500 mt-2 mb-2 h-[3px] w-full  "></div>
+                    <div className="bg-orange mt-2 mb-2 h-[3px] w-full  "></div>
 
                     <div className='pb-4' >
                         <li><a href="">Website Develement</a></li>
@@ -98,7 +100,7 @@ const Foot = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-orange-500 h-[3px]  w-full'></div>
+            <div className='bg-orange h-[3px]  w-full'></div>
             <div className='flex justify-between pl-12 mt-3 pb-3 '>
                 <div className='flex gap-2' >
                     <img className='h-6' src={copy} alt="" />

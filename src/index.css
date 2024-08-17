@@ -1,10 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .slick-slide > div {
-    margin: 10px 50px;
-}
+    margin: 10px 30px;
+
 
 .slick-dots li button:before {
     color: #000; 
@@ -12,4 +11,7 @@
   
 .slick-dots li.slick-active button:before {
     color: #FFA75C; 
+    
 }
+}
+

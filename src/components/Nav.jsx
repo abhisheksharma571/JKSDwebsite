@@ -14,7 +14,7 @@ function Nav() {
 
     return (
 
-        <header className="bg-white">
+        <header className="bg-white py-3">
             <nav className="flex justify-between items-center  w-[94%] h-12 mx-auto">
                 <div>
                     <img
@@ -31,14 +31,14 @@ function Nav() {
                         <li  >
                             <a className="group " href="#">
                                 Home
-                                <div class="bg-orange-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                                <div className="bg-orange h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
 
                             </a>
                         </li>
                         <li>
                             <a className="group " href="#">
                                 Services
-                                <div class="bg-orange-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                                <div className="bg-orange h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
 
                             </a>
                         </li>
@@ -46,28 +46,28 @@ function Nav() {
                         <li>
                             <a className="  group " href="#">
                                 Courses
-                                <div class="bg-orange-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                                <div className="bg-orange h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
 
                             </a>
                         </li>
                         <li>
                             <a className="group" href="#">
                                 Blog
-                                <div class="bg-orange-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                                <div className="bg-orange h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
 
                             </a>
                         </li>
                         <li>
                             <a className="group" href="#">
                                 About Us
-                                <div class="bg-orange-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                                <div className="bg-orange h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
 
                             </a>
                         </li>
                         <li>
                             <a className="group" href="#">
                                 Contact
-                                <div class="bg-orange-500  h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
+                                <div className="bg-orange  h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
 
                             </a>
                         </li>
