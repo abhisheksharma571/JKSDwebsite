@@ -2,9 +2,10 @@
 import './App.css'
 
 import Type from './components/Type'
-import Navbar from './components/Navbar'
+import Nav from './components/Nav'
 import HiringPertners from './components/HiringPertners'
 import SelectedStudents from './components/SelectedStudents'
+import Foot from './components/Foot'
 
 function App() {
 
@@ -12,10 +13,11 @@ function App() {
     <>
       <div className='bg-backgound'>
 
-      <Navbar />
+      <Nav />
       <Type />
       <SelectedStudents />
       <HiringPertners />
+      <Foot/>
       </div>
     </>
   )
