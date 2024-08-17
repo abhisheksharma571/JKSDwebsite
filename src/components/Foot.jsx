@@ -84,7 +84,7 @@ const Foot = () => {
                 </div>
                 <div className=' '>
                     <h1 className='font-medium' >Product</h1>
-                    <div class="bg-orange mt-2 mb-2 h-[3px] w-full  "></div>
+                    <div className="bg-orange mt-2 mb-2 h-[3px] w-full  "></div>
 
                     <div className='pb-4' >
                         <li><a href="">Website Develement</a></li>
