@@ -1,8 +1,10 @@
 
 import './App.css'
+
 import Nav from './components/Nav'
 import Foot from './components/Foot'
 import { Outlet, useLocation } from 'react-router-dom'
+
 
 
 
@@ -14,9 +16,11 @@ function App() {
   return (
     <>
       <div className='bg-backgound'>
+
       {!isNotFoundPage && <Nav />}
       <Outlet />
       {!isNotFoundPage && <Foot />}
+
       </div>
     </>
   )

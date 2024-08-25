@@ -14,7 +14,9 @@ import fb from '../assets/images/facebook.png'
 import { Link } from 'react-router-dom'
 const Foot = () => {
     return (
+
         <footer className='bg-white pt-4'>
+
             <div className='flex justify-around w-auto'>
                 <div className="logo  w-[30%] ">
                     <img className='h-14 pt-4 w-auto pl-6 ' src={image1} alt="" />
