@@ -7,38 +7,29 @@ import Nav from './components/Nav'
 import HiringPertners from './components/HiringPertners'
 import SelectedStudents from './components/SelectedStudents'
 import Foot from './components/Foot'
-
-import Nav from './components/Nav'
-import HiringPertners from './components/HiringPertners'
-import SelectedStudents from './components/SelectedStudents'
 import Review from './components/Review'
 import ImageSlider from './components/ImageSlider'
-import Foot from './components/Foot'
 import Services from './components/Services'
+import Cources from './components/Cources'
 
 
- upstream/main
 
 function App() {
 
   return (
     <>
-
       <div className='bg-backgound'>
+        <Nav />
+        <Cources />
+        <ImageSlider />
+        <Type />
+        <Services />
+        <SelectedStudents />
+        <Review />
+        <HiringPertners />
+        <Foot />
 
 
-      <Nav />
-      <Type />
-
-      <Nav />
-      <ImageSlider />
-      <Services/>
- 
-      <SelectedStudents />
-      <Review/>
-      <HiringPertners />
-
-      <Foot/>
       </div>
     </>
   )

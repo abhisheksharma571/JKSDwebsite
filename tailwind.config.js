@@ -12,7 +12,7 @@ export default {
       },
     colors: {
       backgound: "#f8f8eb",
-      orange: "#FFA75C",
+      orange: "#F97316",
       cardscolor: "#D9D9D9"
     },
 
