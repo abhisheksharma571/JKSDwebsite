@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function HiringPertners() {
+function HiringPartners() {
     var settings = {
         infinite: true,
         arrows: false,
@@ -64,4 +64,4 @@ const logos = [
     './companiesLogo/samsung.png', 
     './companiesLogo/techMahindra.png' 
 ]
-export default HiringPertners
+export default HiringPartners
