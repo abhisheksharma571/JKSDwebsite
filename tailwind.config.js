@@ -12,11 +12,14 @@ export default {
       },
     colors: {
       backgound: "#f8f8eb",
-      orange: "#F97316",
-      cardscolor: "#D9D9D9"
-    },
 
+      orange: "#004aad",
+      cardscolor: "#eaf3ff"
+    },
   },
   plugins: [],
 }
+
 }
+
+      

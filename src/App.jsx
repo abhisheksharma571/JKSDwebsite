@@ -6,9 +6,6 @@ import Foot from './components/Foot'
 import { Outlet, useLocation } from 'react-router-dom'
 
 
-
-
-
 function App() {
   const location = useLocation();
   const isNotFoundPage = location.pathname === '/404' || location.pathname === '*';
