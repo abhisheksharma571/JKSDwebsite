@@ -1,34 +1,25 @@
 
 import './App.css'
 
-
-import Type from './components/Type'
 import Nav from './components/Nav'
-import HiringPertners from './components/HiringPertners'
-import SelectedStudents from './components/SelectedStudents'
 import Foot from './components/Foot'
-import Review from './components/Review'
-import ImageSlider from './components/ImageSlider'
-import Services from './components/Services'
-import Cources from './components/Cources'
+import { Outlet, useLocation } from 'react-router-dom'
+
+
 
 
 
 function App() {
+  const location = useLocation();
+  const isNotFoundPage = location.pathname === '/404' || location.pathname === '*';
 
   return (
     <>
       <div className='bg-backgound'>
-        <Nav />
-        <Cources />
-        <ImageSlider />
-        <Type />
-        <Services />
-        <SelectedStudents />
-        <Review />
-        <HiringPertners />
-        <Foot />
 
+      {!isNotFoundPage && <Nav />}
+      <Outlet />
+      {!isNotFoundPage && <Foot />}
 
       </div>
     </>
