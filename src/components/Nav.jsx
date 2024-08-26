@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IonIcon } from '@ionic/react';
 import '@ionic/react/css/core.css';
 import { menu, close } from 'ionicons/icons';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -15,11 +15,13 @@ function Nav() {
         <header className="bg-white py-3">
             <nav className="flex justify-between items-center w-[94%] h-12 mx-auto">
                 <div>
-                    <img
-                        className="w-24 h-10 cursor-pointer"
-                        src="https://jksd.in/wp-content/themes/impulsebyte/assets/img/logo.png"
-                        alt="Logo"
-                    />
+                    <Link to="/">
+                        <img
+                            className="w-24 h-10 cursor-pointer"
+                            src="https://jksd.in/wp-content/themes/impulsebyte/assets/img/logo.png"
+                            alt="Logo"
+                        />
+                    </Link>
                 </div>
                 <div
                     className={`nav-links duration-500 md:static absolute bg-white-900 md:min-h-fit min-h-[50vh] left-0 ${menuOpen ? 'top-[12%]' : 'top-[-100%]'

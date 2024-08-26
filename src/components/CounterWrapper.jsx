@@ -5,7 +5,7 @@ import CounterCard from './CounterCard';
 const CounterWrapper = () => {
 
   return (
-    <div className="w-full flex justify-around gap-[10px]">
+    <div className="w-full flex justify-around bg-cardscolor gap-[9px]">
       {counters.map((counter, index) => (
         <CounterCard
           key={index}

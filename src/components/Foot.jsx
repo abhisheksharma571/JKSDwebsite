@@ -37,8 +37,8 @@ const Foot = () => {
                     <div className='flex  flex-wrap justify-between'>
                         <div>
 
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="">Contact Us</a></li>
+                            <li><Link to="about">About Us</Link></li>
+                            <li><Link to="contact">Contact Us</Link></li>
                             <li><Link to="faq">FAQ</Link></li>
                         </div>
                         <div>
