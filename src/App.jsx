@@ -3,6 +3,7 @@ import './App.css'
 
 import Nav from './components/Nav'
 import Foot from './components/Foot'
+
 import { Outlet, useLocation } from 'react-router-dom'
 
 
