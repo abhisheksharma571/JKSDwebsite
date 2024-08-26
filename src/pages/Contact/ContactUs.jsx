@@ -3,6 +3,7 @@ import React from "react";
 function ContactUs() {
   return (
     <div>
+
     <body className="antialiased bg-gray-100">
       <div className="flex w-full min-h-screen justify-center items-center">
         <div
@@ -81,5 +82,6 @@ function ContactUs() {
   
   
   );
+
 }
 export default ContactUs;

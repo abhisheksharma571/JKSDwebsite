@@ -11,9 +11,12 @@ import youtube from '../assets/images/youtube.png'
 import insta from '../assets/images/instagram.png'
 import linkdin from '../assets/images/linkedin.png'
 import fb from '../assets/images/facebook.png'
+import { Link } from 'react-router-dom'
 const Foot = () => {
     return (
+
         <footer className='bg-white pt-4'>
+
             <div className='flex justify-around w-auto'>
                 <div className="logo  w-[30%] ">
                     <img className='h-14 pt-4 w-auto pl-6 ' src={image1} alt="" />
@@ -34,9 +37,9 @@ const Foot = () => {
                     <div className='flex  flex-wrap justify-between'>
                         <div>
 
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">FAQ</a></li>
+                            <li><Link to="about">About Us</Link></li>
+                            <li><Link to="contact">Contact Us</Link></li>
+                            <li><Link to="faq">FAQ</Link></li>
                         </div>
                         <div>
 

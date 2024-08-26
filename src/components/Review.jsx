@@ -11,8 +11,8 @@ const Review = () => {
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 3000,
+        autoplaySpeed: 3000,
         pauseOnHover: true,
         centerMode: false,
         responsive: [
@@ -41,14 +41,18 @@ const Review = () => {
       
   return (
     <>
+
+
     <div className='w-full max-w-[1500px]  mx-auto'>
     <h1 className='text-2xl md:text-5xl font-bold text-orange text-center pt-10'>OUR HAPPY CUSTOMERS AND STUDENTS</h1>
         <div className='flex flex-col m-4 px-10'>
             <Slider{...settings}>
             {data.map((d, index)=>(
+                
                 <div 
                 key={index}
-                className='bg-cardscolor h-[350px] w-[290px] text-black rounded-lg m-6 mx-6 sm:mx-4 md:mx-2 lg:mx-6'>
+                className='bg-cardscolor shadow-inner h-[350px] w-[290px] text-black rounded-lg m-6 mx-6 sm:mx-4 md:mx-2 lg:mx-6'>
+
                     <div className='flex h-[50px] -mb-3'>
                     <img src={d.image1} alt="" />
                     </div>
