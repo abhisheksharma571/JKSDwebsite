@@ -8,19 +8,26 @@ import Review from './components/Review'
 import ImageSlider from './components/ImageSlider'
 import Foot from './components/Foot'
 import Services from './components/Services'
+import ContactUs from  './pages/Contact/ContactUs'
+import AboutUs from  './pages/About/AboutUs'
+
+
+
 
 
 
 function App() {
 
   return (
-    <>
+    <>  
 
       <div className='bg-backgound'>
       <Nav />
       <ImageSlider />
       <Services/>
       <SelectedStudents />
+      <ContactUs />
+      <AboutUs />
       <Review/>
       <HiringPertners />
       <Foot />
