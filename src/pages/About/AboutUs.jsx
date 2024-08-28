@@ -221,6 +221,7 @@ function AboutUs() {
           </div>
         </div>
       </div>
+      </div>
   );
 }
 

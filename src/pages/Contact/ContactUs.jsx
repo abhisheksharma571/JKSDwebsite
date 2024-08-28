@@ -17,15 +17,15 @@ function ContactUs() {
             </div>
             <div className="flex flex-col space-y-2">
               <div className="inline-flex space-x-2 items-center pt-2">
-              <img src="./Icons/mobile (1).png" alt="" className="h-[38px]" />
+              <img src="./icons/mobile (1).png" alt="" className="h-[38px]" />
                 <span  className="text-lg mr-2">+91-9625040231</span>
               </div>
               <div className="inline-flex space-x-2 items-center pt-2">
-              <img src="./Icons/email (1).png" alt="" />
+              <img src="./icons/email (1).png" alt="" />
                 <p  className="text-lg" >jksd@gmail.com</p>
               </div>
               <div className="inline-flex space-x-2 items-center pt-2 tracking-wide">
-                <img src="./Icons/gps.png" alt="" />
+                <img src="./icons/gps.png" alt="" />
                 <span className="text-lg"> 1st-floor H-61 Near Electronic City Metro Sta Rd, H Block  Sector-63 Noida Uttar Pradesh 201301</span>
               </div>
             </div>

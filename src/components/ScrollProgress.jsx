@@ -1,47 +1,44 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const ScrollProgress = () => {
+  const [scrollValue, setScrollValue] = useState(0);
+  const location = useLocation(); // Get the current route location
+
   useEffect(() => {
     const calcScrollValue = () => {
-      const scrollProgress = document.getElementById("progress");
-      const progressValue = document.getElementById("progress-value");
       const pos = document.documentElement.scrollTop;
       const calcHeight =
         document.documentElement.scrollHeight -
         document.documentElement.clientHeight;
-      const scrollValue = Math.round((pos * 100) / calcHeight);
-      if (pos > 100) {
-        scrollProgress.style.display = "grid";
-      } else {
-        scrollProgress.style.display = "none";
-      }
-      scrollProgress.style.background = `conic-gradient(#FFA75C ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+      const newScrollValue = Math.round((pos * 100) / calcHeight);
+
+      setScrollValue(newScrollValue); // Update the scrollValue state
     };
 
     // Attach scroll event listener
-    window.onscroll = calcScrollValue;
-    window.onload = calcScrollValue;
+    window.addEventListener("scroll", calcScrollValue);
+    window.addEventListener("load", calcScrollValue);
 
-    // Attach click event listener to scroll to top
-    const scrollProgress = document.getElementById("progress");
-    scrollProgress.addEventListener("click", () => {
-      document.documentElement.scrollTop = 0; // Scroll to top
-    });
+    // Cleanup event listeners on component unmount
+    return () => {
+      window.removeEventListener("scroll", calcScrollValue);
+      window.removeEventListener("load", calcScrollValue);
+    };
   }, []);
+
+  useEffect(() => {
+    // Reset the scroll value and scroll to the top when the location changes
+    setScrollValue(0);
+    window.scrollTo(0, 0); // Scroll to top
+  }, [location]);
 
   return (
     <div
       id="progress"
-      className="fixed bottom-5 right-4 h-10 w-10 grid place-items-center rounded-full shadow-lg cursor-pointer"
-      style={{ display: "none" }}
-    >
-      <div
-        id="progress-value"
-        className="h-[calc(100%-10px)] w-[calc(100%-10px)] bg-white rounded-full grid place-items-center text-xl text-[#001a2e]"
-      >
-        ↑
-      </div>
-    </div>
+      className="fixed top-[70px] left-0 h-[3px] rounded-full bg-orange z-50 transition-width duration-100 ease-out"
+      style={{ width: `${scrollValue}%` }}
+    ></div>
   );
 };
 

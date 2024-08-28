@@ -1,13 +1,12 @@
 import React from 'react'
 import ImageSlider from './ImageSlider'
 import CounterWrapper from './CounterWrapper'
-import Services from './Services'
-import SelectedStudents from './SelectedStudents'
+
+import TrendingCourses from './TrendingCourses'
 import Review from './Review'
 import HiringPartners from './HiringPartners'
 import Adviser from './Adviser'
 import Type from './Type'
-import ScrollProgress from './ScrollProgress'
 
 
 function Home() {
@@ -17,12 +16,13 @@ function Home() {
       <ImageSlider />
       <Type />
       <CounterWrapper />
-      <Services/>
-      <SelectedStudents />
+      
+      <div className='bg-indigo-950'>
+      <TrendingCourses/>
+      </div>
       <Review/>
       <HiringPartners />
       <Adviser />
-      <ScrollProgress />
       </div>
     </div>
   )

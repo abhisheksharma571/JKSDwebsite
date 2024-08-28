@@ -16,7 +16,7 @@ function Adviser() {
       <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
         
         <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"><b>Vidyasagar Chaudhary</b><br />Head-Cloud Security Improvement</p>
-        <a href="www.jksd.in" class="block">
+        <a href="www.jksd.in" className="block">
     <img src="./Images/linkedin.png" alt="Linkedin" className="w-[25px] h-auto rounded-md shadow-lg hover:opacity-75 transition duration-300 ease-in-out" />
 </a>
       </div>
@@ -29,7 +29,7 @@ function Adviser() {
       <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
         
         <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"> <b>Rakesh dubey</b> <br />SAGACIA Financial Inclusion Fund</p>
-        <a href="https://www.linkedin.com/in/rakesh-dubey-b6843a150/" class="block">
+        <a href="https://www.linkedin.com/in/rakesh-dubey-b6843a150/" className="block">
     <img src="./Images/linkedin.png" alt="Linkedin" className="w-[25px] h-auto rounded-md shadow-lg hover:opacity-75 transition duration-300 ease-in-out" />
 </a>
       </div>
