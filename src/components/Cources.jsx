@@ -1,6 +1,7 @@
 import React from 'react'
-import cart from '../assets/images/cart.png'
+import download from '../assets/images/download.png'
 import arrow from '../assets/images/right-arrow.png'
+
 const Cources = () => {
     return (
         <div className="courses  ">
@@ -19,11 +20,10 @@ const Cources = () => {
 
                                 <div className='flex justify-evenly  mt-3 ' >
                                     <button
-                                        class="  font-sans font-medium text-center uppercase  text-xs py-1.5 ml-2 px-2  mt-2  rounded-lg  bg-white border-2 border-orange text-black  flex items-center gap-2  "
+                                        class="  font-sans font-bold  text-center uppercase  text-xs py-1.5 ml-2 px-2  mt-2  rounded-lg  bg-orange border-2  text-black  flex items-center gap-2  "
                                         type="button">
-                                        <img className='h-5 w-5' src={cart} alt="" />
-
-                                        Buy Now
+                                         Brochure
+                                        <img className='h-5 w-5  ' src={download} alt="" />
                                     </button>
 
                                     <button

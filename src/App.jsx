@@ -11,6 +11,8 @@ import Review from './components/Review'
 import ImageSlider from './components/ImageSlider'
 import Services from './components/Services'
 import Cources from './components/Cources'
+import Biocourses from './components/Biocourses'
+
 
 
 
@@ -20,6 +22,7 @@ function App() {
     <>
       <div className='bg-backgound'>
         <Nav />
+        <Biocourses/>
         <Cources />
         <ImageSlider />
         <Type />
