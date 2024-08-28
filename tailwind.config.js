@@ -23,8 +23,11 @@ export default {
     colors: {
       backgound: "#ffffff",
 
-      orange: "#FFA75C",
+
+      orange: "#ffa75c",
+
       cardscolor: "#eaf3ff"
+      
     },
   },
   plugins: [],

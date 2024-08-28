@@ -5,8 +5,9 @@ import CounterWrapper from './CounterWrapper'
 import TrendingCourses from './TrendingCourses'
 import Review from './Review'
 import HiringPartners from './HiringPartners'
-import Adviser from './Adviser'
+
 import Type from './Type'
+import Adviser from './Adviser'
 
 
 function Home() {
@@ -21,6 +22,7 @@ function Home() {
       <TrendingCourses/>
       </div>
       <Review/>
+      <Adviser />
       <HiringPartners />
       <Adviser />
       </div>
