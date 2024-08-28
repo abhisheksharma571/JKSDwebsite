@@ -11,6 +11,7 @@ import youtube from '../assets/images/youtube.png'
 import insta from '../assets/images/instagram.png'
 import linkdin from '../assets/images/linkedin.png'
 import fb from '../assets/images/facebook.png'
+import { Link } from 'react-router-dom'
 const Foot = () => {
     return (
 
@@ -38,7 +39,7 @@ const Foot = () => {
 
                             <li><a href="#">About Us</a></li>
                             <li><a href="">Contact Us</a></li>
-                            <li><a href="">FAQ</a></li>
+                            <li><Link to="faq">FAQ</Link></li>
                         </div>
                         <div>
 
