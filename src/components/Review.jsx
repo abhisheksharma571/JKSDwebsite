@@ -8,34 +8,14 @@ const Review = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 3000,
-        autoplaySpeed: 3000,
+        speed: 1000,
+        autoplaySpeed: 5000,
         pauseOnHover: true,
         centerMode: false,
-        responsive: [
-            {
-                breakpoint: 1270,
-                settings: {
-                    slidesToShow: 3,
-                },
-            },
-
-            {
-                breakpoint: 900,
-                settings: {
-                    slidesToShow: 2,
-                },
-            },
-            {
-                breakpoint: 700,
-                settings: {
-                    slidesToShow: 1,
-                }
-            },
-        ],
+        
 
       };
       
@@ -45,32 +25,38 @@ const Review = () => {
 
     <div className='w-full max-w-[1500px]  mx-auto'>
     <h1 className='text-2xl md:text-5xl font-bold text-orange text-center pt-10'>OUR HAPPY CUSTOMERS AND STUDENTS</h1>
-        <div className='flex flex-col m-4 px-10'>
-            <Slider{...settings}>
-            {data.map((d, index)=>(
+        <div className=' md:flex  mr-20 justify-center  items-center'>
+          <img className="w-2/6 mt-12 " src="./Images/RevImg.png" alt="" />
+    
+            <div className='w-1/2 '>
+               <Slider{...settings}>
+               {data.map((d, index)=>(
                 
                 <div 
                 key={index}
-                className='bg-cardscolor shadow-inner h-[350px] w-[290px] text-black rounded-lg m-6 mx-6 sm:mx-4 md:mx-2 lg:mx-6'>
+                className='w-1/3 rounded-lg m-6 mx-6 sm:mx-4 md:mx-2 lg:mx-6'>
 
-                    <div className='flex h-[50px] -mb-3'>
-                    <img src={d.image1} alt="" />
+                    <div className=' flex justify-center items-center'>
+                    
+                    <img className='rounded-lg  h-32   ' src={d.image} alt="" />
                     </div>
-                    <div className='flex flex-row h-80 w-60 p-2'>
-                        <p>{d.review}</p>                      
+                    <div className='p-8 text-xl'>
+                        <p className='text-center italic'>{d.review}</p>                      
                     </div>
-                    <div className=' flex h-[40px] -mt-16 ml-2 '>
-                        <img src={d.image} alt="" className='rounded-full'/>
-                        <div className='-mt-1 ml-2'>
-                        <p className=''>{d.Name}</p>
-                        <p className='-mt-1 text-[13px] text-blue-600 font-medium'>{d.degAcom}</p>
+                    <div className='  '>
+                        
+                        <div className=''>
+                        <p className='text-4xl text-center font-sans font-semibold'>{d.Name}</p>
+                        <p className=' text-[13px] text-center text-3xl w-auto text-blue-600 font-medium'>{d.degAcom}</p>
                         </div>
                         
                     </div>
+                    
                 </div>
-            ))}
-            </Slider>
-        </div>
+                ))}
+                </Slider>
+            </div>
+        </div>        
     </div>
     
     
@@ -81,7 +67,6 @@ const Review = () => {
 const data = [
     {
         Name: 'Jeff Bezos',
-        image1: './Images/Screenshot_2.png',
         review: 'I recently completed a course at JKSD and was very impressed. The expert instructors and hands-on approach made complex topics easy to understand.  Python and digital marketing, catered perfectly to my needs I highly recommend JKSD.',
         image: './Images/Abhishek.png',
         degAcom: 'CEO | Amazone'
@@ -89,7 +74,6 @@ const data = [
     },
     {
         Name: 'Banny Ban',
-        image1: './Images/Screenshot_2.png',
         review: ' I recently completed a course at JKSD and was very impressed. The expert instructors and hands-on approach made complex topics easy to understand.  Python and digital marketing, catered perfectly to my needs I highly recommend JKSD.',
         image: './Images/Abhishek.png',
         degAcom: 'Student | Oxford University'
@@ -97,14 +81,12 @@ const data = [
     },
     {
         Name: 'Orion Curz',
-        image1: './Images/Screenshot_2.png',
         review: 'I recently completed a course at JKSD and was very impressed. The expert instructors and hands-on approach made complex topics easy to understand.  Python and digital marketing, catered perfectly to my needs I highly recommend JKSD.',
         image: './Images/Abhishek.png',
         degAcom: 'Student | Harvard University'
     },
     {
         Name: 'Elon Musk',
-        image1: './Images/Screenshot_2.png',
         review: 'I recently completed a course at JKSD and was very impressed. The expert instructors and hands-on approach made complex topics easy to understand.  Python and digital marketing, catered perfectly to my needs I highly recommend JKSD.',
         image: './Images/Abhishek.png',
         degAcom: 'CEO | Tesla'

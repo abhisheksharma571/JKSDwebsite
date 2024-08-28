@@ -1,3 +1,4 @@
+import { images } from 'ionicons/icons';
 import React, { useState, useRef, useEffect } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
@@ -38,7 +39,7 @@ function ImageSlider() {
                 {slides.map((slide, index) => (
                     <div
                         key={index}
-                        style={{ backgroundImage: `url(${slide.url})` }}
+                        style={{ backgroundImage: `url(${slide.image1})` }}
                         className='w-full h-full bg-center bg-cover flex-shrink-0'
                     ></div>
                 ))}
@@ -68,17 +69,17 @@ function ImageSlider() {
 
 const slides = [
     {
-        url: 'https://images.pexels.com/photos/1516440/pexels-photo-1516440.jpeg?auto=compress&cs=tinysrgb&w=400'
+        image1: './Images/slider.jpg',
     },
     {
-        url: 'https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
+        image1: './Images/slider.jpg',
+        },
     {
-        url: 'https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
+        image1: './Images/slider.jpg', 
+       },
     {
-        url: 'https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=400'
-    }
+        image1: './Images/slider.jpg',
+        }
 ];
 
 export default ImageSlider;
