@@ -11,6 +11,7 @@ import Services from './pages/Services/Services.jsx'
 import Blogs from './pages/Blogs/Blogs.jsx'
 import PageNotFound from './pages/PageNotFound/PageNotFound.jsx'
 import Faq from './pages/FAQ/Faq.jsx'
+import Biocourses from './components/Biocourses.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
       <Route path='services' element={<Services />} />
       <Route path='blogs' element={<Blogs />} />
       <Route path='faq' element={<Faq />} />
+      <Route path='/biocourse' element={<Biocourses />} />
       <Route path='404' element={<PageNotFound />} />
       <Route path='*' element={<Navigate to="/404" replace />} />
     </Route>

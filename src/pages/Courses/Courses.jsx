@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 const Courses = () => {
     return (
         <div className="courses  ">
@@ -23,7 +24,7 @@ const Courses = () => {
 
                                         Buy Now
                                     </button>
-
+                                    <Link to='/biocourse'>
                                     <button
                                         class="  font-sans font-medium text-center uppercase  text-xs py-1.5 ml-2 px-2  mt-2  rounded-lg  bg-white border-2 border-orange text-black  flex items-center gap-2  "
                                         type="button">
@@ -32,6 +33,7 @@ const Courses = () => {
                                         <img className='h-5 w-5' src='./Images/right-arrow.png' alt="" />
 
                                     </button>
+                                    </Link>
                                 </div>
 
                                 {/* second courses start here  */}

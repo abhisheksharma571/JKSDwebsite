@@ -8,6 +8,7 @@ import HiringPartners from './HiringPartners'
 
 import Type from './Type'
 import Adviser from './Adviser'
+import Services from './Services'
 
 
 function Home() {
@@ -17,12 +18,12 @@ function Home() {
       <ImageSlider />
       <Type />
       <CounterWrapper />
+      <Services />
       
       <div className='bg-indigo-950'>
       <TrendingCourses/>
       </div>
       <Review/>
-      <Adviser />
       <HiringPartners />
       <Adviser />
       </div>
