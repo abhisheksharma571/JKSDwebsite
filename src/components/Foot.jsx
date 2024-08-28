@@ -21,9 +21,9 @@ const Foot = () => {
                 <div className="logo  w-[30%] ">
                     <img className='h-14 pt-4 w-auto pl-6 ' src={image1} alt="" />
                     <div className='pt-2 pb-4 '>
-                        <h1 className='flex'> <img className='h-6' src={supp} alt="" /> <a href="Phone No">+91 96250 40231</a></h1>
-                        <h1 className='flex gap-2 pt-2' > <img className='h-6' src={email} alt="" /> <a href="Email">info@jksd.in</a></h1>
-                        <h1 className=' flex pt-2  gap-1' > <img className='h-7 ' src={add} alt="" /> <a className='' href="">Office No. 103. First Floor H-61, Sector 63, Noida, UP, 201301</a></h1>
+                        <h1 className='flex'> <img className='h-6' src={supp} alt="" /> <a href="tel:+919625040231">+91 96250 40231</a></h1>
+                        <h1 className='flex gap-2 pt-2' > <img className='h-6' src={email} alt="" /> <a href="mailto:info@jksd.in?subject=Subject%20Here&body=Body%20Here">info@jksd.in</a></h1>
+                        <h1 className=' flex pt-2  gap-1' > <img className='h-7 ' src={add} alt="" /> <a className='' href="https://www.google.com/maps/place/JKSD+Infotech+Pvt.+Ltd./@28.626222,77.3767477,17z/data=!4m14!1m7!3m6!1s0x390ce5d4a8d2c129:0xc7e167387b2afd44!2sJKSD+Infotech+Pvt.+Ltd.!8m2!3d28.626222!4d77.3767477!16s%2Fg%2F11y3n542j8!3m5!1s0x390ce5d4a8d2c129:0xc7e167387b2afd44!8m2!3d28.626222!4d77.3767477!16s%2Fg%2F11y3n542j8?entry=ttu&g_ep=EgoyMDI0MDgyMy4wIKXMDSoASAFQAw%3D%3D">Office No. 103. First Floor H-61, Sector 63, Noida, UP, 201301</a></h1>
                     </div>
                     <div className="flex">
                         <img className='h-16 w-auto' src={msme} alt="" />
@@ -37,8 +37,8 @@ const Foot = () => {
                     <div className='flex  flex-wrap justify-between'>
                         <div>
 
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="">Contact Us</a></li>
+                            <li><Link to="about">About Us</Link></li>
+                            <li><Link to="contact">Contact Us</Link></li>
                             <li><Link to="faq">FAQ</Link></li>
                         </div>
                         <div>

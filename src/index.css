@@ -14,4 +14,38 @@
     
 }
 }
+.animate-fade-in-up {
+  animation: fade-in-right 1s ease-out forwards;
+  animation-delay: 0.1s;
+  opacity: 0; 
+}
 
+@keyframes fade-in-right {
+  0% {
+    transform: translateX(100%); 
+    opacity: 0; /* Start fully transparent */
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1; /* End fully visible */
+  }
+}
+
+
+
+  
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #ffffff; 
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  

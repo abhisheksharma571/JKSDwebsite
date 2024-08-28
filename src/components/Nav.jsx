@@ -1,25 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { IonIcon } from '@ionic/react';
 import '@ionic/react/css/core.css';
 import { menu, close } from 'ionicons/icons';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+import ScrollProgress from './ScrollProgress';
 
 function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const onToggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <header className="bg-white py-3">
+        <header className={`navbar ${isScrolled ? 'scrolled' : ''} bg-white py-3`}>
+            <ScrollProgress />
             <nav className="flex justify-between items-center w-[94%] h-12 mx-auto">
                 <div>
-                    <img
-                        className="w-24 h-10 cursor-pointer"
-                        src="https://jksd.in/wp-content/themes/impulsebyte/assets/img/logo.png"
-                        alt="Logo"
-                    />
+                    <Link to="/">
+                        <img
+                            className="w-24 h-10 cursor-pointer"
+                            src="https://jksd.in/wp-content/themes/impulsebyte/assets/img/logo.png"
+                            alt="Logo"
+                        />
+                    </Link>
                 </div>
                 <div
                     className={`nav-links duration-1000 md:static absolute bg-white md:min-h-fit min-h-[42vh]  left-0 ${menuOpen ? 'top-[10.6%]' : 'top-[-100%]'
@@ -120,7 +138,7 @@ function Nav() {
                             >
                                 {({ isActive }) => (
                                     <>
-                                        Contact
+                                        Contact Us
                                         <div
                                             className={`bg-orange h-[2px] ${isActive ? "w-full" : "w-0"} group-hover:w-full transition-all duration-500`}
                                         ></div>

@@ -2,6 +2,7 @@ import React from 'react'
 
 function Services() {
   return (
+
    
     <div className="relative mt-20">
     <div className="sticky top-0 h-screen flex  bg-[#264357]">
