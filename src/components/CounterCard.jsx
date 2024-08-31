@@ -43,7 +43,7 @@ const CounterCard = ({ iconClass, endValue, text }) => {
   }, [isVisible, endValue]);
 
   return (
-    <div ref={ref} className="w-full sm:w-[350px] h-[150px] flex items-center p-4 border-y-[3px] border-orange rounded-md m-6 animate-fade-in-up">
+    <div ref={ref} className="w-full sm:w-[350px] flex items-center p-4 ">
       <img src={iconClass} alt={text} className="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] mr-4" />
       <div className="flex flex-col justify-center">
         <span id={`counter-${endValue}`} className="text-white text-center font-bold text-[2em] sm:text-[3em]">0</span>

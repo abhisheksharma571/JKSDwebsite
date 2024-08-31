@@ -28,20 +28,22 @@ const CounterWrapper = () => {
   }, []);
 
   return (
-    <div
-      ref={wrapperRef}
-      className={`w-full flex justify-around bg-indigo-950 gap-[9px] ${
-        isVisible ? 'animate-fade-in-up' : 'opacity-0'
-      }`}
-    >
-      {counters.map((counter, index) => (
-        <CounterCard
-          key={index}
-          iconClass={counter.iconClass}
-          endValue={counter.endValue}
-          text={counter.text}
-        />
-      ))}
+    <div className="flex justify-center items-center">
+      <div
+        ref={wrapperRef}
+        className={`w-[1300px] flex justify-around items-center gap-[9px] p-2 rounded-3xl bg-gradient-to-r from-blue-200 to-purple-200 backdrop-blur-lg bg-opacity-50 ${
+          isVisible ? 'opacity-100 transition-opacity duration-1000' : 'opacity-0'
+        }`}
+      >
+        {counters.map((counter, index) => (
+          <CounterCard
+            key={index}
+            iconClass={counter.iconClass}
+            endValue={counter.endValue}
+            text={counter.text}
+          />
+        ))}
+      </div>
     </div>
   );
 };
@@ -50,6 +52,7 @@ const counters = [
   { iconClass: './icons/assistance.png', endValue: 150, text: 'Projects Completed' },
   { iconClass: './icons/customer.png', endValue: 98, text: '% Happy Customers' },
   { iconClass: './icons/project.png', endValue: 100, text: '% Placement Assistance' },
+  { iconClass: './icons/courses.png', endValue: 25, text: 'Courses Offered' },
 ];
 
 export default CounterWrapper;
