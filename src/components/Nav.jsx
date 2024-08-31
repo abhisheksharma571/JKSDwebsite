@@ -43,113 +43,27 @@ function Nav() {
                         />
                     </Link>
                 </div>
-                <div
-                    className={`nav-links duration-1000 md:static absolute bg-white md:min-h-fit min-h-[42vh]  left-0 ${menuOpen ? 'top-[10.6%]' : 'top-[-100%]'
-                        } md:w-auto w-1/4  md:bg-white sm:to-blue-500 z-10 flex items-center px-7  `}
-                >
-                    <ul className="flex lg:flex-row flex-col text-[20px] md:items-center md:gap-[4vw] gap-4">
-                        <li>
-                            <NavLink
-                                to="/"
-                                className={({ isActive }) =>
-                                    `group ${isActive ? "active" : ""}`
-                                }
-                            >
-                                {({ isActive }) => (
-                                    <>
-                                        Home
-                                        <div
-                                            className={`bg-orange h-[2px] ${isActive ? "w-full" : "w-0"} group-hover:w-full transition-all duration-500`}
-                                        ></div>
-                                    </>
-                                )}
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/services"
-                                className={({ isActive }) =>
-                                    `group ${isActive ? "active" : ""}`
-                                }
-                            >
-                                {({ isActive }) => (
-                                    <>
-                                        Services
-                                        <div
-                                            className={`bg-orange h-[2px] ${isActive ? "w-full" : "w-0"} group-hover:w-full transition-all duration-500`}
-                                        ></div>
-                                    </>
-                                )}
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/courses"
-                                className={({ isActive }) =>
-                                    `group ${isActive ? "active" : ""}`
-                                }
-                            >
-                                {({ isActive }) => (
-                                    <>
-                                        Courses
-                                        <div
-                                            className={`bg-orange h-[2px] ${isActive ? "w-full" : "w-0"} group-hover:w-full transition-all duration-500`}
-                                        ></div>
-                                    </>
-                                )}
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/blogs"
-                                className={({ isActive }) =>
-                                    `group ${isActive ? "active" : ""}`
-                                }
-                            >
-                                {({ isActive }) => (
-                                    <>
-                                        Blogs
-                                        <div
-                                            className={`bg-orange h-[2px] ${isActive ? "w-full" : "w-0"} group-hover:w-full transition-all duration-500`}
-                                        ></div>
-                                    </>
-                                )}
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/about"
-                                className={({ isActive }) =>
-                                    `group ${isActive ? "active" : ""}`
-                                }
-                            >
-                                {({ isActive }) => (
-                                    <>
-                                        About Us
-                                        <div
-                                            className={`bg-orange h-[2px] ${isActive ? "w-full" : "w-0"} group-hover:w-full transition-all duration-500`}
-                                        ></div>
-                                    </>
-                                )}
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                to="/contact"
-                                className={({ isActive }) =>
-                                    `group ${isActive ? "active" : ""}`
-                                }
-                            >
-                                {({ isActive }) => (
-                                    <>
-                                        Contact Us
-                                        <div
-                                            className={`bg-orange h-[2px] ${isActive ? "w-full" : "w-0"} group-hover:w-full transition-all duration-500`}
-                                        ></div>
-                                    </>
-                                )}
-                            </NavLink>
-                        </li>
+                <div className="hidden md:block">
+                    <ul className="flex md:flex-row flex-col text-[20px] md:items-center md:gap-[4vw] gap-4">
+                        {menuItems.map((item, index) => (
+                            <li key={index}>
+                                <NavLink
+                                    to={item.path}
+                                    className={({ isActive }) =>
+                                        `group ${isActive ? "active" : ""}`
+                                    }
+                                >
+                                    {({ isActive }) => (
+                                        <>
+                                            {item.name}
+                                            <div
+                                                className={`bg-orange h-[2px] ${isActive ? "w-full" : "w-0"} group-hover:w-full transition-all duration-500`}
+                                            ></div>
+                                        </>
+                                    )}
+                                </NavLink>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <IonIcon
@@ -200,5 +114,3 @@ const menuItems = [
 ];
 
 export default Nav;
-
-
