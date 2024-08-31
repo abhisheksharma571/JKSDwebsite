@@ -16,13 +16,13 @@ const Courses = () => {
                                 <h1 className='font-medium text-2xl text-center ' >{d.title}</h1>
                                 <p className='text-xs text-center mt-2 '>{d.description}</p>
 
-                                <div className='flex justify-evenly  mt-3 ' >
+                                <div className='flex justify-evenly   mt-3 ' >
                                     <button
-                                        class="  font-sans font-medium text-center uppercase  text-xs py-1.5 ml-2 px-2  mt-2  rounded-lg  bg-white border-2 border-orange text-black  flex items-center gap-2  "
+                                        class="  font-sans font-medium text-2xl text-center bg-orange  text-xs py-1.5 ml-2 px-2  mt-2  rounded-lg  border-2 border-orange text-black  flex items-center gap-2  "
                                         type="button">
-                                        <img className='h-5 w-5' src='./Images/cart.png' alt="" />
 
-                                        Buy Now
+                                        Brochure
+                                        <img className='h-5 w-5' src='./Images/download.png' alt="" />
                                     </button>
                                     <Link to='/biocourse'>
                                     <button
@@ -59,27 +59,27 @@ const data = [
         image: './Images/digitall.png'
     },
     {
-        title: 'Digital Course',
+        title: 'Data Analytics',
         description: 'BEST DIGITAL MARKETING COURSE IN DELHI NCR',
         image: './Images/digitall.png'
     },
     {
-        title: 'Digital IoT',
+        title: 'Java Full stack',
         description: 'BEST DIGITAL MARKETING COURSE IN DELHI NCR',
         image: './Images/digitall.png'
     },
     {
-        title: 'Digital Marketing',
+        title: 'Cyber Security',
         description: 'BEST DIGITAL MARKETING COURSE IN DELHI NCR',
         image: './Images/digitall.png'
     },
     {
-        title: 'Digital Management',
+        title: 'Internet of Things',
         description: 'BEST DIGITAL MARKETING COURSE IN DELHI NCR',
         image: './Images/digitall.png'
     },
     {
-        title: 'Digital Marketing',
+        title: 'Embedded Systems',
         description: 'BEST DIGITAL IN DELHI NCR',
         image: './Images/digitall.png'
     }

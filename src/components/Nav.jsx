@@ -39,7 +39,7 @@ function Nav() {
                         />
                     </Link>
                 </div>
-                <div
+                   <div
                     className={`nav-links duration-1000 md:static absolute bg-white md:min-h-fit min-h-[42vh]  left-0 ${menuOpen ? 'top-[10.6%]' : 'top-[-100%]'
                         } md:w-auto w-1/4  md:bg-white sm:to-blue-500 z-10 flex items-center px-7  `}
                 >
