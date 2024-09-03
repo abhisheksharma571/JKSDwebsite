@@ -1,7 +1,14 @@
 import React from 'react'
-
+import ServiceHead from './ServiceHead'
+import TrainingP from './TrainingP'
+import WebDev from './WebDev'
+import DigitalMarketing from './DigitalMarketing'
 function Services() {
   return (
+    <>
+    <div>
+      <ServiceHead/>
+    </div>
     <div className='flex'>
       <div className='p-20 w-1/2 '>
       <div className=''>
@@ -19,7 +26,16 @@ function Services() {
         <img className='h-[460px] ' src="./Images/services(1).jpg" alt="Nahi hai" />
       </div>
     </div>
-
+    <div>
+      <TrainingP/>
+    </div>
+    <div>
+      <WebDev/>
+    </div>
+    <div>
+      <DigitalMarketing/>
+    </div>
+    </>
   )
 }
 
