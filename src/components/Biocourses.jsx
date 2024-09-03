@@ -294,8 +294,5 @@ const Biocourses = () => {
     );
 };
 
-
-export default Biocourses;
-
 export default Biocourses;
 
