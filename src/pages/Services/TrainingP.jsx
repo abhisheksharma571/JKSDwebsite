@@ -8,7 +8,7 @@ function TrainingP() {
         <div className='h-[480px] w-[400px] bg-[#62438F] p-[4px] shadow-2xl'>
             <div className='p-7'>
                 <img src="./Images/Internship.jpg" alt="Image is not available" />
-                <h1 className='text-3xl font-normal text-orange pt-3'>Training</h1>
+                <h1 className='text-3xl font-normal text-orange pt-3'>Internship</h1>
                 <p className='pt-3 text-white'>Launch your career with hands-on experience and expert support. Gain skills, build your network, and stand out with our internship course!</p>
                 <div className='flex justify-end pb-2'>
                 <button className='bg-orange h-10 w-32 text-center font-light text-lg'>Explore More</button>
@@ -29,7 +29,7 @@ function TrainingP() {
         <div className='h-[480px] w-[400px] bg-[#62438F] p-[4px] shadow-2xl'>
             <div className='p-7'>
                 <img src=".\Images\LongTerm.jpg" alt="" />
-                <h1 className='text-3xl font-normal text-orange pt-3'>Long Term Courses</h1>
+                <h1 className='text-3xl font-normal text-orange pt-3'>Job Oriented Courses</h1>
                 <p className='pt-3 text-white'>Launch your career with hands-on experience and expert support. Gain skills, build your network, and stand out with our internship course!</p>
                 <div className='flex justify-end pb-2'>
                 <button className='bg-orange h-10 w-32 text-center font-light text-lg'>Explore More</button>

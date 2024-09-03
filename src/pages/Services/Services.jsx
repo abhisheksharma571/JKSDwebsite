@@ -2,6 +2,7 @@ import React from 'react'
 import ServiceHead from './ServiceHead'
 import TrainingP from './TrainingP'
 import WebDev from './WebDev'
+import DigitalMarketing from './DigitalMarketing'
 function Services() {
   return (
     <>
@@ -30,6 +31,9 @@ function Services() {
     </div>
     <div>
       <WebDev/>
+    </div>
+    <div>
+      <DigitalMarketing/>
     </div>
     </>
   )

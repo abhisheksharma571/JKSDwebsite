@@ -26,7 +26,7 @@ function WebDev() {
           <p className=' pt-7'>& more...</p>
         </div>
         <div className='pt-14 '>       
-           <button className='text-lg font-light h-10 w-32 bg-black rounded-lg text-white'>Explore More</button>
+           <button className='text-lg font-light h-10 w-32 bg-black rounded-lg text-white '>Explore More</button>
         </div>
         </div>
 
