@@ -13,7 +13,7 @@ function AboutUs() {
               />
             </div>
 
-            <div className="lg:w-1/2 lg:mr-12 text-xl font-light text-gray-800 pt-20 pb-10    text-left tracking-widest">
+            <div className="lg:w-1/2 lg:mr-12 text-xl font-light text-gray-800 pt-20 pb-10 text-left tracking-widest">
               <h2 className="lg:px-14 lg:text-3xl font-semibold">
                 Shape Tomorrow’s Digital Leaders Today
               </h2>
