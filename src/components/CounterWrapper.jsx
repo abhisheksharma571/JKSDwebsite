@@ -31,7 +31,7 @@ const CounterWrapper = () => {
     <div className="flex justify-center items-center">
       <div
         ref={wrapperRef}
-        className={`w-[1300px] flex justify-around items-center gap-[9px] p-2 rounded-3xl bg-gradient-to-r from-blue-200 to-purple-200 backdrop-blur-lg bg-opacity-50 ${
+        className={`w-[1300px] flex justify-around items-center gap-[9px] p-2 pl-12 rounded-3xl bg-gradient-to-r from-blue-200 to-purple-200 backdrop-blur-lg bg-opacity-50 ${
           isVisible ? 'opacity-100 transition-opacity duration-1000' : 'opacity-0'
         }`}
       >
@@ -52,7 +52,7 @@ const counters = [
   { iconClass: './icons/assistance.png', endValue: 150, text: 'Projects Completed' },
   { iconClass: './icons/customer.png', endValue: 98, text: '% Happy Customers' },
   { iconClass: './icons/project.png', endValue: 100, text: '% Placement Assistance' },
-  { iconClass: './icons/courses.png', endValue: 25, text: 'Courses Offered' },
+  { iconClass: './icons/course.png', endValue: 25, text: 'Courses Offered' },
 ];
 
 export default CounterWrapper;
