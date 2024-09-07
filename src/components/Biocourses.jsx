@@ -1,17 +1,9 @@
 import React, { useState } from 'react';
 import digital from '../assets/images/digitall.png';
-
-import download from '../assets/images/Download.jpeg';
-import share from '../assets/images/Share.jpeg';
-import cartificate from '../assets/images/Certificate.jpeg'
-import telephone from '../assets/images/Contact.jpeg'
-
-import download from '../assets/images/download.png';
+import download from '../assets/images/download .png';
 import share from '../assets/images/share.png';
-import cartificate from '../assets/images/certificate.webp'
-import jksd from '../assets/images/jksd.webp'
+import cartificate from '../assets/images/Certificate.jpeg'
 import telephone from '../assets/images/telephone.png'
-
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
@@ -62,11 +54,7 @@ const Biocourses = () => {
         {
             week: "Week 5: Social Media Marketing (SMM)",
             details: [
-
                 "Overview of Social Media Platforms (Facebook, Instagram, LinkedIn, etc.)",
-
-                "Overview of Social Media Platforms (Facebook, Twitter, Instagram, LinkedIn, etc.)",
-
                 "Creating and Optimizing Social Media Profiles",
                 "Content Creation and Curation for Social Media",
                 "Social Media Advertising Strategies"
@@ -91,11 +79,7 @@ const Biocourses = () => {
             ]
         },
         {
-
             week: "Week 8: Marketing and Affiliate Marketing",
-
-            week: "Week 8: Influencer Marketing and Affiliate Marketing",
-
             details: [
                 "Understanding Influencer Marketing and its Impact",
                 "Identifying and Partnering with Influencers",
@@ -142,157 +126,161 @@ const Biocourses = () => {
 
     return (
         <div className=''>
-            <div className='h-96 bg-indigo-950 w-full flex flex-wrap '>
-                <div className="text-white h-[100%] w-[50%] mx-6 pt-6 pl-8 ">
-                    <h1 className='text-4xl font-bold'>Digital Marketing</h1>
-                    <p className='pt-2'>
-                        Becoming a digital marketing professional is one of the best career decisions at present. The digital marketing industry in India is estimated to produce more than 4 million jobs by 2026. Here are some of the top reasons that constantly add to the growing demand of skilled professionals in the field.
-                        JKSD’s digital marketing training and certification courses are designed to develop professional-level marketing skills required to meet each of these demands. We believe in providing the right knowledge, skills an exposure through traditional classroom learning but with the contemporary approach of hands-on training. Our courses are industry-approved programs absolutely in-sync with the globally-relevant digital marketing standards and designed under the guidance of the veteran industry professionals.
-                        {/* Truncated for brevity */}
-                    </p>
 
-                    <div className='flex justify-evenly mt-4'>
-                        <button className="font-sans font-bold text-center bg-orange text-1xl py-1.5 px-6 mt-2 rounded-lg border-2 border-orange text-black flex items-center gap-2" type="button">
-                            Download Brochure
-                            <img className='h-5 w-5' src={download} alt="" />
+             {/* digital section start here  */}
+
+             <div className='h-auto lg:h-96 bg-indigo-950 w-full flex flex-col-reverse lg:flex-row'>
+    <div className="text-white w-full lg:w-[55%] mx-4 lg:mx-6 pt-4 lg:pt-6 pl-4 lg:pl-8">
+        <h1 className='text-3xl lg:text-4xl font-bold'>Digital Marketing</h1>
+        <p className='pt-2 text-sm lg:text-base'>
+            Becoming a digital marketing professional is one of the best career decisions at present. The digital marketing industry in India is estimated to produce more than 4 million jobs by 2026. Here are some of the top reasons that constantly add to the growing demand of skilled professionals in the field.
+            JKSD’s digital marketing training and certification courses are designed to develop professional-level marketing skills required to meet each of these demands. We believe in providing the right knowledge, skills, and exposure through traditional classroom learning but with a contemporary approach of hands-on training. Our courses are industry-approved programs in-sync with globally-relevant digital marketing standards and designed under the guidance of veteran industry professionals.
+            {/* Truncated for brevity */}
+        </p>
+
+        <div className='flex flex-wrap justify-start lg:justify-evenly mt-4 mb-5'>
+    <button className="font-sans font-bold text-center bg-orange text-xs sm:text-sm lg:text-lg py-1.5 px-2 sm:px-4 lg:px-6 mt-2 rounded-lg border-2 border-orange text-black flex items-center gap-2" type="button">
+        Download Brochure
+        <img className='h-4 sm:h-5 w-4 sm:w-5' src={download} alt="" />
+    </button>
+    <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-4 sm:px-6 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2" type="button">
+        Contact Now
+        <img className='h-5 sm:h-6 w-5 sm:w-6' src={telephone} alt="" />
+    </button>
+    <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-4 sm:px-6 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2" type="button">
+        Share
+        <img className='h-4 sm:h-5 w-4 sm:w-5' src={share} alt="" />
+    </button>
+</div>
+
+    </div>
+
+    <div className="p-4 lg:p-8 flex justify-center items-center lg:items-start">
+        <img className='rounded-lg h-[180px] sm:h-[240px] lg:h-[280px]' src={digital} alt="" />
+    </div>
+</div>
+ {/* digital section close here  */}
+
+
+{/* Digital Marketing: Thrive and Grow section start here  */}
+
+<div className=''>
+    <div className='h-auto w-[90%] lg:w-[80%] mx-auto lg:mx-32'>
+        <h1 className='text-center text-2xl lg:text-3xl font-bold pt-4'>Digital Marketing: Thrive and Grow</h1>
+
+        <div className='flex flex-col lg:flex-row justify-center pt-5'>
+            {/* Table of Contents */}
+            <div className='lg:w-1/2 '>
+                <h1 className='text-xl lg:text-2xl font-medium'>Table of Contents</h1>
+                {weeks.map((item, index) => (
+                    <div key={index} className="border-b border-orange">
+                        <button
+                            className="w-full flex justify-between items-center py-4 text-lg font-semibold focus:outline-none"
+                            onClick={() => toggleWeek(index)}
+                        >
+                            <span>{item.week}</span>
+                            <i className={`fas fa-chevron-down transform transition-transform duration-300 ${openWeek === index ? 'rotate-180' : ''}`}></i>
                         </button>
-                        <button className="font-sans font-bold text-center text-1xl py-2 ml-2 px-12 mt-2 rounded-lg bg-white text-black flex items-center gap-2" type="button">
-                            Contact Now
-                            <img className='h-7 w-6' src={telephone} alt="" />
-                        </button>
-                        <button className="font-sans font-bold text-center text-1xl py-2 ml-2 px-12 mt-2 rounded-lg bg-white text-black flex items-center gap-2" type="button">
-                            Share
-                            <img className='h-5 w-5' src={share} alt="" />
-                        </button>
-                    </div>
-                </div>
-
-                <div className="pl-10 pt-8">
-                    <img className='rounded-lg' src={digital} alt="" />
-                </div>
-            </div>
-
-            <div className=''>
-
-                <div className='h-auto w-[80%]   mx-32 '>
-
-                <div className='h-auto w-[80%]   mx-36 '>
-
-                    <h1 className='text-center text-3xl font-bold pt-4 '>Digital Marketing: Thrive and Grow</h1>
-
-                    <div className='flex justify-center ml-10  pt-5'>
-                        <div className='ml-4'>
-                            <h1 className='text-2xl font-medium'>Table of Contents</h1>
-                            {weeks.map((item, index) => (
-                                <div key={index} className="border-b border-orange">
-                                    <button
-                                        className="w-full flex justify-between items-center py-4 text-lg font-semibold focus:outline-none"
-                                        onClick={() => toggleWeek(index)}
-                                    >
-                                        <span>{item.week}</span>
-                                        <i className={`fas fa-chevron-down transform transition-transform duration-300 ${openWeek === index ? 'rotate-180' : ''}`}></i>
-                                    </button>
-                                    <ul
-                                        className={`text-lg transition-all duration-500 overflow-hidden ${openWeek === index ? 'max-h-40 opacity-100 py-4 px-3' : 'max-h-0 opacity-0'}`}
-                                    >
-                                        {item.details.map((detail, idx) => (
-                                            <li key={idx} className="ml-4 list-disc">{detail}</li>
-                                        ))}
-                                    </ul>
-                                </div>
+                        <ul
+                            className={`text-lg transition-all duration-500 overflow-hidden ${openWeek === index ? 'max-h-40 opacity-100 py-4 px-3' : 'max-h-0 opacity-0'}`}
+                        >
+                            {item.details.map((detail, idx) => (
+                                <li key={idx} className="ml-4 list-disc">{detail}</li>
                             ))}
-                        </div>
-
-                        <div className='h-auto  ml-28 pl-5  w-[70%]'>
-                            <h1 className='font-medium text-2xl pt-4 '>Course Details</h1>
-                            <div className='text-[20px] pt-3 font-medium'>
-                                <pre>Level:             Beginner</pre>
-                                <pre>Total Hours:       80 hrs</pre>
-                                <pre>Total Lessons:</pre>
-                                <pre>Certificate:      Certificate of Completion</pre>
-                                <pre>Last Update:      August 27th, 2024</pre>
-                            </div>
-                            <div>
-                                <h1 className='text-2xl pt-4 font-medium' > Requirements</h1>
-                                <p className='pt-3' >A basic understanding of the Digital Marketing: Thrive and Grow.
-                                    The ability to download large files of about 500 MB from the Internet
-                                    Access to a computer with a 64-bit processor running either Windows, Mac, or Linux</p>
-                            </div>
-                            <div>
-                                <h1 className='font-medium text-2xl pt-4'>What Skills/Competencies Do You Develop?</h1>
-                                <h1 className='pt-4'>At the completion of digital marketing training with us, you would be fully knowledgeable about various digital marketing disciplines that include:</h1>
-                                <ul className='list-disc pl-6 pt-2'> {/* Added list styles and padding */}
-                                    <li>Basic digital marketing concepts and different types of digital marketing</li>
-                                    <li>Search engine optimization (SEO) – both on-page and off-page</li>
-                                    <li>Email marketing, Content marketing</li>
-                                    <li>Search engine marketing – both organic and paid</li>
-                                    <li>Social media marketing (for popular social platforms like Facebook, YouTube, and more)</li>
-                                    <li>Affiliate marketing, E-commerce marketing, Mobile marketing</li>
-                                    <li>Website conversion rate optimization</li>
-                                    <li>Digital marketing tools including Google Ads, Google Analytics, Google Keyword Planner, and more</li>
-                                    <li>Digital marketing strategy building, optimization, measurement, and so on</li>
-                                </ul>
-                            </div>
-
-                        </div>
+                        </ul>
                     </div>
-                </div>
+                ))}
             </div>
 
+            {/* Course Details */}
+            <div className='lg:ml-14 lg:pl-5 mt-6 lg:mt-0 lg:w-2/3'>
+                <h1 className='font-medium text-xl lg:text-2xl'>Course Details</h1>
+                <div className='text-[16px] lg:text-[20px] pt-3 font-medium'>
+                    <pre>Level:             Beginner</pre>
+                    <pre>Total Duration :   3/6 months</pre>
+                    <pre>Certificate:      Certificate of Completion</pre>
+                </div>
+                
+                {/* Requirements */}
+                <div>
+                    <h1 className='text-xl lg:text-2xl pt-4 font-medium'>Requirements</h1>
+                    <p className='pt-3'>
+                        A basic understanding of the Digital Marketing: Thrive and Grow.
+                        The ability to download large files of about 500 MB from the Internet
+                        Access to a computer with a 64-bit processor running either Windows, Mac, or Linux
+                    </p>
+                </div>
 
-            <div className='cartificate flex sm:flex-col md:flex-row lg:flex-row  mt-4 bg-indigo-950 gap-2 justify-center'>
-                <div className="text-white pt-8 overflow-hidden mx-4  w-[50%] ">
-                    <div className='bg-green-300 h-80 rounded-full  w-80 flex mt-[-260px]'></div>
-                    <h1 className='text-orange font-medium text-3xl  pt-8' >Validating Your Success: About Your Certificate</h1>
-                    <h1 className=' pt-10 font-medium '>Once you complete the course video, assignments and quizzes you will be able to generate the certificate.</h1>
-                    <ul className='list-disc pl-10 pt-10'>
-
-            <div className='cartificate flex sm:flex-col md:flex-row lg:flex-row mt-4 bg-indigo-950 gap-2 justify-center'>
-                <div className="text-white pt-8 overflow-hidden w-[45%] ">
-                    <div className='bg-green-300 h-80 rounded-full  w-80 flex mt-[-260px]'></div>
-                    <h1 className='text-orange font-medium text-3xl pl-2 pt-8' >Validating Your Success: About Your Certificate</h1>
-                    <h1 className='pl-2 pt-10 font-medium '>Once you complete the course video, assignments and quizzes you will be able to generate the certificate.</h1>
-                    <ul className='list-disc pl-14 pt-10'>
-
-                        <li>
-                        After watching 60% of videos
-
-                        </li>
-                        <li>
-                        After scoring 60% in quiz & assignment.
-                        </li>
-                        <li>
-                        After completing 1medium level Project on Experience Portal
-                        </li>
+                {/* Skills */}
+                <div>
+                    <h1 className='font-medium text-xl lg:text-2xl pt-4'>What Skills/Competencies Do You Develop?</h1>
+                    <p className='pt-4'>At the completion of digital marketing training with us, you would be fully knowledgeable about various digital marketing disciplines that include:</p>
+                    <ul className='list-disc pl-6 pt-2'>
+                        <li>Basic digital marketing concepts and different types of digital marketing</li>
+                        <li>Search engine optimization (SEO) – both on-page and off-page</li>
+                        <li>Email marketing, Content marketing</li>
+                        <li>Search engine marketing – both organic and paid</li>
+                        <li>Social media marketing (for popular social platforms like Facebook, YouTube, and more)</li>
+                        <li>Affiliate marketing, E-commerce marketing, Mobile marketing</li>
+                        <li>Website conversion rate optimization</li>
+                        <li>Digital marketing tools including Google Ads, Google Analytics, Google Keyword Planner, and more</li>
+                        <li>Digital marketing strategy building, optimization, measurement, and so on</li>
                     </ul>
-
-                    <div className='flex  pl- pt-8'>
-                        <div><h1 className='text-2xl font-medium   ' >Certification From JKSD Infotech Pvt. Ltd. </h1></div>
-                        {/* <div><img className='h-10 ' src={jksd} alt="" /></div> */}
-                    </div>
-                    <div className='bg-green-300 h-80 rounded-full ml-[380px] justify-center items-center w-80 flex mb-[-240px]'></div>
-
                 </div>
-                <div className="img  w-[25%] p-5  ">
-                    <img className=' h-auto  ' src={cartificate} alt="" />
-
-                    <div className='flex gap-4 pl-14 pt-8'>
-                        <div><h1 className='text-3xl font-medium   ' >Certification From </h1></div>
-                        <div><img className='h-10 ' src={jksd} alt="" /></div>
-                    </div>
-                    <div className='bg-green-300 h-80 rounded-full ml-[380px] justify-center items-center w-80 flex mb-[-300px]'></div>
-
-                </div>
-                <div className="img  w-[45%] ">
-                    <img className=' mx-4 p-4 ' src={cartificate} alt="" />
-
-                </div>
-
             </div>
+        </div>
+    </div>
+</div>
+
+
+            {/* Digital Marketing: Thrive and Grow section close here  */}
+
+
+ {/* cartificate section start here  */}
+
+            <div className='cartificate flex flex-col sm:flex-col md:flex-row lg:flex-row mt-4 bg-indigo-950 gap-4 justify-center items-center'>
+    {/* Left Content Section */}
+    <div className="text-white h-[460px]  pt-8 w-[100%] md:w-[60%] lg:w-[60%] overflow-hidden">
+        {/* First Decorative Circle */}
+        <div className='relative'>
+            <div className='bg-red-300  h-40 w-40 md:h-60 md:w-60 lg:h-80 lg:w-80   rounded-full absolute -top-16 md:-top-4 lg:-top-72'></div>
+        </div>
+        
+        {/* Text Content */}
+        <h1 className='text-orange font-medium text-2xl lg:text-3xl pr-40 pt-16 text-center'>
+            Validating Your Success: About Your Certificate
+        </h1>
+        <p className='pt-6 lg:pt-10 font-medium text-center'>
+            Once you complete the course videos, assignments, and quizzes, you will be able to generate the certificate.
+        </p>
+        <ul className='list-disc pl-6 sm:pl-10 pt-4 lg:pt-6'>
+            <li>After watching 60% of videos</li>
+            <li>After scoring 60% in quiz & assignment</li>
+            <li>After completing 1 medium-level project on Experience Portal</li>
+        </ul>
+        
+        {/* Certificate Information */}
+        <div className='pt-6 '>
+            <h1 className='text-xl lg:text-2xl font-medium'>
+                Certification From JKSD Infotech Pvt. Ltd.
+            </h1>
+        </div>
+        
+        {/* Second Decorative Circle */}
+        <div className='relative '>
+            <div className='bg-green-300  h-40 w-40 md:h-60 md:w-60 lg:h-80 lg:w-80 rounded-full absolute bottom-0  right-0 mb-[-10px] md:mb-[-10px] lg:mb-[-340px]'></div>
+        </div>
+    </div>
+
+    {/* Right Image Section */}
+    <div className="img w-[60%] md:w-[40%] lg:w-[25%] p-5 flex justify-center">
+        <img className='h-auto w-full' src={cartificate} alt="Certificate" />
+    </div>
+</div>
 
         </div>
+    
     );
 };
 
 export default Biocourses;
-
