@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { IonIcon } from '@ionic/react';
 import '@ionic/react/css/core.css';
 import { menu, close } from 'ionicons/icons';
@@ -7,31 +7,13 @@ import ScrollProgress from './ScrollProgress';
 
 function Nav() {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
 
     const onToggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setIsScrolled(true);
-            } else {
-                setIsScrolled(false);
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
     return (
-        <header
-            className={`bg-white py-3 w-full z-50 transition-all duration-300 ${
-                isScrolled ? 'scrolled' : ''
-            }`}
-        >
+        <header className="bg-red-400 py-3 w-full z-50 transition-all duration-300 navbar">
             <ScrollProgress />
             <nav className="flex justify-between items-center w-[94%] h-12 mx-auto">
                 <div>
@@ -75,14 +57,9 @@ function Nav() {
 
             {/* Mobile Dropdown Menu */}
             {menuOpen && (
-                <div className="fixed top-0 left-0 w-full h-full bg-white backdrop-blur-lg z-40 transition-transform transform translate-y-0">
-                    <div className="p-8 h-full">
-                        <IonIcon
-                            icon={close}
-                            onClick={onToggleMenu}
-                            className="text-3xl cursor-pointer absolute top-4 right-4"
-                        />
-                        <ul className="flex flex-col text-xl gap-4 mt-12">
+                <div className="navbar fixed top-0 left-0 w-full h-full bg-white backdrop-blur-lg z-40 transition-transform transform translate-y-0">
+                    
+                        <ul className="flex flex-col text-xl gap-4 mt-12 bg-red-200 p-1 backdrop-blur-lg bg-transparent h-full ">
                             {menuItems.map((item, index) => (
                                 <li key={index} className="w-full">
                                     <NavLink
@@ -97,7 +74,7 @@ function Nav() {
                                 </li>
                             ))}
                         </ul>
-                    </div>
+                    
                 </div>
             )}
         </header>
@@ -114,5 +91,3 @@ const menuItems = [
 ];
 
 export default Nav;
-
-
