@@ -6,76 +6,12 @@ function AboutUs() {
       {/* first Section*/}
       <div className="md:flex ">
         <div>
-
-          <div className="flex flex-row ">
-            <div className="lg:w-1/2 py-14 pl-28">
-              <img
-                src="src\assets\images\students.jpg"
-                className=" h-full  rounded-xl"
-              />
-            </div>
-
-            <div className="lg:w-1/2 lg:mr-12 text-xl font-light text-gray-800 pt-20 pb-10 text-left tracking-widest">
-              <h2 className="lg:px-14 lg:text-3xl font-semibold">
-                Shape Tomorrow’s Digital Leaders Today
-              </h2>
-              <br />
-              <p className="lg:px-14 lg:text-xl font-normal text-left">
-                At JKSD Infotech, our vision is to shape a future where
-                education knows no boundaries and technology serves as a
-                catalyst for progress and empowerment. We envision a world where
-                learning is not confined to the four walls of a classroom but
-                extends to every corner of the globe, transcending barriers of
-                geography, socioeconomic status, and traditional educational
-                models We aspire to create a learning ecosystem that is
-                inclusive, equitable, and accessible to all, where individuals
-                have the tools, resources, and support they need to thrive and
-                contribute meaningfully to society.
-              </p>
-              <br />
-
-              <div className=" px-60 pb-24">
-                <button className="inline-block self-center bg-orange text-black font-bold rounded-2xl px-6 py-2 uppercase text-xl">
-                  Read More{" "}
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className=" min-w-full h-80 bg-indigo-950 ">
-            <h2 className="text-white  font-semibold text-2xl  md:text-5xl pl-14 pt-14 ">
-              {" "}
-              Our Mission
-            </h2>
-
-            <div className="flex flex-row gap-8  m-14 pl-28 ">
-            <div className="bg-slate-100 h-10 w-auto p-8 rounded-2xl flex items-center justify-center">
-  <ul className="list-disc">
-    <li className="text-xl">
-    To aim for Equity and inclusivity in Education
-    </li>
-  </ul>
-</div>
-
-              <div className="bg-slate-100 h-10 w-auto p-8 rounded-2xl flex items-center justify-center">
-  <ul className="list-disc">
-    <li className="text-xl">
-    To reach learners in every corner of the country
-    </li>
-  </ul>
-</div>
-
-
-<div className="bg-slate-100 h-10 w-auto p-8 rounded-2xl flex items-center justify-center">
-  <ul className="list-disc">
-    <li className="text-xl">
-    To build abusiness sustainability
-    </li>
-  </ul>
-</div>
-            </div>
-          </div>
-
+          <img
+            src=".\Images\student grp.jpeg"
+            alt="student image"
+            className=" pt-14 md:w-[500px] md:h-[660px] md:mt-[30px] md:ml-[170px]"
+          />
+        </div>
 
         <div className=" text-3xl  font-semibold md:flex-col md:w-1/2 ">
           <h1 className=" pt-10 text-center md:mt-20 md:text-left md:text-4xl md:pl-[80px] ">
@@ -179,7 +115,7 @@ function AboutUs() {
 
 
      <div>
-     <h1 className='text-2xl md:text-5xl font-bold text-orange text-center pt-10 py-10'>OUR FOUNDERS</h1>
+     <h1 className=' md:text-5xl text-orange text-center pt-10 py-10 font-roboto-slab font-black text-2xl'>Our Founders</h1>
      <div  className="flex flex-col gap-6 px-14 pt-10 pb-10 md:flex-row md:h-[500px] md:flex bg-indigo-950 md:py-[50px] md:px-[50px] md:gap-10 md:justify-evenly">
                
      { /* Jitesh Sir*/ }
@@ -206,7 +142,7 @@ function AboutUs() {
             rel="noopener noreferrer"
           >
             <img
-              src="./Icons/linkedin.png"
+              src="./icons/linkedin.png"
               alt="LinkedIn"
               className="w-8 mt-5 md:h-8 object-cover rounded-lg hover:opacity-80"
             />
@@ -237,7 +173,7 @@ function AboutUs() {
             rel="noopener noreferrer"
           >
             <img
-              src="./Icons/linkedin.png"
+              src="./icons/linkedin.png"
               alt="LinkedIn"
               className="w-8 mt-5  h-8 object-cover rounded-lg hover:opacity-80"
             />
@@ -269,7 +205,7 @@ function AboutUs() {
             rel="noopener noreferrer"
           >
             <img
-              src="./Icons/linkedin.png"
+              src="./icons/linkedin.png"
               alt="LinkedIn"
               className="w-8 mt-5  h-8 object-cover rounded-lg hover:opacity-80"
             />
@@ -300,7 +236,7 @@ function AboutUs() {
             rel="noopener noreferrer"
           >
             <img
-              src="./Icons/linkedin.png"
+              src="./icons/linkedin.png"
               alt="LinkedIn"
               className="w-8 mt-5  h-8 object-cover rounded-lg hover:opacity-80"
             />
@@ -313,7 +249,7 @@ function AboutUs() {
    { /* Our Team*/ }
       
       <div className="bg-white">
-      <h1 className='text-2xl md:text-5xl font-bold text-orange text-center pt-10 py-10'>OUR TEAM</h1>
+      <h1 className=' md:text-5xl  text-orange text-center pt-10 py-10 font-roboto-slab font-black text-2xl'>Our Team</h1>
       <img src="public\Images\groupnew.png"
       alt="team pic"
        className=" mt-5 mb-14 md:h-[550px] md:mb-5 md:ml-[450px]  md:w-[750px]"/>

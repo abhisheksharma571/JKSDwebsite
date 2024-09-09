@@ -71,15 +71,15 @@ function ContactUs() {
             </div>
             <div className="flex flex-col space-y-2">
               <div className="inline-flex space-x-0 items-center pt-2">
-                <img src="public/Icons/mobile (1).png" alt="" />
+                <img src="icons/mobile (1).png" alt="" />
                 <p className="text-lg">+91-9625040231</p>
               </div>
               <div className="inline-flex space-x-2 items-center pt-2">
-                <img src="./Icons/email (1).png" alt="" className="h-7 w-7" />
+                <img src="./icons/email (1).png" alt="" className="h-7 w-7" />
                 <p className="text-lg">Info@jksd.in</p>
               </div>
               <div className="inline-flex space-x-2 items-center pt-2 tracking-wide">
-                <img src="./Icons/gps.png" alt="location" className="h-7 w-7" />
+                <img src="./icons/gps.png" alt="location" className="h-7 w-7" />
                 <span className="text-lg">
                   #103. 1st-floor H-61, Sector-63 Noida-201301
                 </span>
@@ -87,16 +87,16 @@ function ContactUs() {
             </div>
             <div className="flex space-x-9 text-lg">
               <a href="#">
-                <img src="public/Icons/facebook .png" />
+                <img src="icons/facebook .png" />
               </a>
               <a href="https://www.instagram.com/jksdinfotech?igsh=YjA5ejRlc21senA1">
-                <img src="public/Icons/instagram.png" />
+                <img src="icons/instagram.png" />
               </a>
               <a href="https://www.linkedin.com/company/jksdinfotechpvtltd/">
-                <img src="public/Icons/linkedin-logo.png" />
+                <img src="icons/linkedin-logo.png" />
               </a>
               <a href="https://youtube.com/@jksdinfotech01?si=5aCajzAiVoKc0Dm-">
-                <img src="public\Icons\youtube.png"
+                <img src="icons\youtube.png"
                 className="md:w-[35px]" />
               </a>
             </div>
