@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import digital from '../assets/images/digitall.png';
 
-import download from '../assets/images/Download.jpeg';
-import share from '../assets/images/Share.jpeg';
-import cartificate from '../assets/images/Certificate.jpeg'
-import telephone from '../assets/images/Contact.jpeg'
+
 
 import download from '../assets/images/download.png';
 import share from '../assets/images/share.png';
@@ -233,20 +230,14 @@ const Biocourses = () => {
                                     <li>Digital marketing strategy building, optimization, measurement, and so on</li>
                                 </ul>
                             </div>
-
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div className='cartificate flex sm:flex-col md:flex-row lg:flex-row  mt-4 bg-indigo-950 gap-2 justify-center'>
-                <div className="text-white pt-8 overflow-hidden mx-4  w-[50%] ">
-                    <div className='bg-green-300 h-80 rounded-full  w-80 flex mt-[-260px]'></div>
-                    <h1 className='text-orange font-medium text-3xl  pt-8' >Validating Your Success: About Your Certificate</h1>
-                    <h1 className=' pt-10 font-medium '>Once you complete the course video, assignments and quizzes you will be able to generate the certificate.</h1>
-                    <ul className='list-disc pl-10 pt-10'>
-
+            
             <div className='cartificate flex sm:flex-col md:flex-row lg:flex-row mt-4 bg-indigo-950 gap-2 justify-center'>
                 <div className="text-white pt-8 overflow-hidden w-[45%] ">
                     <div className='bg-green-300 h-80 rounded-full  w-80 flex mt-[-260px]'></div>
@@ -297,5 +288,5 @@ const Biocourses = () => {
 
 export default Biocourses;
 
-export default Biocourses;
+
 

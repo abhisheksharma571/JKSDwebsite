@@ -38,7 +38,7 @@ const Review = () => {
 
                     <div className=' flex justify-center items-center'>
                     
-                    <img className='rounded-lg  h-32   ' src={d.image} alt="" />
+                    <img className='rounded-lg  h-32 w-32 ' src={d.image} alt="" />
                     </div>
                     <div className='p-8 text-xl'>
                         <p className='text-center italic'>{d.review}</p>                      
@@ -47,7 +47,7 @@ const Review = () => {
                         
                         <div className=''>
                         <p className='text-4xl text-center font-sans font-semibold'>{d.Name}</p>
-                        <p className=' text-[13px] text-center text-3xl w-auto text-blue-600 font-medium'>{d.degAcom}</p>
+                        
                         </div>
                         
                     </div>
@@ -66,30 +66,27 @@ const Review = () => {
 }
 const data = [
     {
-        Name: 'Jeff Bezos',
-        review: 'I recently completed a course at JKSD and was very impressed. The expert instructors and hands-on approach made complex topics easy to understand.  Python and digital marketing, catered perfectly to my needs I highly recommend JKSD.',
+        Name: 'Abhisek Kumar',
+        review: 'The web development course was excellent—comprehensive, practical, and up-to-date. The instructors were knowledgeable, and the hands-on projects really prepared me for real-world challenges. Highly recommend it!',
         image: './Images/Abhishek.png',
-        degAcom: 'CEO | Amazone'
+        
         
     },
     {
-        Name: 'Banny Ban',
-        review: ' I recently completed a course at JKSD and was very impressed. The expert instructors and hands-on approach made complex topics easy to understand.  Python and digital marketing, catered perfectly to my needs I highly recommend JKSD.',
-        image: './Images/Abhishek.png',
-        degAcom: 'Student | Oxford University'
+        Name: 'Sawan Gupta',
+        review: 'Comprehensive and well-structured courses. The interactive sessions made learning engaging. Great support from the team throughout the course. Worth every penny!',
+        image: './Images/Sawan.jpg',
         
     },
     {
-        Name: 'Orion Curz',
-        review: 'I recently completed a course at JKSD and was very impressed. The expert instructors and hands-on approach made complex topics easy to understand.  Python and digital marketing, catered perfectly to my needs I highly recommend JKSD.',
-        image: './Images/Abhishek.png',
-        degAcom: 'Student | Harvard University'
+        Name: 'Rohit Sharma',
+        review: 'IoT embedded systems integrate sensors and connectivity into devices, enabling smart, automated functions. They enhance efficiency and data collection across industries. Thanks, Devansh Sir, for your insightful guidance on this topic.',
+        image: './Images/Rohit.jpeg',
     },
     {
         Name: 'Elon Musk',
         review: 'I recently completed a course at JKSD and was very impressed. The expert instructors and hands-on approach made complex topics easy to understand.  Python and digital marketing, catered perfectly to my needs I highly recommend JKSD.',
         image: './Images/Abhishek.png',
-        degAcom: 'CEO | Tesla'
     }
 ]
 

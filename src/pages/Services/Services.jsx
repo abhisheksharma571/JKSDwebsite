@@ -3,6 +3,8 @@ import ServiceHead from './ServiceHead'
 import TrainingP from './TrainingP'
 import WebDev from './WebDev'
 import DigitalMarketing from './DigitalMarketing'
+import IoT from './IoT'
+import HRConsulting from './HRConsulting'
 function Services() {
   return (
     <>
@@ -26,15 +28,11 @@ function Services() {
         <img className='h-[460px] ' src="./Images/services(1).jpg" alt="Nahi hai" />
       </div>
     </div>
-    <div>
       <TrainingP/>
-    </div>
-    <div>
       <WebDev/>
-    </div>
-    <div>
       <DigitalMarketing/>
-    </div>
+      <IoT/>
+    <HRConsulting/>
     </>
   )
 }
