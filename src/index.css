@@ -14,6 +14,8 @@
     
 }
 }
+
 .list-item-bullet::marker {
     color: #5651a0; /* Change this to your desired color */
 }
+
