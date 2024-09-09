@@ -19,6 +19,7 @@ const Courses = () => {
                                 <div className='flex justify-evenly   mt-2 ' >
                                     <button
                                         class="  font-sans font-medium text-sm text-center bg-orange py-1.5 ml-2 px-2  mt-2  rounded-lg  border-2 border-orange text-black  flex items-center gap-2  "
+
                                         type="button">
 
                                         Brochure
@@ -60,6 +61,7 @@ const data = [
         image: './Images/digitall.png'
     },
     {
+
         id: 'dataanalytics',
         title: 'Data Analytics',
         description: 'Analyze data for actionable insights',
