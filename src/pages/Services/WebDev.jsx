@@ -2,11 +2,11 @@ import React from 'react'
 
 function WebDev() {
   return (
-    <div className='flex h-screen w-full bg-[#fcfaf6]'>
-        <div className='w-1/2 px-16 pt-28 flex h-[630px]'>
+    <div className='flex h-[650px]   bg-white w-[100%] '>
+        <div className='w-1/2 px-16 pt-16 flex h-[630px]'>
           <img src="./Images/Web.jpg" alt="" />
         </div>
-        <div className='w-1/2 pt-28'>
+        <div className='w-1/2 pt-16'>
         <h1 className='text-5xl font-semibold'>Website Development</h1>
         <p className='text-lg mt-10 w-[85%] '>Empower your business with a professional website and stand out in today's digital age! At JKSD, we provide top-notch web development services tailored to your needs. Let us help you create a powerful online presence that drives success and sets you apart from the competition.</p>
         <div className='flex justify-between w-1/2'>

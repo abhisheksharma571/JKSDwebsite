@@ -2,7 +2,7 @@ import React from 'react'
 
 function DigitalMarketing() {
   return (
-    <div className='w-full h-screen bg-black'>
+    <div className='w-full h-auto  bg-black'>
         <div className='relative'>
         <img className='h-screen w-1/2 ' src="./Images/DigitalBack.jpg" alt="Where is image" />
         <div className='absolute inset-0 flex '>
