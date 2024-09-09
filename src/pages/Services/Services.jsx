@@ -10,7 +10,7 @@ function Services() {
       <div>
         <ServiceHead />
       </div>
-      <div className='flex flex-col lg:flex-row bg-red-400'>
+      <div className='flex flex-col lg:flex-row '>
         <div className='p-6 sm:p-10 md:p-16 lg:p-20 w-full lg:w-1/2'>
           <div className='text-xs sm:text-sm md:text-base lg:text-lg'>
             S e r v i c e s
