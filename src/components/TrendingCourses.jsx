@@ -9,6 +9,8 @@ function TrendingCourses() {
     };
 
     return (
+        <>
+        <h1 className=' md:text-5xl  text-orange text-center pt-10 font-roboto-slab font-black text-2xl bg-gray-200'>Our Placement Partners</h1>
         <div className="h-full py-10 flex items-center justify-center bg-gray-200">
             <div className="flex space-x-4 overflow-x-auto p-4">
                 {data.map((course, index) => (
@@ -50,6 +52,7 @@ function TrendingCourses() {
                 ))}
             </div>
         </div>
+        </>
     );
 }
 

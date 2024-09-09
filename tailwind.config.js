@@ -11,6 +11,9 @@ export default {
   theme: {
 
     extend: {
+      fontFamily: {
+        'roboto-slab': ['"Roboto Slab"', 'serif'], // Add this line to include Roboto Slab
+      },
 
       colors:{
         'blue' : colors.blue,

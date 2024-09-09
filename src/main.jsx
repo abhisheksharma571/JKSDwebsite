@@ -31,15 +31,15 @@ const router = createBrowserRouter(
       <Route path='services' element={<Services />} />
       <Route path='blogs' element={<Blogs />} />
       <Route path='faq' element={<Faq />} />
-      <Route path='/digitalmarketing' element={<DigitalMarketing/>} />
-      <Route path='/dataanalytics' element={<DataAnalytics/>} />
-      <Route path='/javafullstack' element={<JavafullStack/>} />
-      <Route path='/cybersecurity' element={<CyberSecurity/>} />
-      <Route path='/embedded' element={<Embedded/>} />
-      <Route path='/graphicsdesigning' element={<GraphicDesigning/>} />
-      <Route path='/iot' element={<Iot/>} />
-      <Route path='/python' element={<Python/>} />
-      <Route path='/robotics' element={<Robotics/>} />
+      <Route path='digitalmarketing' element={<DigitalMarketing/>} />
+      <Route path='dataanalytics' element={<DataAnalytics/>} />
+      <Route path='javafullstack' element={<JavafullStack/>} />
+      <Route path='cybersecurity' element={<CyberSecurity/>} />
+      <Route path='embedded' element={<Embedded/>} />
+      <Route path='graphicsdesigning' element={<GraphicDesigning/>} />
+      <Route path='iot' element={<Iot/>} />
+      <Route path='python' element={<Python/>} />
+      <Route path='robotics' element={<Robotics/>} />
       <Route path='404' element={<PageNotFound />} />
       <Route path='*' element={<Navigate to="/404" replace />} />
     </Route>

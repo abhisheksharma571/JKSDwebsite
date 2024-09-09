@@ -20,9 +20,7 @@ function Home() {
       <CounterWrapper />
       <Services />
       
-      <div className='bg-indigo-950'>
       <TrendingCourses/>
-      </div>
       <Review/>
       <HiringPartners />
       <Adviser />
