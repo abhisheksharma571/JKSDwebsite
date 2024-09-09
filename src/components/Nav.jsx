@@ -114,5 +114,3 @@ const menuItems = [
 ];
 
 export default Nav;
-
-

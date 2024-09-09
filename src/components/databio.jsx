@@ -1,18 +1,13 @@
 import React, { useState } from 'react';
 import digital from '../assets/images/digitall.png';
-
-
-
-
-import download from '../assets/images/download.png';
-
+import download from '../assets/images/download .png';
 import share from '../assets/images/share.png';
 import cartificate from '../assets/images/Certificate.jpeg'
 import telephone from '../assets/images/telephone.png'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
-const Biocourses = () => {
+const databio = () => {
     const [openWeek, setOpenWeek] = useState(null);
 
     const toggleWeek = (index) => {
@@ -136,10 +131,9 @@ const Biocourses = () => {
 
              <div className='h-auto lg:h-96 bg-indigo-950 w-full flex flex-col-reverse lg:flex-row'>
     <div className="text-white w-full lg:w-[55%] mx-4 lg:mx-6 pt-4 lg:pt-6 pl-4 lg:pl-8">
-        <h1 className='text-3xl lg:text-4xl font-bold'>Digital Marketing</h1>
+        <h1 className='text-3xl lg:text-4xl font-bold'>Data Analytics</h1>
         <p className='pt-2 text-sm lg:text-base'>
-            Becoming a digital marketing professional is one of the best career decisions at present. The digital marketing industry in India is estimated to produce more than 4 million jobs by 2026. Here are some of the top reasons that constantly add to the growing demand of skilled professionals in the field.
-            JKSD’s digital marketing training and certification courses are designed to develop professional-level marketing skills required to meet each of these demands. We believe in providing the right knowledge, skills, and exposure through traditional classroom learning but with a contemporary approach of hands-on training. Our courses are industry-approved programs in-sync with globally-relevant digital marketing standards and designed under the guidance of veteran industry professionals.
+        Data analytics involves the process of examining raw data to uncover patterns, trends, and insights that inform decision-making. It encompasses techniques like statistical analysis, data mining, and machine learning to extract meaningful information from large datasets. Businesses use data analytics to optimize operations, improve customer experiences, and drive innovation. By analyzing historical data, companies can predict future trends, identify opportunities, and mitigate risks. Data analytics is also vital in sectors like healthcare, finance, and marketing, where it helps in personalizing services, detecting fraud, and improving operational efficiency.
             {/* Truncated for brevity */}
         </p>
 
@@ -192,44 +186,7 @@ const Biocourses = () => {
                             {item.details.map((detail, idx) => (
                                 <li key={idx} className="ml-4 list-disc">{detail}</li>
                             ))}
-
-                        </div>
-
-                        <div className='h-auto  ml-28 pl-5  w-[70%]'>
-                            <h1 className='font-medium text-2xl pt-4 '>Course Details</h1>
-                            <div className='text-[20px] pt-3 font-medium'>
-                                <pre>Level:             Beginner</pre>
-                                <pre>Total Hours:       80 hrs</pre>
-                                <pre>Total Lessons:</pre>
-                                <pre>Certificate:      Certificate of Completion</pre>
-                                <pre>Last Update:      August 27th, 2024</pre>
-                            </div>
-                            <div>
-                                <h1 className='text-2xl pt-4 font-medium' > Requirements</h1>
-                                <p className='pt-3' >A basic understanding of the Digital Marketing: Thrive and Grow.
-                                    The ability to download large files of about 500 MB from the Internet
-                                    Access to a computer with a 64-bit processor running either Windows, Mac, or Linux</p>
-                            </div>
-                            <div>
-                                <h1 className='font-medium text-2xl pt-4'>What Skills/Competencies Do You Develop?</h1>
-                                <h1 className='pt-4'>At the completion of digital marketing training with us, you would be fully knowledgeable about various digital marketing disciplines that include:</h1>
-                                <ul className='list-disc pl-6 pt-2'> {/* Added list styles and padding */}
-                                    <li>Basic digital marketing concepts and different types of digital marketing</li>
-                                    <li>Search engine optimization (SEO) – both on-page and off-page</li>
-                                    <li>Email marketing, Content marketing</li>
-                                    <li>Search engine marketing – both organic and paid</li>
-                                    <li>Social media marketing (for popular social platforms like Facebook, YouTube, and more)</li>
-                                    <li>Affiliate marketing, E-commerce marketing, Mobile marketing</li>
-                                    <li>Website conversion rate optimization</li>
-                                    <li>Digital marketing tools including Google Ads, Google Analytics, Google Keyword Planner, and more</li>
-                                    <li>Digital marketing strategy building, optimization, measurement, and so on</li>
-                                </ul>
-                            </div>
-                            </div>
-                        </div>
-
                         </ul>
-
                     </div>
                 ))}
             </div>
@@ -253,26 +210,6 @@ const Biocourses = () => {
                     </p>
                 </div>
 
-
-            
-            <div className='cartificate flex sm:flex-col md:flex-row lg:flex-row mt-4 bg-indigo-950 gap-2 justify-center'>
-                <div className="text-white pt-8 overflow-hidden w-[45%] ">
-                    <div className='bg-green-300 h-80 rounded-full  w-80 flex mt-[-260px]'></div>
-                    <h1 className='text-orange font-medium text-3xl pl-2 pt-8' >Validating Your Success: About Your Certificate</h1>
-                    <h1 className='pl-2 pt-10 font-medium '>Once you complete the course video, assignments and quizzes you will be able to generate the certificate.</h1>
-                    <ul className='list-disc pl-14 pt-10'>
-
-                        <li>
-                        After watching 60% of videos
-
-                        </li>
-                        <li>
-                        After scoring 60% in quiz & assignment.
-                        </li>
-                        <li>
-                        After completing 1medium level Project on Experience Portal
-                        </li>
-
                 {/* Skills */}
                 <div>
                     <h1 className='font-medium text-xl lg:text-2xl pt-4'>What Skills/Competencies Do You Develop?</h1>
@@ -287,7 +224,6 @@ const Biocourses = () => {
                         <li>Website conversion rate optimization</li>
                         <li>Digital marketing tools including Google Ads, Google Analytics, Google Keyword Planner, and more</li>
                         <li>Digital marketing strategy building, optimization, measurement, and so on</li>
-
                     </ul>
                 </div>
             </div>
@@ -346,9 +282,4 @@ const Biocourses = () => {
     );
 };
 
-
-
-export default Biocourses;
-
-
-
+export default databio;
