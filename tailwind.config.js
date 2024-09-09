@@ -13,7 +13,7 @@ export default {
     extend: {
 
       colors:{
-        'blue' : colors.blue,
+        'indigo' : colors.blue,
         'orange' : colors.orange
         
       },
