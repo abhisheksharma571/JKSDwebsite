@@ -1,8 +1,11 @@
-import React from 'react';
-import ServiceHead from './ServiceHead';
-import TrainingP from './TrainingP';
-import WebDev from './WebDev';
-import DigitalMarketing from './DigitalMarketing';
+
+import React from 'react'
+import ServiceHead from './ServiceHead'
+import TrainingP from './TrainingP'
+import WebDev from './WebDev'
+import DigitalMarketing from './DigitalMarketing'
+import IoT from './IoT'
+import HRConsulting from './HRConsulting'
 
 function Services() {
   return (
@@ -46,15 +49,14 @@ function Services() {
           />
         </div>
       </div>
-      <div>
-        <TrainingP />
-      </div>
-      <div>
-        <WebDev />
-      </div>
-      <div>
-        <DigitalMarketing />
-      </div>
+     
+    
+      <TrainingP/>
+      <WebDev/>
+      <DigitalMarketing/>
+      <IoT/>
+    <HRConsulting/>
+
     </>
   );
 }
