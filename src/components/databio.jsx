@@ -7,7 +7,7 @@ import telephone from '../assets/images/telephone.png'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
-const Biocourses = () => {
+const databio = () => {
     const [openWeek, setOpenWeek] = useState(null);
 
     const toggleWeek = (index) => {
@@ -131,10 +131,9 @@ const Biocourses = () => {
 
              <div className='h-auto lg:h-96 bg-indigo-950 w-full flex flex-col-reverse lg:flex-row'>
     <div className="text-white w-full lg:w-[55%] mx-4 lg:mx-6 pt-4 lg:pt-6 pl-4 lg:pl-8">
-        <h1 className='text-3xl lg:text-4xl font-bold'>Digital Marketing</h1>
+        <h1 className='text-3xl lg:text-4xl font-bold'>Data Analytics</h1>
         <p className='pt-2 text-sm lg:text-base'>
-            Becoming a digital marketing professional is one of the best career decisions at present. The digital marketing industry in India is estimated to produce more than 4 million jobs by 2026. Here are some of the top reasons that constantly add to the growing demand of skilled professionals in the field.
-            JKSD’s digital marketing training and certification courses are designed to develop professional-level marketing skills required to meet each of these demands. We believe in providing the right knowledge, skills, and exposure through traditional classroom learning but with a contemporary approach of hands-on training. Our courses are industry-approved programs in-sync with globally-relevant digital marketing standards and designed under the guidance of veteran industry professionals.
+        Data analytics involves the process of examining raw data to uncover patterns, trends, and insights that inform decision-making. It encompasses techniques like statistical analysis, data mining, and machine learning to extract meaningful information from large datasets. Businesses use data analytics to optimize operations, improve customer experiences, and drive innovation. By analyzing historical data, companies can predict future trends, identify opportunities, and mitigate risks. Data analytics is also vital in sectors like healthcare, finance, and marketing, where it helps in personalizing services, detecting fraud, and improving operational efficiency.
             {/* Truncated for brevity */}
         </p>
 
@@ -283,4 +282,4 @@ const Biocourses = () => {
     );
 };
 
-export default Biocourses;
+export default databio;

@@ -79,8 +79,8 @@ const Foot = () => {
                 {/* Product Information */}
                 <div className="w-full  mb-4 md:w-[20%]">
                     <h1 className="font-medium text-center  md:text-left">Product</h1>
-                    <div className="bg-orange mt-2 mb-2 h-[3px]  md:w-full"></div>
-                    <div className=" text-center text-  md:text-left">
+                    <div className="bg-orange mt-2  mb-2 h-[3px]  md:w-full"></div>
+                    <div className=" md:text-left ">
                         <li><a href="#">Website Development</a></li>
                         <li><a href="#">HR Consulting</a></li>
                         <li><a href="#">Innovative Lab Setups</a></li>
