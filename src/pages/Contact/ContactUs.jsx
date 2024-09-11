@@ -141,6 +141,19 @@ function ContactUs() {
                   />
                 </div>
                 <div>
+                  <label htmlFor="phone" className="text-sm">Phone Number</label>
+                  <input
+                    type="file"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone Number"
+                    required
+                    className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-orange"
+                  />
+                </div>
+               
+                
+                <div>
                   <label htmlFor="message" className="text-sm">How Can We Help You?</label>
                   <textarea
                     id="message"

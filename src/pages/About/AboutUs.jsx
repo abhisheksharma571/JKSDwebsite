@@ -4,7 +4,7 @@ function AboutUs() {
   return (
     <div className="">
       {/* first Section*/}
-      <div className="md:flex ">
+      <div className="bg-[#c9cedd] md:flex">
         <div>
           <img
             src="public\students\student about .png"
