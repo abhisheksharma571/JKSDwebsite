@@ -88,6 +88,7 @@ const menuItems = [
     { name: 'Blogs', path: '/blogs' },
     { name: 'About Us', path: '/about' },
     { name: 'Contact Us', path: '/contact' },
+
 ];
 
 export default Nav;

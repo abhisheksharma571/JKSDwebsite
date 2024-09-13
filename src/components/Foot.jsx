@@ -42,7 +42,7 @@ const Foot = () => {
 
                 {/* Company Information */}
                 <div className="w-full md:w-[30%] mb-8 md:mb-0">
-                    <h1 className="text-center font-medium">Company</h1>
+                    <h1 className="text-center font-medium">Quick links</h1>
                     <div className="bg-orange mt-2 mb-2 h-[3px] w-full"></div>
                     <div className="flex flex-wrap justify-around md:justify-between">
                         <div>
@@ -52,8 +52,8 @@ const Foot = () => {
                         </div>
                         <div>
                             <li><a href="#">Job Assistance</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><Link to="privacypolicy">Privacy Policy</Link></li>
+                            <li><Link to="termandcondition">Terms and Condition</Link></li>
                         </div>
                     </div>
                     <div className="text-center mt-6">
@@ -83,9 +83,9 @@ const Foot = () => {
                     <div className=" md:text-left ">
                         <li><a href="#">Website Development</a></li>
                         <li><a href="#">HR Consulting</a></li>
+                        <li><a href="https://jksdautomation.com/ " target='_blank' >Home Automation</a></li>
                         <li><a href="#">Innovative Lab Setups</a></li>
                         <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Summer Marketing</a></li>
                         <li><a href="#">Short Term Courses</a></li>
                         <li><a href="#">Job Oriented Courses</a></li>
                     </div>
@@ -96,16 +96,16 @@ const Foot = () => {
             <div className="flex flex-col md:flex-row justify-between items-center pl-4 md:pl-12 mt-3 pb-3">
                 <div className="flex items-center gap-2">
                     <img className="h-6" src={copy} alt="" />
-                    <h1>Copyright 2024 JKSD</h1>
+                    <h1>Copyright 2024 JKSD infotech Pvt. Ltd.</h1>
                 </div>
                 <div className="flex gap-5 md:gap-10 pr-4 md:pr-12 mt-2 md:mt-0">
                     <h1>Support Policy</h1>
-                    <h1>Terms & Conditions</h1>
-                    <h1>Privacy Policy</h1>
+                  <Link to='/termandcondition'><h1>Terms & Conditions</h1></Link>
+                  <Link to='/privacypolicy'><h1>Privacy Policy</h1></Link>
+                    
                 </div>
             </div>
         </footer>
     )
 }
-
 export default Foot
