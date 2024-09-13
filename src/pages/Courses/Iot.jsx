@@ -312,7 +312,7 @@ const Iot = () => {
 
              {/* digital section start here  */}
 
-             <div className='h-auto lg:h-96 bg-indigo-950 w-full flex flex-col-reverse lg:flex-row'>
+             <div className='h-auto lg:h-96 bg-[#0A528E] w-full flex flex-col-reverse lg:flex-row'>
     <div className="text-white w-full lg:w-[55%] mx-4 lg:mx-6 pt-4 lg:pt-6 pl-4 lg:pl-8">
         <h1 className='text-3xl lg:text-4xl font-bold'>Internet of Things (IoT)</h1>
         <p className='pt-2 text-sm lg:text-base mr-10'>

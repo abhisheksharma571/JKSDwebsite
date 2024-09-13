@@ -254,7 +254,7 @@ const BusinessAnalyst = () => {
 
              {/* digital section start here  */}
 
-             <div className='h-auto lg:h-96 bg-indigo-950 w-full flex flex-col-reverse lg:flex-row'>
+             <div className='h-auto lg:h-96 bg-[#0A528E] w-full flex flex-col-reverse lg:flex-row'>
     <div className="text-white w-full lg:w-[55%] mx-4 lg:mx-6 pt-4 lg:pt-6 pl-4 lg:pl-8">
         <h1 className='text-3xl lg:text-4xl font-bold'>Bussiness Analyst</h1>
         <p className='pt-2 text-sm lg:text-base mr-10'>
@@ -286,7 +286,7 @@ const BusinessAnalyst = () => {
     </div>
 
     <div className="p-4 lg:p-8 flex justify-center items-center lg:items-start">
-        <img className='rounded-lg h-[180px] sm:h-[240px] lg:h-[280px]' src={cybersecurity} alt="" />
+        <img className='rounded-lg h-[180px]   sm:h-[240px] lg:h-[280px]' src={cybersecurity} alt="" />
     </div>
 </div>
  {/* digital section close here  */}
