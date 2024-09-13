@@ -388,13 +388,9 @@ const DigitalMarketing = () => {
 
  {/* cartificate section start here  */}
 
-            <div className='cartificate flex flex-col sm:flex-col md:flex-row lg:flex-row mt-4 bg-indigo-950 gap-4 justify-center items-center'>
+ <div className='cartificate flex flex-col sm:flex-col md:flex-row lg:flex-row mt-4 bg-white gap-4 justify-center items-center'>
     {/* Left Content Section */}
-    <div className="text-white lg:h-[460px] pt-8 w-[100%] md:w-[60%] lg:w-[60%] overflow-hidden">
-        {/* First Decorative Circle */}
-        <div className='relative'>
-            <div className='bg-red-300  h-40 w-40 md:h-60 md:w-60 lg:h-80 lg:w-80 hidden lg:block  rounded-full absolute -top-16 md:-top-4 lg:-top-72'></div>
-        </div>
+    <div className="text-black lg:h-[460px] pt-8 w-[100%] md:w-[60%] lg:w-[60%] overflow-hidden">
         
         {/* Text Content */}
         <h1 className='text-orange ml-10 lg:ml-5 font-medium text-2xl lg:text-3xl pr-40 pt-0 lg:pt-16 '>
@@ -415,15 +411,10 @@ const DigitalMarketing = () => {
                 Certification From JKSD Infotech Pvt. Ltd.
             </h1>
         </div>
-        
-        {/* Second Decorative Circle */}
-        <div className='relative '>
-            <div className='bg-green-300 hidden lg:block h-40 w-40 md:h-60 md:w-60 lg:h-80 lg:w-80 rounded-full absolute bottom-0  right-0 mb-[-10px] md:mb-[-10px] lg:mb-[-340px]'></div>
-        </div>
     </div>
 
     {/* Right Image Section */}
-    <div className="img w-[60%] md:w-[40%] lg:w-[25%] pb-5 lg:p-5 flex justify-center">
+    <div className="img w-[60%] md:w-[40%] lg:w-[25%] pb-5 mb-5 lg:p-5 flex justify-center shadow-xl">
         <img className='h-auto w-full' src={cartificate} alt="Certificate" />
     </div>
 </div>

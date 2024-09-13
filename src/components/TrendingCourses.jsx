@@ -88,13 +88,13 @@ const data = [
         id: 'businessanalyst',
         title: 'Business Analyst',
         description: 'Analyze data for actionable insights',
-        image: './Images/graphicdesigning.png'
+        image: './Images/BusinessAnalyst.jpeg'
     },
     {
         id: 'graphicdesigning',
         title: 'Graphic Designing',
         description: 'Design stunning visuals and graphics using modern tools',
-        image: './Images/graphicdesigning.png'
+        image: './Images/Graphics.jpg'
     }
 ];
 

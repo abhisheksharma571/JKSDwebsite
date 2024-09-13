@@ -95,7 +95,7 @@ function AboutUs() {
         />
        </div>
        <div className=" ">
-        <h1 className="  font-semibold text-indigo-900 text-center text-4xl py-[20px]  pt-10
+        <h1 className="  font-semibold text-indigo-900 text-center text-4xl py-[20px] pt-10
          md:text-5xl md:pt-[100px] md:pr-[80px] "> Our Vision</h1>
          <ul
           className="text-gray-600  text-xl font-medium px-10  pb-10 tracking-wide 
@@ -120,14 +120,14 @@ function AboutUs() {
 
 
      <div>
-     <h1 className=' md:text-5xl text-[#08528e] text-center pt-10 py-10 font-roboto-slab font-black text-2xl'>Our Founders</h1>
+     <h1 className=' md:text-5xl text-[#08528e] text-center pt-10 py-10 font-philosopher font-black text-2xl'>Our Founders</h1>
      <div  className="flex flex-col gap-6 px-14 pt-10 pb-10 md:flex-row md:h-[500px] md:flex  bg-[#0A528E]  md:py-[50px] md:px-[50px] md:gap-10 md:justify-evenly">
                
      { /* Jitesh Sir*/ }
      <div className="flex flex-col   md:w-80 h-96 items-center p-7  bg-slate-100 shadow-lg rounded-3xl">
           <div className="w-32 h-32 mb-4 items-center ">
             <img
-              src="public\Images\JITESH MATHUR.jpeg"
+              src=".\Images\JITESH MATHUR.jpeg"
               className="w-full h-full rounded-full object-cover"
             />
           </div>
@@ -158,7 +158,7 @@ function AboutUs() {
         <div className="flex flex-col  md:w-80 h-96 items-center p-7  bg-slate-100 shadow-lg rounded-3xl">
           <div className="w-32 h-32 mb-4 items-center ">
             <img
-              src="public\Images\SWAPNIL MISRA.jpeg"
+              src=".\Images\SWAPNIL MISRA.jpeg"
               className="w-full h-full rounded-full object-cover"
             />
           </div>
@@ -190,7 +190,7 @@ function AboutUs() {
         <div className="flex flex-col md:w-80 h-96 items-center p-7  bg-slate-100 shadow-lg rounded-3xl">
           <div className="w-32 h-32 mb-4 items-center ">
             <img
-              src="public\Images\DEVANSH RAGHAV.jpeg"
+              src=".\Images\DEVANSH RAGHAV.jpeg"
               className="w-full h-full rounded-full object-cover"
             />
           </div>
@@ -221,7 +221,7 @@ function AboutUs() {
         <div className="flex flex-col md:w-80 h-96 items-center p-7  bg-slate-100 shadow-lg rounded-3xl">
           <div className="w-32 h-32 mb-4 items-center ">
             <img
-              src="public\Images\FARIHA MAM.jpeg"
+              src=".\Images\FARIHA MAM.jpeg"
               className="w-full h-full rounded-full object-cover"
             />
           </div>
@@ -254,7 +254,7 @@ function AboutUs() {
    { /* Our Team*/ }
       
       <div className="bg-white">
-      <h1 className=' md:text-5xl  text-[#08528e] text-center pt-10 py-10 font-roboto-slab font-black text-2xl'>Our Team</h1>
+      <h1 className=' md:text-5xl  text-[#08528e] text-center pt-10 py-10 font-philosopher font-black text-2xl'>Our Team</h1>
       <img src="./Images/ourteam.jpeg"
       alt="team pic"
        className=" mt-5 mb-14 md:h-[550px] md:mb-5 md:ml-[450px]  md:w-[750px]"/>
