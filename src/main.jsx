@@ -23,6 +23,8 @@ import Python from './pages/Courses/Python.jsx'
 import Robotics from './pages/Courses/Robotics.jsx'
 import TermAndConditions from './pages/Policies/TermAndConditions.jsx'
 import PrivacyPolicy from './pages/Policies/PrivacyPolicy.jsx'
+import BussinessAnalytics from './pages/Courses/BussinessAnalytics.jsx'
+
 
 
 const router = createBrowserRouter(
@@ -49,6 +51,18 @@ const router = createBrowserRouter(
       <Route path='robotics' element={<Robotics />} />
       <Route path='termandcondition' element={<TermAndConditions />} />
       <Route path='Privacypolicy' element={<PrivacyPolicy />} />
+      <Route path='faq' element={<Faq />} />
+      <Route path='digitalmarketing' element={<DigitalMarketing/>} />
+      <Route path='dataanalytics' element={<DataAnalytics/>} />
+      <Route path='javafullstack' element={<JavafullStack/>} />
+      <Route path='cybersecurity' element={<CyberSecurity/>} />
+      <Route path='embedded' element={<Embedded/>} />
+      <Route path='graphicsdesigning' element={<GraphicDesigning/>} />
+      <Route path='bussinessanalyst' element={<BussinessAnalytics/>} />
+      <Route path='iot' element={<Iot/>} />
+      <Route path='python' element={<Python/>} />
+      <Route path='robotics' element={<Robotics/>} />
+
       <Route path='404' element={<PageNotFound />} />
       <Route path='*' element={<Navigate to="/404" replace />} />
     </Route>

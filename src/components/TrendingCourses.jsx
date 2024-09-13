@@ -60,20 +60,20 @@ const data = [
     {
         id: 'iot',
         title: 'IoT (Internet of Things)',
-        description: 'Learn to connect and control devices remotely via the Internet',
+        description: 'Embedded Systems & Robotics',
         image: './Images/IoT.png'
     },
     {
-        id: 'embedded',
-        title: 'Embedded Systems',
-        description: 'Master microcontroller programming for smart devices',
-        image: './Images/embebded.jpg'
+        id: 'python',
+        title: 'Python',
+        description: 'Build applications with Python, a versatile language',
+        image: './Images/python.jpg'
     },
     {
-        id: 'robotics',
-        title: 'Robotics',
-        description: 'Build and program robots for automation and innovation',
-        image: './Images/robotics.jpg'
+        id: 'dataanalytics',
+        title: 'Data Analyst',
+        description: 'Analyze data for actionable insights',
+        image: './Images/Data.webp'
     },
     {
         id: 'digitalmarketing',
@@ -82,10 +82,10 @@ const data = [
         image: './Images/digitall.png'
     },
     {
-        id: 'python',
-        title: 'Python',
-        description: 'Build applications with Python, a versatile language',
-        image: './Images/python.jpg'
+        id: 'bussinessanalyst',
+        title: 'Bussiness Analyst',
+        description: 'Analyze data for actionable insights',
+        image: './Images/graphicdesigning.png'
     },
     {
         id: 'graphicdesigning',
