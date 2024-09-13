@@ -1,4 +1,4 @@
-import { images } from 'ionicons/icons';
+
 import React, { useState, useRef, useEffect } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
@@ -40,7 +40,7 @@ function ImageSlider() {
                     <div
                         key={index}
                         style={{ backgroundImage: `url(${slide.image1})` }}
-                        className='w-full h-full bg-center bg-cover flex-shrink-0'
+                        className='w-full bg-center bg-cover flex-shrink-0 aspect-w-16 aspect-h-9'
                     ></div>
                 ))}
             </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function TrendingCourses() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -8,6 +9,8 @@ function TrendingCourses() {
     };
 
     return (
+        <>
+        <h1 className=' md:text-5xl  text-orange text-center pt-10 font-roboto-slab font-black text-2xl bg-gray-200'>Our Placement Partners</h1>
         <div className="h-full py-10 flex items-center justify-center bg-gray-200">
             <div className="flex space-x-4 overflow-x-auto p-4">
                 {data.map((course, index) => (
@@ -36,9 +39,11 @@ function TrendingCourses() {
                                         <p className="text-gray-400 mt-2">{course.description}</p>
                                     </div>
                                     <div className="mt-4">
+                                    <Link to={`/${course.id}`}>
                                         <button className="text-white font-semibold py-2 px-4 bg-orange rounded hover:bg-orange-600">
                                             Explore More
                                         </button>
+                                    </Link>
                                     </div>
                                 </div>
                             </>
@@ -47,39 +52,46 @@ function TrendingCourses() {
                 ))}
             </div>
         </div>
+        </>
     );
 }
 
 const data = [
     {
+        id: 'iot',
+        title: 'IoT (Internet of Things)',
+        description: 'Learn to connect and control devices remotely via the Internet',
+        image: './Images/IoT.png'
+    },
+    {
+        id: 'embedded',
+        title: 'Embedded Systems',
+        description: 'Master microcontroller programming for smart devices',
+        image: './Images/embebded.jpg'
+    },
+    {
+        id: 'robotics',
+        title: 'Robotics',
+        description: 'Build and program robots for automation and innovation',
+        image: './Images/robotics.jpg'
+    },
+    {
+        id: 'digitalmarketing',
         title: 'Digital Marketing',
-        description: 'BEST DIGITAL MARKETING COURSE IN DELHI NCR',
+        description: 'Drive online growth through SEO, social media, and ads',
         image: './Images/digitall.png'
     },
     {
-        title: 'Digital Course',
-        description: 'BEST DIGITAL MARKETING COURSE IN DELHI NCR',
-        image: './Images/digitall.png'
+        id: 'python',
+        title: 'Python',
+        description: 'Build applications with Python, a versatile language',
+        image: './Images/python.jpg'
     },
     {
-        title: 'Digital IoT',
-        description: 'BEST DIGITAL MARKETING COURSE IN DELHI NCR',
-        image: './Images/digitall.png'
-    },
-    {
-        title: 'Digital Marketing',
-        description: 'BEST DIGITAL MARKETING COURSE IN DELHI NCR',
-        image: './Images/digitall.png'
-    },
-    {
-        title: 'Digital Management',
-        description: 'BEST DIGITAL MARKETING COURSE IN DELHI NCR',
-        image: './Images/digitall.png'
-    },
-    {
-        title: 'Digital Marketing',
-        description: 'BEST DIGITAL IN DELHI NCR',
-        image: './Images/digitall.png'
+        id: 'graphicdesigning',
+        title: 'Graphic Designing',
+        description: 'Design stunning visuals and graphics using modern tools',
+        image: './Images/graphicdesigning.png'
     }
 ];
 
