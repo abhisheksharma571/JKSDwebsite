@@ -1,4 +1,5 @@
 import React from "react";
+import ContactHome from "./ContactHome";
 function ContactUs() {
   const [result, setResult] = React.useState("");
 
@@ -51,7 +52,10 @@ function ContactUs() {
     }
   };
   return (
-
+    <>
+    <div>
+    <ContactHome/>
+    </div>
     <div>
 
     <body className="antialiased bg-gray-100">
@@ -173,6 +177,7 @@ function ContactUs() {
       </div>
       </body>
       </div>
+      </>
 
   );
 

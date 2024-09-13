@@ -1,13 +1,18 @@
 import React from "react";
+import AboutHome from "./AboutHome";
 
 function AboutUs() {
   return (
+    <>
+    <div>
+      <AboutHome />
+    </div>
     <div className="">
       {/* first Section*/}
       <div className="bg-[#c9cedd] md:flex ">
         <div>
           <img
-            src=".\Images\student grp.jpeg"
+            src=".\Images\aboutimage.jpeg"
             alt="student image"
             className=" pt-14 md:w-[500px] md:h-[660px] md:mt-[30px] md:ml-[170px]"
           />
@@ -76,7 +81,7 @@ function AboutUs() {
 
        </div>
        <div>
-        <img src="public\mission\mission .png"
+        <img src=".\Images\mission.png"
         className="m-10 ml-[120px] w-[380px] md:w-[380px]   md:mt-10 md:mr-[150px]"/>
        </div>
 
@@ -85,7 +90,7 @@ function AboutUs() {
 
      <div  className="flex flex-col-reverse md:flex-row bg-white md:flex  ">
        <div>
-        <img src="public\Images\vision\vision .png"
+        <img src=".\Images\vision.png"
         className="m-10 ml-[150px] w-[380px] md:w-[380px] md:mt-5 md:ml-[150px]"
         />
        </div>
@@ -115,7 +120,7 @@ function AboutUs() {
 
 
      <div>
-     <h1 className=' md:text-5xl text-orange text-center pt-10 py-10 font-roboto-slab font-black text-2xl'>Our Founders</h1>
+     <h1 className=' md:text-5xl text-[#08528e] text-center pt-10 py-10 font-roboto-slab font-black text-2xl'>Our Founders</h1>
      <div  className="flex flex-col gap-6 px-14 pt-10 pb-10 md:flex-row md:h-[500px] md:flex  bg-[#0A528E]  md:py-[50px] md:px-[50px] md:gap-10 md:justify-evenly">
                
      { /* Jitesh Sir*/ }
@@ -249,14 +254,15 @@ function AboutUs() {
    { /* Our Team*/ }
       
       <div className="bg-white">
-      <h1 className=' md:text-5xl  text-orange text-center pt-10 py-10 font-roboto-slab font-black text-2xl'>Our Team</h1>
-      <img src="src\group.png"
+      <h1 className=' md:text-5xl  text-[#08528e] text-center pt-10 py-10 font-roboto-slab font-black text-2xl'>Our Team</h1>
+      <img src="./Images/ourteam.jpeg"
       alt="team pic"
        className=" mt-5 mb-14 md:h-[550px] md:mb-5 md:ml-[450px]  md:w-[750px]"/>
       </div>
 
 
     </div>
+    </>
 
   );
 }

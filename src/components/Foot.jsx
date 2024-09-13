@@ -1,11 +1,11 @@
 import React from 'react'
-import image1 from '../assets/images/logo.webp'
+import image1 from '../assets/images/jksd-white-logo.png'
 import foot1 from '../assets/images/footer.png'
-import supp from '../assets/images/support.png'
-import email from '../assets/images/email.png'
-import add from '../assets/images/gps.png'
-import msme from '../assets/images/msme1.png'
-import iso from '../assets/images/iso.png'
+import supp from '../assets/images/contact.jpeg'
+import email from '../assets/images/mail.jpeg'
+import add from '../assets/images/location.jpeg'
+import msme from '../assets/images/msme3.png'
+import iso from '../assets/images/iso4.png'
 import copy from '../assets/images/copyright.png'
 import youtube from '../assets/images/youtube.png'
 import insta from '../assets/images/instagram.png'
@@ -15,11 +15,11 @@ import { Link } from 'react-router-dom'
 
 const Foot = () => {
     return (
-        <footer className="bg-white pt-4">
+        <footer className="bg-[#08528e] text-white pt-4">
             <div className="flex flex-col md:flex-row justify-around w-full px-4 md:px-0">
                 {/* Logo and Contact Information */}
                 <div className="logo w-full md:w-[30%] mb-8 md:mb-0">
-                    <img className="h-14 pt-4 w-auto mx-auto md:mx-0" src={image1} alt="" />
+                    <img className="h-16 pl-6 w-auto mx-auto md:mx-0" src={image1} alt="" />
                     <div className="pt-2 pb-4 text-center md:text-left">
                         <h1 className="flex items-center justify-center md:justify-start">
                             <img className="h-6 mr-2" src={supp} alt="" />
@@ -35,8 +35,8 @@ const Foot = () => {
                         </h1>
                     </div>
                     <div className="flex justify-center md:justify-start">
-                        <img className="h-16 w-auto" src={msme} alt="" />
-                        <img className="h-14 pl-7" src={iso} alt="" />
+                        <img className="h-[120px] w-auto" src={msme} alt="" />
+                        <img className="h-[120px]" src={iso} alt="" />
                     </div>
                 </div>
 
@@ -78,7 +78,7 @@ const Foot = () => {
 
                 {/* Product Information */}
                 <div className="w-full  mb-4 md:w-[20%]">
-                    <h1 className="font-medium text-center  md:text-left">Product</h1>
+                    <h1 className="font-medium text-center  md:text-left">Our Divisions</h1>
                     <div className="bg-orange mt-2  mb-2 h-[3px]  md:w-full"></div>
                     <div className=" md:text-left ">
                         <li><a href="#">Website Development</a></li>
@@ -86,8 +86,12 @@ const Foot = () => {
                         <li><a href="https://jksdautomation.com/ " target='_blank' >Home Automation</a></li>
                         <li><a href="#">Innovative Lab Setups</a></li>
                         <li><a href="#">Digital Marketing</a></li>
-                        <li><a href="#">Short Term Courses</a></li>
-                        <li><a href="#">Job Oriented Courses</a></li>
+                        
+                    </div>
+                    <div className='pt-10 text-2xl font-bold'>
+                        <button className='bg-orange text-[#08528e] rounded-lg py-2 px-4 '>
+                            <Link to='/enrollnow'>Enroll Now</Link>
+                        </button>
                     </div>
                 </div>
             </div>
