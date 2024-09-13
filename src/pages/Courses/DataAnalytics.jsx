@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import download from '../../assets/images/download.png';
 import analyst from '../../assets/images/Data.webp';
 import share from '../../assets/images/share.png';
@@ -111,10 +112,12 @@ const DataAnalytics = () => {
         Contact Now
         <img className='h-5 sm:h-6 w-5 sm:w-6' src={telephone} alt="" />
     </button>
+    <Link to ='/enrollnow' >
     <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-3 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2" type="button">
-        Share
-        <img className='h-4 sm:h-5 w-4 sm:w-5' src={share} alt="" />
+        Enroll Now
+        {/* <img className='h-4 sm:h-5 w-4 sm:w-5' src={share} alt="" /> */}
     </button>
+    </Link>
 </div>
 
     </div>
