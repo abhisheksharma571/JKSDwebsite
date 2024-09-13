@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import python from '../../assets/images/python.jpg';
 import download from '../../assets/images/download.png';
-import share from '../../assets/images/share.png';
 import certificate from '../../assets/images/Certificate.jpeg';
 import telephone from '../../assets/images/telephone.png';
 import Modal from '../../components/Modal';
@@ -276,10 +275,12 @@ const Python = () => {
                             <img className='h-5 sm:h-6 w-5 sm:w-6' src={telephone} alt="" />
                         </button>
                         </Link>
-                        <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-3 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2">
-                            Share
-                            <img className='h-4 sm:h-5 w-4 sm:w-5' src={share} alt="" />
-                        </button>
+                        <Link to ='/enrollnow' >
+                            <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-3 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2" type="button">
+                            Enroll Now
+                                 {/* <img className='h-4 sm:h-5 w-4 sm:w-5' src={share} alt="" /> */}
+                            </button>
+                        </Link>
                     </div>
                 </div>
 
@@ -319,9 +320,9 @@ const Python = () => {
                     <div className='lg:ml-14 lg:pl-5 mt-6 lg:mt-0 lg:w-2/3'>
                         <h1 className='font-medium text-xl lg:text-2xl'>Course Details</h1>
                         <div className='text-[16px] lg:text-[20px] pt-3 font-medium'>
-                            <pre>Level:             Beginner</pre>
-                            <pre>Total Duration :   3/6 months</pre>
-                            <pre>Certificate:      Certificate of Completion</pre>
+                            <pre className='font-sans text-lg font-semibold'>Level:                   Beginner</pre>
+                            <pre className='font-sans text-lg font-semibold'>Total Duration :   3/6 months</pre>
+                            <pre className='font-sans text-lg font-semibold'>Certificate:           Certificate of Completion</pre>
                         </div>
                         
                         {/* Requirements */}
