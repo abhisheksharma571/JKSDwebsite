@@ -12,15 +12,15 @@ import Blogs from './pages/Blogs/Blogs.jsx'
 import PageNotFound from './pages/PageNotFound/PageNotFound.jsx'
 import Faq from './pages/FAQ/Faq.jsx'
 
-import DigitalMarketing from './pages/Courses/DigitalMarketing.jsx'
-import DataAnalytics from './pages/Courses/DataAnalytics.jsx'
-import JavafullStack from './pages/Courses/JavafullStack.jsx'
-import CyberSecurity from './pages/Courses/CyberSecurity.jsx'
-import Embedded from './pages/Courses/Embedded.jsx'
-import GraphicDesigning from './pages/Courses/GraphicDesigning.jsx'
-import Iot from './pages/Courses/Iot.jsx'
-import Python from './pages/Courses/Python.jsx'
-import Robotics from './pages/Courses/Robotics.jsx'
+// import DigitalMarketing from './pages/Courses/DigitalMarketing.jsx'
+// import DataAnalytics from './pages/Courses/DataAnalytics.jsx'
+// import JavafullStack from './pages/Courses/JavafullStack.jsx'
+// import CyberSecurity from './pages/Courses/CyberSecurity.jsx'
+// import Embedded from './pages/Courses/Embedded.jsx'
+// import GraphicDesigning from './pages/Courses/GraphicDesigning.jsx'
+// import Iot from './pages/Courses/Iot.jsx'
+// import Python from './pages/Courses/Python.jsx'
+// import Robotics from './pages/Courses/Robotics.jsx'
 
 
 const router = createBrowserRouter(
@@ -33,15 +33,15 @@ const router = createBrowserRouter(
       <Route path='services' element={<Services />} />
       <Route path='blogs' element={<Blogs />} />
       <Route path='faq' element={<Faq />} />
-      <Route path='digitalmarketing' element={<DigitalMarketing/>} />
+      {/* <Route path='digitalmarketing' element={<DigitalMarketing/>} />
       <Route path='dataanalytics' element={<DataAnalytics/>} />
-      <Route path='javafullstack' element={<JavafullStack/>} />
-      <Route path='cybersecurity' element={<CyberSecurity/>} />
-      <Route path='embedded' element={<Embedded/>} />
-      <Route path='graphicsdesigning' element={<GraphicDesigning/>} />
+      <Route path='javafullstack' element={<JavafullStack/>} /> */}
+      {/* <Route path='cybersecurity' element={<CyberSecurity/>} /> */}
+      {/* <Route path='embedded' element={<Embedded/>} /> */}
+      {/* <Route path='graphicsdesigning' element={<GraphicDesigning/>} />
       <Route path='iot' element={<Iot/>} />
-      <Route path='python' element={<Python/>} />
-      <Route path='robotics' element={<Robotics/>} />
+      <Route path='python' element={<Python/>} /> */}
+      {/* <Route path='robotics' element={<Robotics/>} /> */}
 
       <Route path='404' element={<PageNotFound />} />
       <Route path='*' element={<Navigate to="/404" replace />} />

@@ -32,7 +32,7 @@ function HiringPartners() {
     };
   return (
     <div className='w-full max-w-[1300px] mx-auto pb-10'>
-        <h1 className=' md:text-5xl  text-orange text-center pt-10 font-roboto-slab font-black text-2xl'>Our Placement Partners</h1>
+        <h1 className=' md:text-5xl  text-[#08528e] text-center pt-10 font-philosopher font-black text-2xl'>Our Placement Partners</h1>
         <div className='mt-5 md:mt-10 [767px]:mt-0 px-10'>
         <Slider {...settings}>
                     {logos.map((d, index) => (

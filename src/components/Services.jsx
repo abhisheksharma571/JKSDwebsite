@@ -8,7 +8,7 @@ function Services() {
 
     <div className="sticky top-0 h-screen flex  bg-[#264357]">
     <div className='text-4xl w-1/2 p-24 text-white font-sans text-left font-semibold'>
-        <h2 className="">Empower Your Journey: Training Programs Designed for Success</h2>
+        <h2 className="font-philosopher">Empower Your Journey: Training Programs Designed for Success</h2>
         {/* <h2 className="py-1 text-3xl">Your Path to Expertise: Industry-Focused Training Programs</h2> */}
         <p className='text-lg mt-10 w-[68%]'>Enhance your skills with our expert-led training programs. Whether you're starting your career or advancing it, we offer tailored courses to help you succeed in today’s competitive market.</p>
         <div className='mt-10 font-normal text-lg text-[#a7d4f4]'>
@@ -30,7 +30,7 @@ function Services() {
 
     <div className="sticky top-0 h-screen flex  bg-[#9F4C6A] text-white">
         <div className='text-4xl w-1/2 p-24 font-sans text-left font-semibold'>
-        <h2 className="">Grow Your Business with Digital Marketing and Web Development</h2>
+        <h2 className="font-philosopher">Grow Your Business with Digital Marketing and Web Development</h2>
         {/* <h2 className="py-1">A full guide to Digital Marketing</h2> */}
         <p className='text-lg mt-10 w-[68%]'>JKSD Info. Tech provides expert digital marketing and website development services to help your business grow online. From building engaging websites to implementing targeted marketing strategies, we ensure your brand stands out and achieves results.</p>
         <div className='mt-10 font-normal text-lg text-[#fdd7e5]'>
@@ -54,7 +54,7 @@ function Services() {
 
     <div className="sticky top-0 h-screen flex  bg-[#713a93] text-white">
         <div className='text-4xl w-1/2 p-24 font-sans text-left font-semibold'>
-        <h2 className="">Transform Your Home into an Intelligent Space</h2>
+        <h2 className="font-philosopher">Transform Your Home into an Intelligent Space</h2>
         {/* <h2 className="py-1">A full guide to Digital Marketing</h2> */}
         <p className='text-lg mt-10 w-[75%]'>At JKSD, we offer cutting-edge home automation solutions to simplify your life. Control lighting, security, and more with ease, turning your home into a smart, responsive space that adapts to your needs. Experience convenience and peace of mind with our reliable, user-friendly systems.</p>
         <div className='mt-10 font-normal text-lg text-[#e2b9f8]'>
@@ -79,7 +79,7 @@ function Services() {
 
     <div className="sticky top-0 h-screen flex  bg-[#3B7652] text-white">
         <div className='text-4xl w-1/2 p-24 font-sans text-left font-semibold'>
-        <h2 className="">Expert HR Consulting for Organizational Success</h2>
+        <h2 className="font-philosopher">Expert HR Consulting for Organizational Success</h2>
         {/* <h2 className="py-1">A full guide to Digital Marketing</h2> */}
         <p className='text-lg mt-10 w-[75%]'>JKSD Info. Tech offers tailored HR consulting to help businesses build effective teams and improve workforce performance. From optimizing hiring to enhancing HR strategies, we provide expert solutions for organizational success.</p>
         <div className='mt-10 font-normal text-lg text-[#a1f48c]'>
@@ -102,7 +102,7 @@ function Services() {
 
     <div className="sticky top-0 h-screen flex  bg-[#8D558B] text-white">
     <div className='text-4xl w-1/2 p-20 font-sans text-left font-semibold'>
-        <h2 className="w-[70%]">Innovative Lab Setup: Your Ideas, Our Lab</h2>
+        <h2 className="w-[70%] font-philosopher">Innovative Lab Setup: Your Ideas, Our Lab</h2>
         {/* <h2 className="py-1">A full guide to Digital Marketing</h2> */}
         <p className='text-lg mt-10 w-[75%]'>Elevate your projects with JKSD Info. Tech’s Innovative Lab Setup. Our advanced solutions create a cutting-edge environment for experimentation and development, driving innovation and efficiency. Transform your vision into reality and stay ahead with our expert lab solutions tailored to your needs.</p>
         <div className='flex'>

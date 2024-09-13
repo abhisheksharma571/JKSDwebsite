@@ -1,5 +1,5 @@
 import React from 'react'
-import contact from '../assets/images/customer.png'
+import contact from '../assets/images/customer-service.png'
 import hero from '../assets/images/hero.jpg'
 
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
@@ -26,7 +26,7 @@ const Type = () => {
                 <a href="">
                   <div  className=''>
                       <button
-                        className="h-10  pr-10 mt-4 mb-4  md:mt-8 w-40 align-middle bg-orange font-bold text-center uppercase text-sm px-4 rounded-3xl text-black shadow-sm hover:shadow-lg hover:bg-[#D97706] relative flex items-center justify-center md:justify-start   md:pr-[50px]"
+                        className="h-10  pr-10 mt-4 mb-4  md:mt-8 w-40 align-middle bg-[#08528e] font-bold text-center uppercase text-sm px-4 rounded-3xl text-white shadow-sm hover:shadow-lg hover:bg-[#164368] relative flex items-center justify-center md:justify-start   md:pr-[50px]"
                         type="button">
                         Contact Us
                         <span className="absolute right-0 md:right-0 grid  h-full transition-colors place-items-center bg-light-blue-600 group-hover:bg-light-blue-700">
