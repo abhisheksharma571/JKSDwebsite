@@ -13,14 +13,12 @@ import PageNotFound from './pages/PageNotFound/PageNotFound.jsx'
 import Faq from './pages/FAQ/Faq.jsx'
 import DigitalMarketing from './pages/Courses/DigitalMarketing.jsx'
 import DataAnalytics from './pages/Courses/DataAnalytics.jsx'
-import JavafullStack from './pages/Courses/JavafullStack.jsx'
-import CyberSecurity from './pages/Courses/CyberSecurity.jsx'
+import BusinessAnalyst from './pages/Courses/BusinessAnalyst.jsx'
 import Embedded from './pages/Courses/Embedded.jsx'
 import GraphicDesigning from './pages/Courses/GraphicDesigning.jsx'
 import Iot from './pages/Courses/Iot.jsx'
 import Python from './pages/Courses/Python.jsx'
 import Robotics from './pages/Courses/Robotics.jsx'
-import BussinessAnalytics from './pages/Courses/BussinessAnalytics.jsx'
 
 
 const router = createBrowserRouter(
@@ -35,11 +33,9 @@ const router = createBrowserRouter(
       <Route path='faq' element={<Faq />} />
       <Route path='digitalmarketing' element={<DigitalMarketing/>} />
       <Route path='dataanalytics' element={<DataAnalytics/>} />
-      <Route path='javafullstack' element={<JavafullStack/>} />
-      <Route path='cybersecurity' element={<CyberSecurity/>} />
+      <Route path='businessanalyst' element={<BusinessAnalyst/>} />
       <Route path='embedded' element={<Embedded/>} />
-      <Route path='graphicsdesigning' element={<GraphicDesigning/>} />
-      <Route path='bussinessanalyst' element={<BussinessAnalytics/>} />
+      <Route path='graphicdesigning' element={<GraphicDesigning/>} />
       <Route path='iot' element={<Iot/>} />
       <Route path='python' element={<Python/>} />
       <Route path='robotics' element={<Robotics/>} />

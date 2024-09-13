@@ -5,6 +5,7 @@ import share from '../../assets/images/share.png';
 import cartificate from '../../assets/images/Certificate.jpeg'
 import telephone from '../../assets/images/telephone.png'
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { Link } from 'react-router-dom';
 
 
 const GraphicDesigning = () => {
@@ -131,10 +132,11 @@ const GraphicDesigning = () => {
         Download Brochure
         <img className='h-4 sm:h-5 w-4 sm:w-5' src={download} alt="" />
     </button>
+    <Link to='/contact'>
     <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-2 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2" type="button">
         Contact Now
         <img className='h-5 sm:h-6 w-5 sm:w-6' src={telephone} alt="" />
-    </button>
+    </button></Link>
     <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-3 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2" type="button">
         Share
         <img className='h-4 sm:h-5 w-4 sm:w-5' src={share} alt="" />

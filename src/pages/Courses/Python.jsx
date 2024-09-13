@@ -6,6 +6,7 @@ import certificate from '../../assets/images/Certificate.jpeg';
 import telephone from '../../assets/images/telephone.png';
 import Modal from '../../components/Modal';
 import Form from '../../components/Form';
+import { Link } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Python = () => {
@@ -24,98 +25,230 @@ const Python = () => {
         {
             week: "Week 1: Introduction to Python",
             details: [
-                "Setting Up Python Environment",
-                "Basic Syntax and Variables",
-                "Control Structures and Loops"
+                "Why Python",
+                "Application areas of python",
+                "Python implementations",
+               " 1. Cpython",
+                " 2. Jython",
+                " 3. Ironpython",
+                " 4. Pypy",
+               " Python versions",
+               " Installing python",
+                "Python interpreter architecture",
+                "Python byte code compiler",
+               "Python virtual machine(pvm)"
             ]
         },
         {
-            week: "Week 2: Data Structures in Python",
+            week: "Week 2:Writing and executing first Python Program",
             details: [
-                "Understanding Lists, Tuples, and Dictionaries",
-                "Manipulating Data with Python",
-                "Functions and Modular Programming"
+                "Using interactive mode",
+                "Using script mode",
+                " General text editor and command window",
+                " Idle editor and idle shell",
+                " Understanding print() function",
+                 "How to compile python program explicitly"
             ]
         },
         {
-            week: "Week 3: Object-Oriented Programming in Python",
+            week: "Week 3:Python Language Fundamentals",
             details: [
-                "Classes and Objects",
-                "Inheritance and Polymorphism",
-                "Working with Modules and Packages"
+                "Character set",
+                "Keywords",
+                "Comments",
+                "Variables",
+                "Literals",
+                "Operators",
+                "Reading input from console",
+                "Parsing string to int, float"
             ]
         },
         {
-            week: "Week 4: Working with Files and Databases",
+            week: "Week 4: Python Conditional Statements",
             details: [
-                "Reading and Writing Files",
-                "Connecting Python with Databases",
-                "Performing CRUD Operations"
+                "If statement",
+                "If else statement",
+                "If elif statement",
+                "If elif else statement",
+                 "Nested if statement"
             ]
         },
         {
-            week: "Week 5: Web Development with Flask/Django",
+            week: "Week 5: Looping Statements",
             details: [
-                "Introduction to Web Frameworks",
-                "Building a Simple Web Application",
-                "Routing and Templates"
+                "While loop",
+                " For loop",
+                 "Nested loops",
+                 "Pass, break and continue keywords"
             ]
         },
         {
-            week: "Week 6: API Development and Integration",
+            week: "Week 6:  Standard Data Types",
             details: [
-                "Creating RESTful APIs with Python",
-                "Using External APIs",
-                "Handling JSON and XML"
+                "Int, float, complex, bool, nonetype",
+                "Str, list, tuple, range",
+                "Dict, set, frozenset"
+                            ]
+        },
+        {
+            week: "Week 7: String Handling",
+            details: [
+                 "What is string?",
+                 "String representations",
+                 "Unicode string",
+                 "String functions, methods",
+                 "String indexing and slicing"
             ]
         },
         {
-            week: "Week 7: Data Analysis with Python",
+            week: "Week 8:Python List",
             details: [
-                "Introduction to Pandas and NumPy",
-                "Working with DataFrames",
-                "Data Visualization using Matplotlib"
+                "Creating and accessing lists",
+                "Indexing and slicing lists",
+                "List methods Nested lists",
+                " List comprehension"
+                
             ]
         },
         {
-            week: "Week 8: Automation with Python",
+            week: "Week 9: Python Tuple",
             details: [
-                "Automating Tasks with Python",
-                "Web Scraping with BeautifulSoup",
-                "Using Python for Scripting"
+                 "Creating tuple",
+                " Accessing tuple",
+                "Immutability of tuple"
             ]
         },
         {
-            week: "Week 9: Testing and Debugging",
+            week: "Week 10: Python Set",
             details: [
-                "Unit Testing in Python",
-                "Debugging Python Code",
-                "Handling Errors and Exceptions"
+                "How to create a set",
+                "Iteration over sets",
+                "Python set methods",
+                "Python frozenset"
             ]
         },
         {
-            week: "Week 10: Advanced Python Concepts",
+            week: "Week 11: Python Dictionary",
             details: [
-                "Generators and Iterators",
-                "Decorators and Context Managers",
-                "Concurrency with Threads and Async"
+                "Creating a dictionary",
+                 "Dictionary methods",
+                 "Accessing values from dictionary",
+                 "Updating dictionary",
+                "Iterating dictionary",
+                 "Dictionary comprehension"
             ]
         },
         {
-            week: "Week 11: Working with External Libraries",
+            week: "Week 12:Python Functions",
             details: [
-                "Using Python Libraries (e.g., Requests, OS, Sys)",
-                "Installing and Managing Dependencies",
-                "Creating Python Virtual Environments"
-            ]
+                "Defining a function",
+               "Calling a function",
+                "Types of functions",
+               " Function arguments",
+               " 1. Positional arguments, keyword arguments",
+                "2. Default arguments, non-default arguments",
+               " 3. Arbitrary arguments, keyword arbitrary arguments",
+                " Function return statement",
+                " Nested function",
+               "Function as argument",
+               "Function as return statement",
+               "Decorator function Closure Map(), filter(), reduce(), any() functions",
+               "Anonymous or lambda function"
+         ]
         },
         {
-            week: "Week 12: Capstone Project",
+            week: "Week 13: Modules & Packages",
             details: [
-                "Building a Comprehensive Python Application",
-                "Integrating Multiple Python Modules",
-                "Testing, Debugging, and Deployment"
+                "Why modules",
+                "Script v/s module",
+                "Importing module",
+                "Standard v/s third party modules",
+                "Why packages",
+                "Understanding pip utility"
             ]
+        },
+
+         {
+            week: "Week 14:File I/O",
+            details: [
+                " Introduction to file handling",
+                " File modes",
+                " Functions and methods related to file handling",
+                " Understanding with block"
+            ]
+        },
+
+        {
+            week: "Week 15:Regular Expressions (Regex)",
+            details: [
+             "Need of regular expressions",
+            " Re module",
+             "Functions /methods related to regex",
+            " Meta characters & special sequences"
+                        ]
+        },
+        {
+            week: "Week 16:Object Oriented Programming",
+            details: [
+                "Procedural v/s Object Oriented Programming",
+                "OOP Principles",
+                 "Defining a Class & Object Creation",
+                " Inheritance",
+                "Encapsulation",
+                "Polymorphism",
+                " Abstraction",
+                " Garbage Collection",
+               " Iterator & Generator"
+                 ]
+        },
+        {
+            week: "Week 17:Exception Handling",
+            details: [
+                "Difference between Syntax Errors and Exceptions",
+                 "Keywords used in Exception Handling try, except, finally, raise, assert",
+                 "Types of Except Blocks",
+                 "User-defined Exceptions"
+                 ]
+        },
+
+        {
+            week: "Week 17:GUI Programming",
+            details: [
+                "Introduction to Tkinter Programming",
+                "Tkinter Widgets",
+                "Layout Managers",
+                 "Event handling",
+                 "Displaying image"
+                 ]
+        },
+        {
+            week: "Week 18:Multi-Threading Programming",
+            details: [
+                "Multi-processing v/s Multi-threading",
+               "Need of threads",
+                "Creating child threads ssss",
+                "Functions /methods related to threads",
+               "Thread synchronization and locking"
+                 ]
+        },
+        {
+            week: "Week 18:Introduction to RDBMS",
+            details: [
+                "What is Relational Database Package?",
+                " Difference between SQL & Database",
+                 "Installing MySQL Server database"
+                 ]
+        },
+        {
+            week: "Week 18:Python Database Connectivity",
+            details: [
+                "Database Drivers and connectors",
+                "Creating connection object",
+                "Understanding cursor object",
+                 "Executing SQL statements using cursor",
+                " Fetching records from cursor",
+                " Storing and retrieving Date and Time"
+                 ]
         }
     ];
 
@@ -126,7 +259,7 @@ const Python = () => {
                 <div className="text-white w-full lg:w-[55%] mx-4 lg:mx-6 pt-4 lg:pt-6 pl-4 lg:pl-8">
                     <h1 className='text-3xl lg:text-4xl font-bold'>Python Programming</h1>
                     <p className='pt-2 text-sm lg:text-base mr-10'>
-                        Python is one of the most versatile and widely used programming languages today. This course will guide you through the fundamentals of Python, from basic syntax to advanced programming concepts.
+                    Python is one of the most versatile and widely used programming languages today. This course will guide you through the fundamentals of Python, from basic syntax to advanced programming concepts, enabling you to build powerful applications. With hands-on projects and expert instruction, you’ll gain the skills necessary to excel in Python development.
                     </p>
 
                     <div className='flex flex-wrap justify-start lg:justify-evenly mt-4 mb-5'>
@@ -137,10 +270,12 @@ const Python = () => {
                             Download Brochure
                             <img className='h-4 sm:h-5 w-4 sm:w-5' src={download} alt="" />
                         </button>
+                        <Link to='/contact'>
                         <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-2 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2">
                             Contact Now
                             <img className='h-5 sm:h-6 w-5 sm:w-6' src={telephone} alt="" />
                         </button>
+                        </Link>
                         <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-3 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2">
                             Share
                             <img className='h-4 sm:h-5 w-4 sm:w-5' src={share} alt="" />

@@ -82,8 +82,8 @@ const data = [
         image: './Images/digitall.png'
     },
     {
-        id: 'bussinessanalyst',
-        title: 'Bussiness Analyst',
+        id: 'businessanalyst',
+        title: 'Business Analyst',
         description: 'Analyze data for actionable insights',
         image: './Images/graphicdesigning.png'
     },

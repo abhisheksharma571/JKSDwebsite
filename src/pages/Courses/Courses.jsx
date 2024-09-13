@@ -68,14 +68,14 @@ const data = [
         image: './Images/Data.webp'
     },
     {
-        id: 'javafullstack',
-        title: 'Java Full stack',
+        id: 'python',
+        title: 'Python',
         description: 'Build full-stack web applications',
-        image: './Images/javafull.jpg'
+        image: './Images/python.jpg'
     },
     {
-        id: 'cybersecurity',
-        title: 'Cyber Security',
+        id: 'businessanalyst',
+        title: 'Business Analyst',
         description: 'Protect systems from digital threats',
         image: './Images/cybersecurity.jpg'
     },
