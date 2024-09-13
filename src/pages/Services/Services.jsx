@@ -31,10 +31,10 @@ function Services() {
           </div>
           <div className='text-wrap py-6 sm:py-10 md:py-12 lg:py-16 text-sm sm:text-base md:text-lg'>
             <p>
-            At JKSD, we offer a wide range of services designed to drive innovation and efficiency across multiple industries. Our expertise includes website development, home automation, HR consulting, digital marketing, IoT solutions, and innovative lab setups. Whether you are looking to enhance your digital presence, automate your home, or create cutting-edge technological spaces, our team is equipped to deliver customized solutions that align with your goals. Let JKSD be your partner in success, as we help you navigate the challenges of today's dynamic business environment.
+            JKSD is a dynamic company specializing in website development, home automation, HR consulting, digital marketing, IoT solutions, and innovative lab setups. Our expert team is committed to delivering customized services that drive growth and innovation for your business.
             </p>
           </div>
-          <button className='bg-orange h-10 w-24 sm:w-28 md:w-32 rounded-xl rounded-r-full text-sm sm:text-base md:text-lg font-normal font-sans'>
+          <button className='bg-[#08528e] text-white h-10 w-24 sm:w-28 md:w-32 rounded-xl rounded-r-full text-sm sm:text-base md:text-lg font-normal font-sans'>
             Know More
           </button>
         </div>

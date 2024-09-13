@@ -1,6 +1,6 @@
 import React from 'react'
+import contact from '../assets/images/customer-service.png'
 import { Link } from 'react-router-dom'
-import contact from '../assets/images/customer.png'
 import hero from '../assets/images/hero.jpg'
 
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
@@ -25,6 +25,7 @@ const Type = () => {
                     Unlock your potential with JKSD’s high-quality courses. Whether starting a new career or enhancing skills, we offer immersive training in cloud computing, IoT, Python, and digital marketing to help you thrive in today’s competitive landscape.
                 </p>
                 <a href="">
+                  <div  className=''>
                     <div className=''>
                         <Link to='/contact'>
                         <button
@@ -36,6 +37,7 @@ const Type = () => {
                             </span>
                         </button>
                         </Link>
+
                     </div>
                 </a>
             </div>
