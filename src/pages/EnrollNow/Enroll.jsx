@@ -45,8 +45,8 @@ const Enroll = () => {
       if (data.success) {
         setResult(
           <div className="text-orange font-bold text-lg text-center pt-2">
-            <img src="./Images/digitall.png" alt="" />
-            Details Sent Successfully
+            <img src="./Images/Thanks.gif" alt="" />
+            Thanks! Payment complete. You're all set to begin!
           </div>
         );
         event.target.reset();
