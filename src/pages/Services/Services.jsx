@@ -6,6 +6,7 @@ import WebDev from './WebDev'
 import DigitalMarketing from './DigitalMarketing'
 import IoT from './IoT'
 import HRConsulting from './HRConsulting'
+import HomeAutomation from './HomeAutomation'
 
 function Services() {
   return (
@@ -30,11 +31,7 @@ function Services() {
           </div>
           <div className='text-wrap py-6 sm:py-10 md:py-12 lg:py-16 text-sm sm:text-base md:text-lg'>
             <p>
-              At JKSD, we are dedicated to guiding your career path with
-              expert-driven services designed to equip you with the skills and
-              knowledge needed to succeed. Whether you're starting out or
-              seeking to advance, our tailored solutions ensure you're prepared
-              to meet the demands of the modern workplace.
+            At JKSD, we offer a wide range of services designed to drive innovation and efficiency across multiple industries. Our expertise includes website development, home automation, HR consulting, digital marketing, IoT solutions, and innovative lab setups. Whether you are looking to enhance your digital presence, automate your home, or create cutting-edge technological spaces, our team is equipped to deliver customized solutions that align with your goals. Let JKSD be your partner in success, as we help you navigate the challenges of today's dynamic business environment.
             </p>
           </div>
           <button className='bg-orange h-10 w-24 sm:w-28 md:w-32 rounded-xl rounded-r-full text-sm sm:text-base md:text-lg font-normal font-sans'>
@@ -55,8 +52,8 @@ function Services() {
       <WebDev/>
       <DigitalMarketing/>
       <IoT/>
-    <HRConsulting/>
-
+      <HRConsulting/>
+      <HomeAutomation/>
     </>
   );
 }
