@@ -1,21 +1,42 @@
+/* index.css */
+
+/* Ensure Tailwind is imported */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 .slick-slide > div {
     margin: 10px 30px;
-
+}
 
 .slick-dots li button:before {
     color: #000; 
 }
-  
+
 .slick-dots li.slick-active button:before {
     color: #FFA75C; 
-    
 }
+
+.animate-fade-in-up {
+    animation: fade-in-right 1s ease-out forwards;
+    animation-delay: 0.1s;
+    opacity: 0; 
 }
+
 
 .list-item-bullet::marker {
     color: #5651a0; /* Change this to your desired color */
+
 }
 
+.navbar {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Always apply the blurred background */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition:  0.3s ease, backdrop-filter 0.3s ease;
+}
+  

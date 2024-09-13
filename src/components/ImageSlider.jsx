@@ -1,3 +1,4 @@
+
 import React, { useState, useRef, useEffect } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
@@ -38,8 +39,8 @@ function ImageSlider() {
                 {slides.map((slide, index) => (
                     <div
                         key={index}
-                        style={{ backgroundImage: `url(${slide.url})` }}
-                        className='w-full h-full bg-center bg-cover flex-shrink-0'
+                        style={{ backgroundImage: `url(${slide.image1})` }}
+                        className='w-full bg-center bg-cover flex-shrink-0 aspect-w-16 aspect-h-9'
                     ></div>
                 ))}
             </div>
@@ -68,17 +69,17 @@ function ImageSlider() {
 
 const slides = [
     {
-        url: 'https://images.pexels.com/photos/1516440/pexels-photo-1516440.jpeg?auto=compress&cs=tinysrgb&w=400'
+        image1: './Images/slider.jpg',
     },
     {
-        url: 'https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
+        image1: './Images/slider.jpg',
+        },
     {
-        url: 'https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&w=400'
-    },
+        image1: './Images/slider.jpg', 
+       },
     {
-        url: 'https://images.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=400'
-    }
+        image1: './Images/slider.jpg',
+        }
 ];
 
 export default ImageSlider;
