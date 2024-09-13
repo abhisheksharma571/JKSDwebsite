@@ -17,6 +17,7 @@ const Courses = () => {
                                 <p className='text-xs text-center mt-2 '>{d.description}</p>
 
                                 <div className='flex justify-evenly   mt-2 ' >
+                                <Link to={`/${d.id}`}>
                                     <button
                                         class="  font-sans font-medium text-sm text-center bg-orange py-1.5 ml-2 px-2  mt-2  rounded-lg  border-2 border-orange text-black  flex items-center gap-2  "
 
@@ -25,6 +26,7 @@ const Courses = () => {
                                         Brochure
                                         <img className='h-5 w-5' src='./Images/download.png' alt="" />
                                     </button>
+                                    </Link>
                                     <Link to={`/${d.id}`}>
                                     <button
                                         class="  font-sans font-medium text-center uppercase  text-xs py-1.5 ml-2 px-2  mt-2  rounded-lg  bg-white border-2 border-orange text-black  flex items-center gap-2  "

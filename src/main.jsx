@@ -42,8 +42,6 @@ const router = createBrowserRouter(
       <Route path='faq' element={<Faq />} />
       <Route path='digitalmarketing' element={<DigitalMarketing />} />
       <Route path='dataanalytics' element={<DataAnalytics />} />
-      <Route path='javafullstack' element={<JavafullStack />} />
-      <Route path='cybersecurity' element={<CyberSecurity />} />
       <Route path='embedded' element={<Embedded />} />
       <Route path='graphicsdesigning' element={<GraphicDesigning />} />
       <Route path='iot' element={<Iot />} />
