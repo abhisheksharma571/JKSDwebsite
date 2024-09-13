@@ -1,11 +1,13 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import CourseHead from './CourseHead'
 const Courses = () => {
     return (
+        <>
+        <div>
+            <CourseHead />
+        </div>
         <div className="courses  ">
-            <div className="coureshading items-center mt-5 text-orange text-center font-roboto-slab font-black text-5xl">
-                <h1 >Our Courses</h1>
-            </div >
             <div className='flex flex-wrap gap-12 justify-evenly mx-24 py-4 '>
                 {
                     data.map((d, index) => (
@@ -50,6 +52,7 @@ const Courses = () => {
 
 
         </div>
+        </>
     )
 }
 
@@ -68,14 +71,14 @@ const data = [
         image: './Images/Data.webp'
     },
     {
-        id: 'javafullstack',
-        title: 'Java Full stack',
+        id: 'python',
+        title: 'Python',
         description: 'Build full-stack web applications',
-        image: './Images/javafull.jpg'
+        image: './Images/python.jpg'
     },
     {
-        id: 'cybersecurity',
-        title: 'Cyber Security',
+        id: 'businessanalyst',
+        title: 'Business Analyst',
         description: 'Protect systems from digital threats',
         image: './Images/cybersecurity.jpg'
     },

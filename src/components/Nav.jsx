@@ -19,8 +19,8 @@ function Nav() {
                 <div>
                     <Link to="/">
                         <img
-                            className="w-24 h-10 cursor-pointer"
-                            src="https://jksd.in/wp-content/themes/impulsebyte/assets/img/logo.png"
+                            className="w-24 cursor-pointer"
+                            src="./logo/jksd-logo.png"
                             alt="Logo"
                         />
                     </Link>
@@ -88,6 +88,7 @@ const menuItems = [
     { name: 'Blogs', path: '/blogs' },
     { name: 'About Us', path: '/about' },
     { name: 'Contact Us', path: '/contact' },
+
 ];
 
 export default Nav;

@@ -4,7 +4,10 @@ function Adviser() {
   return (
     <>
     <div>
+
         <h1 className=' md:text-5xl  text-[#08528e] text-center font-philosopher font-black text-2xl '>Our Advisors</h1>
+
+
     </div>
     <div className="flex mt-6 mb-3 items-center justify-center bg-backgound ">
   <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 ">

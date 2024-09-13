@@ -24,15 +24,10 @@
     opacity: 0; 
 }
 
-@keyframes fade-in-right {
-    0% {
-        transform: translateX(100%); 
-        opacity: 0; /* Start fully transparent */
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1; /* End fully visible */
-    }
+
+.list-item-bullet::marker {
+    color: #5651a0; /* Change this to your desired color */
+
 }
 
 .navbar {

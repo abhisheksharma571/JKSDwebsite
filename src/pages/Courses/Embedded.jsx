@@ -152,9 +152,9 @@ const Embedded = () => {
             <div className='lg:ml-14 lg:pl-5 mt-6 lg:mt-0 lg:w-2/3'>
                 <h1 className='font-medium text-xl lg:text-2xl'>Course Details</h1>
                 <div className='text-[16px] lg:text-[20px] pt-3 font-medium'>
-                    <pre>Level:             Beginner</pre>
-                    <pre>Total Duration :   3/6 months</pre>
-                    <pre>Certificate:      Certificate of Completion</pre>
+                    <pre className='font-sans text-lg font-semibold'>Level:                   Beginner</pre>
+                    <pre className='font-sans text-lg font-semibold'>Total Duration :   3/6 months</pre>
+                    <pre className='font-sans text-lg font-semibold'>Certificate:           Certificate of Completion</pre>
                 </div>
                 
                 {/* Requirements */}

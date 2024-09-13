@@ -1,127 +1,272 @@
 import React, { useState } from 'react';
 import digital from '../../assets/images/digitall.png';
 import download from '../../assets/images/download.png';
-import share from '../../assets/images/share.png';
 import cartificate from '../../assets/images/Certificate.jpeg'
 import telephone from '../../assets/images/telephone.png'
+import Modal from '../../components/Modal';
+import Form from '../../components/Form';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { Link } from 'react-router-dom';
 
 
 const DigitalMarketing = () => {
+    const digitalBrochureUrl = './brochures/DigitalMarketing.pdf';
     const [openWeek, setOpenWeek] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const toggleWeek = (index) => {
         setOpenWeek(openWeek === index ? null : index);
     };
+    const openModal = () => setIsModalOpen(true);  // Open modal function
+    const closeModal = () => setIsModalOpen(false);  // Close modal function
 
     const weeks = [
         {
-            week: "Week 1: Introduction to Digital Marketing",
-            details: [
-                "Overview of Digital Marketing Landscape",
-                "Evolution of Digital Marketing Channels",
-                "Importance and Benefits of Digital Marketing",
-                "Digital Marketing vs. Traditional Marketing"
+            "week": "Week 1: Basics of marketing and digital marketing",
+            "details": [
+              "Introduction to marketing",
+              "Importance of branding",
+              "Understanding the marketing mix",
+              "Traditional vs digital marketing"
             ]
-        },
-        {
-            week: "Week 2: Website Essentials",
-            details: [
-                "Basics of Website Creation and Design",
-                "User Experience (UX) and User Interface (UI) Principles",
-                "Website Optimization for Search Engines (SEO)",
-                "Introduction to Content Management Systems (CMS)"
+          },
+          {
+           "week": "Week 2: Understanding digital marketing",
+           "details": [
+                    "Introduction to digital marketing",
+                     "Understanding the marketing channels",
+                     "Elements of digital marketing strategies"
             ]
-        },
-        {
-            week: "Week 3: Search Engine Optimization (SEO)",
-            details: [
-                "Understanding Search Engines and Algorithms",
-                "On-Page SEO Techniques",
-                "Off-Page SEO Techniques",
-                "SEO Tools and Analytics"
+          },
+          {
+            "week": "Week 3: Content planning & creation",
+              "details": [
+               "Understanding the principles of content marketing",
+               "Understanding the types of content",
+              "Research & content creation",
+              "Graphic designing using Canva",
+               "Video editing using Canva"
+              ]
+          },
+          {
+            "week": "Week 4: Professional blogging",
+           "details": [
+              "What is blogging & best practices",
+             "Writing SEO-friendly blogs"
             ]
-        },
-        {
-            week: "Week 4: Pay-Per-Click (PPC) Advertising",
-            details: [
-                "Introduction to PPC Advertising Platforms (Google Ads, Bing Ads)",
-                "Keyword Research and Selection",
-                "Ad Copywriting and Ad Extensions",
-                "Campaign Setup, Monitoring, and Optimization"
+          },
+          {
+            "week": "Week 5: Website creation",
+            "details": [
+              "Understanding the key elements",
+              "Deciding the niche & getting ready with domain and web hosting",
+              "WordPress website creation",
+              "Chatbots",
+              "Landing pages"
             ]
-        },
-        {
-            week: "Week 5: Social Media Marketing (SMM)",
-            details: [
-                "Overview of Social Media Platforms (Facebook, Instagram, LinkedIn, etc.)",
-                "Creating and Optimizing Social Media Profiles",
-                "Content Creation and Curation for Social Media",
-                "Social Media Advertising Strategies"
+          },
+          {
+            "week": "Week 6: E-commerce store creation",
+          "details": [
+          "Understanding e-commerce websites",
+          "Setting up e-commerce store with Woo-Commerce",
+          "Payment gateway integration"
             ]
-        },
-        {
-            week: "Week 6: Content Marketing",
-            details: [
-                "Fundamentals of Content Marketing",
-                "Content Strategy and Planning",
-                "Blogging, Infographics, Videos, and other Content Formats",
-                "Content Distribution and Promotion Techniques"
+          },
+          {
+            "week": "Week 7: Shopify store creation",
+            "details": [
+              "Setting up e-commerce store with Shopify",
+              "Deep learning of dropshipping"
             ]
-        },
-        {
-            week: "Week 7: Email Marketing",
-            details: [
-                "Building an Email List and Subscriber Segmentation",
-                "Email Copywriting and Design Best Practices",
-                "Email Automation and Personalization",
-                "Email Marketing Metrics and Analytics"
+          },
+          {
+            "week": "Week 8: Email marketing",
+            "details": [
+                 "Understanding basic email marketing concepts",
+                 "Getting started with email automation",
+                 "Understanding & executing drip campaigns"
             ]
-        },
-        {
-            week: "Week 8: Marketing and Affiliate Marketing",
-            details: [
-                "Understanding Influencer Marketing and its Impact",
-                "Identifying and Partnering with Influencers",
-                "Introduction to Affiliate Marketing Programs and Networks",
-                "Affiliate Marketing Strategies and Measurement"
+          },
+          {
+           "week": "Week 9: Introduction to Google Analytics",
+           "details": [
+                      "Understanding the key terminologies",
+                      "Adding tracking codes",
+                      "Report analysis",
+                     "Analyzing optimization factors"
             ]
-        },
-        {
-            week: "Week 9: Mobile Marketing and App Marketing",
-            details: [
-                "Overview of Mobile Marketing Landscape",
-                "Mobile Responsive Design and User Experience (UX)",
-                "Mobile Advertising Platforms (Google Ads, Facebook Ads, etc.)",
-                "App Store Optimization (ASO) and App Promotion Strategies"
+          },
+          {
+            "week": "Week 10: Advanced search engine optimization",
+            "details": [
+                "Understanding search engine algorithms",
+                "Shortlisting right keywords",
+                "On-page optimization",
+               "Off-page optimization",
+               "Local SEO",
+               "Understanding Search Console"
             ]
-        },
-        {
-            week: "Week 10: Analytics and Performance Measurement",
-            details: [
-                "Introduction to Digital Marketing Analytics Tools (Google Analytics, etc.)",
-                "Key Performance Indicators (KPIs) and Metrics",
-                "Data Analysis and Interpretation",
-                "Reporting and Performance Optimization Strategies"
+          },
+          {
+            "week": "Week 11: Social media optimization",
+            "details": [
+                  "Social media fundamentals",
+                  "Optimizing Facebook for business",
+                  "Optimizing Instagram for business",
+                  "Utilizing Twitter for business",
+                  "Getting discovered through LinkedIn",
+                  "Quora marketing",
+                  "Pinterest"
             ]
-        },
-        {
-            week: "Week 11: Digital Marketing Strategy and Planning",
-            details: [
-                "Creating a Digital Marketing Strategy Framework",
-                "Setting SMART Goals and Objectives",
-                "Budgeting and Resource Allocation",
-                "Developing a Digital Marketing Plan"
+          },
+          {
+            
+      "week": "Week 12: Search engine marketing",
+      "details": [
+               "Introduction to Google Ads",
+                "Creating search campaigns & setting up conversion tracking",
+                "Display campaigns",
+                "Executing a campaign with live budget",
+                "Optimizing the campaign",
+                "Bing Ads"
             ]
-        },
-        {
-            week: "Week 12: Capstone Project",
-            details: [
-                "Application of Digital Marketing Concepts and Techniques",
-                "Developing and Implementing a Comprehensive Digital Marketing Campaign",
-                "Presentation of Capstone Projects"
+          },
+          {
+           "week": "Week 13: Social media marketing",
+           "details": [
+              "Introduction to Facebook & Instagram advertising",
+              "Setting up ad account & pixels",
+              "Executing live campaign in class",
+              "Twitter ads, LinkedIn ads",
+              "Quora advertisements"
             ]
-        }
+          },
+          {
+           
+        "week": "Week 14: Lead generation",
+        "details": [
+          "Understanding the concepts & funnels of lead generation",
+          "Creating high converting landing page",
+          "Getting started with marketing automation"
+                  ]
+          },
+          {
+            "week": "Week 15: E-commerce marketing",
+            "details": [
+              "Understanding Google Merchant Center",
+              "Facebook e-commerce ads"
+                      ]
+          },
+          {
+           "week": "Week 16: Remarketing",
+           "details": [
+              "Understanding remarketing concept",
+              "Creating remarketing lists",
+              "Setting up search, display, video remarketing",
+              "Facebook remarketing",
+              "Dynamic remarketing for e-commerce"
+           ]
+          },
+          {
+            "week": "Week 17: Video marketing with YouTube",
+            "details": [
+              "Understanding YouTube algorithms",
+              "YouTube program & policies",
+              "YouTube SEO",
+              "YouTube advertisement",
+              "Video analytics"
+            ]
+
+          },
+          { "week": "Week 18: Mobile marketing",
+            "details": [
+              "Understanding the mobile marketing concept",
+              "How to integrate voice/SMS services",
+              "Bulk WhatsApp",
+              "Bulk SMS"
+            ]
+          },
+          {
+        "week": "Week 19: Marketplace selling",
+        "details": [
+          "Getting started with seller account",
+          "Best practices to list a product",
+          "Categories, logistics & price overview"
+        ]
+          },
+          {
+           "week": "Week 20: Web analytics and CRO",
+           "details": [
+              "Understanding segments, filters & reports",
+              "Setting up goals with Google Tag Manager",
+              "Understanding CRO"
+            ]
+          },
+          {
+            "week": "Week 21: Online reputation management",
+            "details": [
+              "Need of ORM",
+              "Current trends",
+              "10+ case studies",
+              "Crisis management",
+              "ORM tools",
+              "Steps to effective ORM"
+            ]
+          },
+          {
+           "week": "Week 22: Google AdSense & YouTube",
+           "details": [
+              "Introduction to Google AdSense",
+              "Tips to get AdSense approved",
+              "Best practices to monetize videos and blog"
+            ]
+                    },
+          {
+            "week": "Week 23: Influencer marketing & personal branding",
+            "details": [
+              "How to become an influencer",
+              "Key channels for influencer marketing",
+              "Getting started with personal branding",
+              "Case studies"
+            ]
+          },
+          {
+            "week": "Week 24: Affiliate marketing",
+            "details": [
+              "Understanding the concept of affiliate marketing",
+              "Setting up affiliate account",
+              "Choosing the right niche",
+              "Getting started with first affiliate campaign"
+            ]
+          },
+          {
+            "week": "Week 25: Domain investment",
+            "details": [
+              "Introduction to domain flipping",
+              "Finding the right domain",
+              "Trading with brandable/non-brandable domains"
+            ]
+          },
+          {
+            "week": "Week 26: How to grab freelancing projects",
+            "details": [
+              "Exploring the right platforms to get freelancing projects",
+              "Creating an ideal profile",
+              "Key services to offer",
+              "How to create a proposal & reporting"
+            ]
+          },
+          {
+            "week": "Week 27: Dive into the latest trends",
+            "details": [
+              "User-generated content",
+              "Voice integration in marketing",
+              "Position zero on search results",
+              "How AI will impact marketing",
+              "Omnichannel marketing"
+            ]
+          }
     ];
 
     return (
@@ -139,18 +284,23 @@ const DigitalMarketing = () => {
         </p>
 
         <div className='flex flex-wrap justify-start lg:justify-evenly mt-4 mb-5'>
-    <button className="font-sans font-bold text-center bg-orange text-xs sm:text-sm lg:text-lg py-1.5 px-2 sm:px-4 lg:px-6 mt-2 rounded-lg border-2 border-orange text-black flex items-center gap-2" type="button">
+    <button 
+        onClick={openModal}
+        className="font-sans font-bold text-center bg-orange text-xs sm:text-sm lg:text-lg py-1.5 px-2 sm:px-4 lg:px-6 mt-2 rounded-lg border-2 border-orange text-black flex items-center gap-2" type="button">
         Download Brochure
         <img className='h-4 sm:h-5 w-4 sm:w-5' src={download} alt="" />
     </button>
+     <Link to='/contact'>
     <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-2 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2" type="button">
         Contact Now
         <img className='h-5 sm:h-6 w-5 sm:w-6' src={telephone} alt="" />
-    </button>
+    </button></Link>
+    <Link to ='/enrollnow' >
     <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-3 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2" type="button">
-        Share
-        <img className='h-4 sm:h-5 w-4 sm:w-5' src={share} alt="" />
+        Enroll Now
+        {/* <img className='h-4 sm:h-5 w-4 sm:w-5' src={share} alt="" /> */}
     </button>
+    </Link>
 </div>
 
     </div>
@@ -196,9 +346,9 @@ const DigitalMarketing = () => {
             <div className='lg:ml-14 lg:pl-5 mt-6 lg:mt-0 lg:w-2/3'>
                 <h1 className='font-medium text-xl lg:text-2xl'>Course Details</h1>
                 <div className='text-[16px] lg:text-[20px] pt-3 font-medium'>
-                    <pre>Level:             Beginner</pre>
-                    <pre>Total Duration :   3/6 months</pre>
-                    <pre>Certificate:      Certificate of Completion</pre>
+                    <pre className='font-sans text-lg font-semibold'>Level:                   Beginner</pre>
+                    <pre className='font-sans text-lg font-semibold'>Total Duration :   3/6 months</pre>
+                    <pre className='font-sans text-lg font-semibold'>Certificate:           Certificate of Completion</pre>
                 </div>
                 
                 {/* Requirements */}
@@ -277,7 +427,10 @@ const DigitalMarketing = () => {
         <img className='h-auto w-full' src={cartificate} alt="Certificate" />
     </div>
 </div>
-
+{/* Modal for Form */}
+<Modal isOpen={isModalOpen} closeModal={closeModal}>
+                <Form pdfUrl={digitalBrochureUrl}/>
+            </Modal>
         </div>
     
     );

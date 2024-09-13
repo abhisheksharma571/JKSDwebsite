@@ -10,7 +10,10 @@ function TrendingCourses() {
 
     return (
         <>
-        <h1 className=' md:text-5xl  text-[#08528e] text-center pt-10 font-philosopher font-black text-2xl bg-gray-200'>Our Placement Partners</h1>
+
+        <h1 className=' md:text-5xl  text-[#08528e] text-center pt-10 font-philosopher font-black text-2xl bg-gray-200'>Our Training Courses</h1>
+
+
         <div className="h-full py-10 flex items-center justify-center bg-gray-200">
             <div className="flex space-x-4 overflow-x-auto p-4">
                 {data.map((course, index) => (
@@ -60,20 +63,20 @@ const data = [
     {
         id: 'iot',
         title: 'IoT (Internet of Things)',
-        description: 'Learn to connect and control devices remotely via the Internet',
+        description: 'Embedded Systems & Robotics',
         image: './Images/IoT.png'
     },
     {
-        id: 'embedded',
-        title: 'Embedded Systems',
-        description: 'Master microcontroller programming for smart devices',
-        image: './Images/embebded.jpg'
+        id: 'python',
+        title: 'Python',
+        description: 'Build applications with Python, a versatile language',
+        image: './Images/python.jpg'
     },
     {
-        id: 'robotics',
-        title: 'Robotics',
-        description: 'Build and program robots for automation and innovation',
-        image: './Images/robotics.jpg'
+        id: 'dataanalytics',
+        title: 'Data Analyst',
+        description: 'Analyze data for actionable insights',
+        image: './Images/Data.webp'
     },
     {
         id: 'digitalmarketing',
@@ -82,10 +85,10 @@ const data = [
         image: './Images/digitall.png'
     },
     {
-        id: 'python',
-        title: 'Python',
-        description: 'Build applications with Python, a versatile language',
-        image: './Images/python.jpg'
+        id: 'businessanalyst',
+        title: 'Business Analyst',
+        description: 'Analyze data for actionable insights',
+        image: './Images/graphicdesigning.png'
     },
     {
         id: 'graphicdesigning',
