@@ -4,7 +4,7 @@ function AboutUs() {
   return (
     <div className="">
       {/* first Section*/}
-      <div className="md:flex ">
+      <div className="bg-[#c9cedd] md:flex ">
         <div>
           <img
             src=".\Images\student grp.jpeg"
@@ -77,7 +77,7 @@ function AboutUs() {
        </div>
        <div>
         <img src="public\mission\mission .png"
-        className="m-10 ml-[120px] w-[380px] md:w-[380px]   md:mt-10 md:ml-[200px]"/>
+        className="m-10 ml-[120px] w-[380px] md:w-[380px]   md:mt-10 md:mr-[150px]"/>
        </div>
 
     </div>
@@ -86,7 +86,7 @@ function AboutUs() {
      <div  className="flex flex-col-reverse md:flex-row bg-white md:flex  ">
        <div>
         <img src="public\Images\vision\vision .png"
-        className="m-10 ml-[120px] w-[380px] md:w-[380px] md:mt-5 md:ml-[250px]"
+        className="m-10 ml-[150px] w-[380px] md:w-[380px] md:mt-5 md:ml-[150px]"
         />
        </div>
        <div className=" ">
@@ -94,7 +94,7 @@ function AboutUs() {
          md:text-5xl md:pt-[100px] md:pr-[80px] "> Our Vision</h1>
          <ul
           className="text-gray-600  text-xl font-medium px-10  pb-10 tracking-wide 
-          list-disc text-left md:pl-[100px]  md:text-2xl  md:pt-10 md:text-left  "
+          list-disc text-left md:pr-[80px]  md:text-2xl  md:pt-10 md:text-left  "
         >
           <li className="py-2 list-item-bullet">
           To widely democratize education in India.
@@ -116,7 +116,7 @@ function AboutUs() {
 
      <div>
      <h1 className=' md:text-5xl text-orange text-center pt-10 py-10 font-roboto-slab font-black text-2xl'>Our Founders</h1>
-     <div  className="flex flex-col gap-6 px-14 pt-10 pb-10 md:flex-row md:h-[500px] md:flex bg-indigo-950 md:py-[50px] md:px-[50px] md:gap-10 md:justify-evenly">
+     <div  className="flex flex-col gap-6 px-14 pt-10 pb-10 md:flex-row md:h-[500px] md:flex  bg-[#0A528E]  md:py-[50px] md:px-[50px] md:gap-10 md:justify-evenly">
                
      { /* Jitesh Sir*/ }
      <div className="flex flex-col   md:w-80 h-96 items-center p-7  bg-slate-100 shadow-lg rounded-3xl">
@@ -250,7 +250,7 @@ function AboutUs() {
       
       <div className="bg-white">
       <h1 className=' md:text-5xl  text-orange text-center pt-10 py-10 font-roboto-slab font-black text-2xl'>Our Team</h1>
-      <img src="public\Images\groupnew.png"
+      <img src="src\group.png"
       alt="team pic"
        className=" mt-5 mb-14 md:h-[550px] md:mb-5 md:ml-[450px]  md:w-[750px]"/>
       </div>

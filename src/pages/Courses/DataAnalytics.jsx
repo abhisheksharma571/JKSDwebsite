@@ -4,15 +4,21 @@ import analyst from '../../assets/images/Data.webp';
 import share from '../../assets/images/share.png';
 import cartificate from '../../assets/images/Certificate.jpeg'
 import telephone from '../../assets/images/telephone.png'
+import Modal from '../../components/Modal';
+import Form from '../../components/Form';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 const DataAnalytics = () => {
+    const dataAnalystBrochureUrl = './brochures/DataAnalyst.pdf';
     const [openWeek, setOpenWeek] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const toggleWeek = (index) => {
         setOpenWeek(openWeek === index ? null : index);
     };
+    const openModal = () => setIsModalOpen(true);  // Open modal function
+    const closeModal = () => setIsModalOpen(false);  // Close modal function
 
     const weeks = [
         {
@@ -95,7 +101,9 @@ const DataAnalytics = () => {
         </p>
 
         <div className='flex flex-wrap justify-start lg:justify-evenly mt-4 mb-5'>
-    <button className="font-sans font-bold text-center bg-orange text-xs sm:text-sm lg:text-lg py-1.5 px-2 sm:px-4 lg:px-6 mt-2 rounded-lg border-2 border-orange text-black flex items-center gap-2" type="button">
+    <button 
+        onClick={openModal}
+        className="font-sans font-bold text-center bg-orange text-xs sm:text-sm lg:text-lg py-1.5 px-2 sm:px-4 lg:px-6 mt-2 rounded-lg border-2 border-orange text-black flex items-center gap-2" type="button">
         Download Brochure
         <img className='h-4 sm:h-5 w-4 sm:w-5' src={download} alt="" />
     </button>
@@ -230,7 +238,10 @@ const DataAnalytics = () => {
         <img className='h-auto w-full' src={cartificate} alt="Certificate" />
     </div>
 </div>
-
+{/* Modal for Form */}
+<Modal isOpen={isModalOpen} closeModal={closeModal}>
+                <Form pdfUrl={dataAnalystBrochureUrl}/>
+            </Modal>
         </div>
     
     );

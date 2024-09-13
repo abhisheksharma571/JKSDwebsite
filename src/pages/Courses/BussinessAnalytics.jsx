@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import iot from '../../assets/images/IoT.png';
+import cybersecurity from '../../assets/images/cybersecurity.jpg';
 import download from '../../assets/images/download.png';
 import share from '../../assets/images/share.png';
 import cartificate from '../../assets/images/Certificate.jpeg'
@@ -9,11 +9,8 @@ import Form from '../../components/Form';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
-const Iot = () => {
-    const [pdfUrl, setPdfUrl] = useState('');
-    const iotBrochureUrl6Months = './brochures/IoT6months.pdf';
-    const iotBrochureUrl3Months = './brochures/IoT3months.pdf';
-    const iotBrochureUrlAdvanced = './brochures/IoTAdvanced.pdf';
+const CyberSecurity = () => {
+    const bussinessanalystBrochureUrl = './brochures/BussinessAnalyst.pdf';
     const [openWeek, setOpenWeek] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -25,67 +22,67 @@ const Iot = () => {
 
     const weeks = [
         {
-            week: "Week 1: Introduction to IoT",
+            week: "Week 1: Introduction to Cyber Security",
             details: [
-                "Overview of IoT Concepts",
-                "IoT Architecture and Components",
-                "Setting Up IoT Development Environment"
+                "Understanding Cyber Threats",
+                "Overview of Cyber Security Measures",
+                "Introduction to Network Security"
             ]
         },
         {
-            week: "Week 2: Programming Microcontrollers",
+            week: "Week 2: Threat Analysis and Risk Management",
             details: [
-                "Introduction to Microcontrollers",
-                "Programming with Arduino",
-                "Integrating Sensors and Actuators"
+                "Identifying and Assessing Threats",
+                "Risk Management Techniques",
+                "Vulnerability Assessment"
             ]
         },
         {
-            week: "Week 3: IoT Communication Protocols",
+            week: "Week 3: Network Security Fundamentals",
             details: [
-                "Understanding IoT Protocols (MQTT, CoAP, etc.)",
-                "Wireless Communication (Wi-Fi, Bluetooth, Zigbee)",
-                "Setting Up Communication Between Devices"
+                "Understanding Network Security Protocols",
+                "Implementing Firewalls and Intrusion Detection Systems",
+                "Encryption Techniques"
             ]
         },
         {
-            week: "Week 4: Data Collection and Analysis",
+            week: "Week 4: Ethical Hacking and Penetration Testing",
             details: [
-                "Collecting Data from IoT Devices",
-                "Storing Data in the Cloud",
-                "Analyzing Data for Insights"
+                "Introduction to Ethical Hacking",
+                "Penetration Testing Techniques",
+                "Tools for Ethical Hacking"
             ]
         },
         {
-            week: "Week 5: IoT Security",
+            week: "Week 5: Incident Response and Recovery",
             details: [
-                "Identifying IoT Security Risks",
-                "Implementing Security Measures",
-                "Securing Data Transmission"
+                "Incident Response Planning",
+                "Handling Security Breaches",
+                "Disaster Recovery Planning"
             ]
         },
         {
-            week: "Week 6: Cloud Integration for IoT",
+            week: "Week 6: Security Compliance and Regulations",
             details: [
-                "Connecting IoT Devices to Cloud Platforms",
-                "Using AWS IoT, Azure IoT Hub",
-                "Building Scalable IoT Solutions"
+                "Understanding Security Compliance",
+                "Overview of GDPR, HIPAA, and Other Regulations",
+                "Implementing Compliance Measures"
             ]
         },
         {
-            week: "Week 7: IoT Application Development",
+            week: "Week 7: Advanced Security Techniques",
             details: [
-                "Building IoT Applications",
-                "Deploying IoT Solutions",
-                "Testing and Debugging IoT Systems"
+                "Security for Cloud Computing",
+                "Mobile Security Best Practices",
+                "IoT Security Considerations"
             ]
         },
         {
             week: "Week 8: Capstone Project",
             details: [
-                "Developing a Complete IoT Solution",
-                "Integrating Sensors, Cloud, and Application",
-                "Presenting Your IoT Project"
+                "Developing a Cyber Security Strategy",
+                "Simulating Security Incidents",
+                "Presenting Findings and Recommendations"
             ]
         }
     ];
@@ -97,31 +94,19 @@ const Iot = () => {
 
              <div className='h-auto lg:h-96 bg-indigo-950 w-full flex flex-col-reverse lg:flex-row'>
     <div className="text-white w-full lg:w-[55%] mx-4 lg:mx-6 pt-4 lg:pt-6 pl-4 lg:pl-8">
-        <h1 className='text-3xl lg:text-4xl font-bold'>Internet of Things (IoT)</h1>
+        <h1 className='text-3xl lg:text-4xl font-bold'>Bussiness Analytics</h1>
         <p className='pt-2 text-sm lg:text-base mr-10'>
-        The Internet of Things (IoT) is revolutionizing industries by connecting everyday objects to the internet, creating smarter environments. This IoT course is designed to prepare you for a career in this rapidly growing field, where you’ll learn to design, develop, and deploy IoT solutions. Through this program, you’ll gain expertise in areas such as embedded systems, sensor networks, data analytics, and IoT security. With hands-on projects and expert guidance, you’ll be equipped to contribute to the development of innovative IoT applications that are transforming industries like healthcare, agriculture, and smart cities.
+        In an era where cyber threats are increasingly sophisticated, the role of a cyber security professional is more critical than ever. Our Cyber Security course is designed to equip you with the knowledge and skills to protect sensitive information and secure networks from potential breaches. You’ll delve into topics such as threat analysis, cryptography, ethical hacking, and incident response, gaining a deep understanding of how to defend against cyber attacks. With guidance from industry experts, this program offers a blend of theoretical learning and practical application, ensuring you’re ready to safeguard digital assets in any organization.
             {/* Truncated for brevity */}
         </p>
 
-        <div className='flex flex-wrap justify-start lg:justify-evenly mt-4 mb-5 gap-5'>
-                        <button 
-                            onClick={() => openModal(iotBrochureUrl6Months)} 
-                            className="font-sans font-bold text-center bg-orange text-xs sm:text-sm lg:text-lg py-1.5 px-2 sm:px-4 lg:px-6 mt-2 rounded-lg border-2 border-orange text-black flex items-center gap-2">
-                            6-Months Brochure
-                            <img className='h-4 sm:h-5 w-4 sm:w-5' src={download} alt="" />
-                        </button>
-                        <button 
-                            onClick={() => openModal(iotBrochureUrl3Months)} 
-                            className="font-sans font-bold text-center bg-orange text-xs sm:text-sm lg:text-lg py-1.5 px-2 sm:px-4 lg:px-6 mt-2 rounded-lg border-2 border-orange text-black flex items-center gap-2">
-                            3-Months Brochure
-                            <img className='h-4 sm:h-5 w-4 sm:w-5' src={download} alt="" />
-                        </button>
-                        <button 
-                            onClick={() => openModal(iotBrochureUrlAdvanced)} 
-                            className="font-sans font-bold text-center bg-orange text-xs sm:text-sm lg:text-lg py-1.5 px-2 sm:px-4 lg:px-6 mt-2 rounded-lg border-2 border-orange text-black flex items-center gap-2">
-                            6-Weeks Brochure
-                            <img className='h-4 sm:h-5 w-4 sm:w-5' src={download} alt="" />
-                        </button>
+        <div className='flex flex-wrap justify-start lg:justify-evenly mt-4 mb-5'>
+    <button 
+        onClick={openModal}
+        className="font-sans font-bold text-center bg-orange text-xs sm:text-sm lg:text-lg py-1.5 px-2 sm:px-4 lg:px-6 mt-2 rounded-lg border-2 border-orange text-black flex items-center gap-2" type="button">
+        Download Brochure
+        <img className='h-4 sm:h-5 w-4 sm:w-5' src={download} alt="" />
+    </button>
     <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-2 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2" type="button">
         Contact Now
         <img className='h-5 sm:h-6 w-5 sm:w-6' src={telephone} alt="" />
@@ -135,7 +120,7 @@ const Iot = () => {
     </div>
 
     <div className="p-4 lg:p-8 flex justify-center items-center lg:items-start">
-        <img className='rounded-lg h-[180px] sm:h-[240px] lg:h-[280px]' src={iot} alt="" />
+        <img className='rounded-lg h-[180px] sm:h-[240px] lg:h-[280px]' src={cybersecurity} alt="" />
     </div>
 </div>
  {/* digital section close here  */}
@@ -145,7 +130,7 @@ const Iot = () => {
 
 <div className=''>
     <div className='h-auto w-[90%] lg:w-[80%] mx-auto lg:mx-32'>
-        <h1 className='text-center text-2xl lg:text-3xl font-bold pt-4'>IoT: Innovate and Connect</h1>
+        <h1 className='text-center text-2xl lg:text-3xl font-bold pt-4'>Cyber Security: Defend and Secure</h1>
 
         <div className='flex flex-col lg:flex-row justify-center pt-5'>
             {/* Table of Contents */}
@@ -184,23 +169,23 @@ const Iot = () => {
                 <div>
                     <h1 className='text-xl lg:text-2xl pt-4 font-medium'>Requirements</h1>
                     <p className='pt-3'>
-                    Basic programming skills
-                    Understanding of microcontrollers and sensors
-                    Access to IoT development kits
+                    Basic knowledge of networking and operating systems
+                    Familiarity with basic security concepts
+                    Access to a computer with internet
                     </p>
                 </div>
 
                 {/* Skills */}
                 <div>
                     <h1 className='font-medium text-xl lg:text-2xl pt-4'>What Skills/Competencies Do You Develop?</h1>
-                    <p className='pt-4'>At the completion of Internet of Things (IoT) training with us, you would be fully knowledgeable about various Internet of Things (IoT) disciplines that include:</p>
+                    <p className='pt-4'>At the completion of Cyber Security training with us, you would be fully knowledgeable about various Cyber Security disciplines that include:</p>
                     <ul className='list-disc pl-6 pt-2'>
-                        <li>IoT architecture and protocols</li>
-                        <li>Embedded systems and sensor integration</li>
-                        <li>Data collection and analysis</li>
-                        <li>IoT security considerations</li>
-                        <li>Cloud platforms for IoT</li>
-                        <li>Building and deploying IoT solutions</li>
+                        <li>Understanding of cybersecurity principles</li>
+                        <li>Threat analysis and risk management</li>
+                        <li>Network security and encryption</li>
+                        <li>Ethical hacking and penetration testing</li>
+                        <li>Incident response and disaster recovery</li>
+                        <li>Compliance and regulatory requirements</li>
                     </ul>
                 </div>
             </div>
@@ -254,13 +239,12 @@ const Iot = () => {
     </div>
 </div>
 {/* Modal for Form */}
-            <Modal isOpen={isModalOpen} closeModal={closeModal}>
-                <Form pdfUrl={pdfUrl}/>
+<Modal isOpen={isModalOpen} closeModal={closeModal}>
+                <Form pdfUrl={bussinessanalystBrochureUrl}/>
             </Modal>
-
         </div>
     
     );
 };
 
-export default Iot;
+export default CyberSecurity;
