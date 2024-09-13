@@ -17,7 +17,7 @@ function TrainingP() {
         </div>
         <div className='h-[480px] w-[400px] bg-[#62438F] p-[4px] shadow-2xl'>
             <div className='p-7'>
-                <img src=".\Images\ShortTerm.jpg" alt="" />
+                <img src="./Images/ShortTerm.jpg" alt="Short Term Courses" />
                 <h1 className='text-3xl font-normal text-orange pt-3'>Short Term Courses</h1>
                 <p className='pt-3 text-white'>Unlock more opportunities with JKSD Infotech Pvt. Ltd. Click below to explore all our detailed courses and take the next step in your learning journey!</p>
                 <div className='flex justify-end pb-2'>
@@ -28,7 +28,7 @@ function TrainingP() {
         </div>
         <div className='h-[480px] w-[400px] bg-[#62438F] p-[4px] shadow-2xl'>
             <div className='p-7'>
-                <img src=".\Images\LongTerm.jpg" alt="" />
+                <img src="./Images/LongTerm.jpg" alt="Job Oriented Courses" />
                 <h1 className='text-3xl font-normal text-orange pt-3'>Job Oriented Courses</h1>
                 <p className='pt-3 text-white'>Get career-ready with JKSD Infotech Pvt. Ltd. Explore our job-oriented courses and fast-track your path to success. Click below for full course details</p>
                 <div className='flex justify-end pb-2'>

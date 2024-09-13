@@ -13,7 +13,7 @@ const Review = () => {
         autoplay: true,
         speed: 1000,
         autoplaySpeed: 5000,
-        pauseOnHover: true,
+        pauseOnHover: false,
         centerMode: false,
         
 
@@ -66,9 +66,9 @@ const Review = () => {
 }
 const data = [
     {
-        Name: 'Abhisek Kumar',
-        review: 'The web development course was excellent—comprehensive, practical, and up-to-date. The instructors were knowledgeable, and the hands-on projects really prepared me for real-world challenges. Highly recommend it!',
-        image: './Images/Abhishek.png',
+        Name: 'Abhisek Yadav',
+        review: 'Hello Everyone my name is Abhishek Yadav. I am doing python course from JKSD. My experience is good . They have great teachers.',
+        image: './Images/AbhishekYadav.jpeg',
         
         
     },
@@ -84,9 +84,9 @@ const data = [
         image: './Images/Rohit.jpeg',
     },
     {
-        Name: 'Elon Musk',
-        review: 'I recently completed a course at JKSD and was very impressed. The expert instructors and hands-on approach made complex topics easy to understand.  Python and digital marketing, catered perfectly to my needs I highly recommend JKSD.',
-        image: './Images/Abhishek.png',
+        Name: 'Himanshu Sharma',
+        review: 'The IoT embedded systems seamlessly integrates hardware and software to create interconnected devices capable of collecting, transmitting, and processing data. This technology enhances efficiency and automation in various applications, from smart homes to industrial systems. Read more...',
+        image: './Images/HimanshuSharma.jpeg',
     }
 ]
 
