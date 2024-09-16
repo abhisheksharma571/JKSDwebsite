@@ -7,6 +7,7 @@ import HiringPartners from './HiringPartners'
 import Type from './Type'
 import Adviser from './Adviser'
 import Services from './Services'
+import EnrollNow from '../pages/EnrollNow/EnrollNow'
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       <Services />
       <TrendingCourses/>
       <Review/>
+      <EnrollNow/>
 
       <HiringPartners />
       <Adviser />

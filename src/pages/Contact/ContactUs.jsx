@@ -56,7 +56,7 @@ function ContactUs() {
 
     <div>
 
-    <body className="antialiased bg-gray-100">
+    <body className="antialiased  bg-gray-100">
 
       <div className="flex w-full min-h-screen justify-center items-center">
         <div className="flex flex-col lg:flex-row justify-between lg:space-x-6 space-y-6 lg:space-y-0 bg-sky bg-black w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">

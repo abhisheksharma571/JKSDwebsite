@@ -24,9 +24,9 @@ const Review = () => {
 
 
     <div className='w-full max-w-[1500px]  mx-auto'>
-    <h1 className=' md:text-5xl text-orange text-center pt-10 font-roboto-slab font-black text-2xl'>Our Happy Customers and Students</h1>
+    <h1 className='text-2xl pt-10  md:text-5xl text-orange text-center font-roboto-slab font-black'>Our Happy Customers and Students</h1>
         <div className=' md:flex  mr-20 justify-center  items-center'>
-          <img className="w-2/6 mt-12 " src="./Images/RevImg.png" alt="" />
+          <img className="md:w-2/6 mt-12 " src="./Images/RevImg.png" alt="" />
     
             <div className='w-1/2 '>
                <Slider{...settings}>

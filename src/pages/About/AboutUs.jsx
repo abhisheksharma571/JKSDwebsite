@@ -1,84 +1,25 @@
 import React from "react";
+import AboutHome from "./AboutHome";
 
 function AboutUs() {
   return (
+    <>
+    <div>
+      <AboutHome />
+    </div>
     <div className="">
       {/* first Section*/}
-      <div className="bg-[#c9cedd] md:flex">
+      <div className="bg-[#c9cedd] md:flex ">
         <div>
-
-          <div className="flex flex-row ">
-            <div className="lg:w-1/2 py-14 pl-28">
-              <img
-                src="src\assets\images\students.jpg"
-                className=" h-full  rounded-xl"
-              />
-            </div>
-
-            <div className="lg:w-1/2 lg:mr-12 text-xl font-light text-gray-800 pt-20 pb-10 text-left tracking-widest">
-              <h2 className="lg:px-14 lg:text-3xl font-semibold">
-                Shape Tomorrow’s Digital Leaders Today
-              </h2>
-              <br />
-              <p className="lg:px-14 lg:text-xl font-normal text-left">
-                At JKSD Infotech, our vision is to shape a future where
-                education knows no boundaries and technology serves as a
-                catalyst for progress and empowerment. We envision a world where
-                learning is not confined to the four walls of a classroom but
-                extends to every corner of the globe, transcending barriers of
-                geography, socioeconomic status, and traditional educational
-                models We aspire to create a learning ecosystem that is
-                inclusive, equitable, and accessible to all, where individuals
-                have the tools, resources, and support they need to thrive and
-                contribute meaningfully to society.
-              </p>
-              <br />
-
-              <div className=" px-60 pb-24">
-                <button className="inline-block self-center bg-orange text-black font-bold rounded-2xl px-6 py-2 uppercase text-xl">
-                  Read More{" "}
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div className=" min-w-full h-80 bg-indigo-950 ">
-            <h2 className="text-white  font-semibold text-2xl  md:text-5xl pl-14 pt-14 ">
-              {" "}
-              Our Mission
-            </h2>
-
-            <div className="flex flex-row gap-8  m-14 pl-28 ">
-            <div className="bg-slate-100 h-10 w-auto p-8 rounded-2xl flex items-center justify-center">
-  <ul className="list-disc">
-    <li className="text-xl">
-    To aim for Equity and inclusivity in Education
-    </li>
-  </ul>
-</div>
-
-              <div className="bg-slate-100 h-10 w-auto p-8 rounded-2xl flex items-center justify-center">
-  <ul className="list-disc">
-    <li className="text-xl">
-    To reach learners in every corner of the country
-    </li>
-  </ul>
-</div>
-
-
-<div className="bg-slate-100 h-10 w-auto p-8 rounded-2xl flex items-center justify-center">
-  <ul className="list-disc">
-    <li className="text-xl">
-    To build abusiness sustainability
-    </li>
-  </ul>
-</div>
-            </div>
-          </div>
-
+          <img
+            src=".\Images\aboutimage.jpeg"
+            alt="student image"
+            className=" pt-14 m-10 w-[300px] md:w-[500px] md:h-[700px] md:mt-[30px] md:m-[12px] lg:ml-[150px] "
+          />
+        </div>
 
         <div className=" text-3xl  font-semibold md:flex-col md:w-1/2 ">
-          <h1 className=" pt-10 text-center md:mt-20 md:text-left md:text-4xl md:pl-[80px] ">
+          <h1 className=" pt-10 text-center md:mt-20 md:text-left md:text-4xl lg:pl-[100px]  ">
             Unlocking{" "}
             <span className="  bg-gradient-to-r from-[#FF5733] to-[#FFBD33] bg-clip-text text-transparent">
               Journey Of{" "}
@@ -87,7 +28,7 @@ function AboutUs() {
             Knowledge and Skill Devlopment
           </h1>{" "}
           <br />
-          <p className=" text-lg text-center  font-normal tracking-wide  md:text-xl  md:pl-[80px] md:text-left md:tracking-wide">
+          <p className=" text-lg text-center px-3 font-normal tracking-wide  md:text-xl  md:text-left md:tracking-wide lg:pl-[100px] ">
             At JKSD Infotech, our vision is to shape a future where education
             knows no boundaries and technology serves as a catalyst for progress
             and empowerment. We envision a world where learning is not confined
@@ -96,7 +37,7 @@ function AboutUs() {
             traditional educational models .
           </p>
           <br />
-          <ul className="list-disc  text-lg pl-10 font-normal md:pb-10   md:text-xl  md:pl-[100px] md:tracking-wide">
+          <ul className="list-disc  px-6 py-5 text-lg pl-10 font-normal md:pb-10   md:text-xl  md:pl-[40px] md:tracking-wide lg:pl-[100px]">
             <li className="md:py-2 ">
               Our expertise programs will transform trainees in a significant
               way by honing their understanding and elevating their alma mater.
@@ -121,11 +62,11 @@ function AboutUs() {
       <div  className=" overflow-hidden bg-white md:flex">
       
        <div className="md:flex-col">
-        <h1 className="  font-semibold  py-[30px] text-indigo-900 text-center text-4xl
-         md:text-5xl md:pt-[100px] md:pl-[100px]"> Our Mission</h1>
+        <h1 className="  font-semibold  py-[30px] font-philosopher  text-[#08528e] text-center text-4xl
+         md:text-5xl md:pt-[100px] md:pl-[90px] lg:pl-[100px]"> Our Mission</h1>
          <ul
-          className="text-gray-600 text-xl font-medium px-10 pb-10 tracking-wide 
-          list-disc text-left pl-[30px]  md:text-2xl  md:pl-[250px] md:pt-5 md:text-left "
+          className="text-gray-600 px-6 py-5 text-xl font-medium  pb-10 tracking-wide 
+          list-disc text-left pl-[30px]  md:text-2xl  md:pl-[150px] md:pt-5 md:text-left lg:pl-[250px] "
         >
           <li className="py-2  list-item-bullet">
           To pursue diversity and equity in education.
@@ -140,8 +81,8 @@ function AboutUs() {
 
        </div>
        <div>
-        <img src="public\mission\mission .png"
-        className="m-10 ml-[120px] w-[380px] md:w-[380px]   md:mt-10 md:ml-[200px]"/>
+        <img src=".\Images\mission.png"
+        className="m-10 ml-[50px] w-[280px] md:w-[400px]   md:mt-10 md:ml-[100px]  lg:w-[450px] lg:ml-[210px]"/>
        </div>
 
     </div>
@@ -149,22 +90,23 @@ function AboutUs() {
 
      <div  className="flex flex-col-reverse md:flex-row bg-white md:flex  ">
        <div>
-        <img src="public\Images\vision\vision .png"
-        className="m-10 ml-[120px] w-[380px] md:w-[380px] md:mt-5 md:ml-[250px]"
+        <img src=".\Images\vision.png"
+        className="m-10 ml-[50px] w-[280px] md:w-[400px] md:mt-10 md:ml-[100px]  lg:w-[450px] lg:ml-[210px] "
         />
        </div>
        <div className=" ">
-        <h1 className="  font-semibold text-indigo-900 text-center text-4xl py-[20px]  pt-10
+        <h1 className="  font-semibold text-[#08528e] font-philosopher text-center text-4xl py-[20px] pt-10
          md:text-5xl md:pt-[100px] md:pr-[80px] "> Our Vision</h1>
          <ul
-          className="text-gray-600  text-xl font-medium px-10  pb-10 tracking-wide 
-          list-disc text-left md:pl-[100px]  md:text-2xl  md:pt-10 md:text-left  "
+          className="text-gray-600 px-9 py-5 text-xl font-medium   pb-10 tracking-wide 
+          list-disc text-left md:pl-[150px] md:text-2xl  md:pt-10 md:text-left lg:pl-[200px] "
         >
-          <li className="py-2 list-item-bullet">
+          <li className="py-2  list-item-bullet">
           To widely democratize education in India.
           </li>
           <li className="py-2 list-item-bullet">
-          To provide affordable, high-quality education to all children
+        
+          Affordable, high-quality education for all.
           </li>
           <li className="py-2 list-item-bullet">
             To build a business sustainability.
@@ -179,14 +121,14 @@ function AboutUs() {
 
 
      <div>
-     <h1 className='text-2xl md:text-5xl font-bold text-orange text-center pt-10 py-10'>OUR FOUNDERS</h1>
-     <div  className="flex flex-col gap-6 px-14 pt-10 pb-10 md:flex-row md:h-[500px] md:flex bg-indigo-950 md:py-[50px] md:px-[50px] md:gap-10 md:justify-evenly">
+     <h1 className='text-4xl md:text-5xl text-[#08528e] text-center pt-10 py-10 font-philosopher font-black '>Our Founders</h1>
+     <div  className="flex flex-col gap-6 px-14 pt-10 pb-10 md:flex-row md:h-[500px] md:flex  bg-[#0A528E]  md:py-[50px] md:px-[50px] md:gap-10 md:justify-evenly">
                
      { /* Jitesh Sir*/ }
      <div className="flex flex-col   md:w-80 h-96 items-center p-7  bg-slate-100 shadow-lg rounded-3xl">
           <div className="w-32 h-32 mb-4 items-center ">
             <img
-              src="public\Images\JITESH MATHUR.jpeg"
+              src=".\Images\jitesh_mathur-removebg.jpg"
               className="w-full h-full rounded-full object-cover"
             />
           </div>
@@ -217,7 +159,7 @@ function AboutUs() {
         <div className="flex flex-col  md:w-80 h-96 items-center p-7  bg-slate-100 shadow-lg rounded-3xl">
           <div className="w-32 h-32 mb-4 items-center ">
             <img
-              src="public\Images\SWAPNIL MISRA.jpeg"
+              src=".\Images\swapnil mishra-bgremove.jpg"
               className="w-full h-full rounded-full object-cover"
             />
           </div>
@@ -249,7 +191,7 @@ function AboutUs() {
         <div className="flex flex-col md:w-80 h-96 items-center p-7  bg-slate-100 shadow-lg rounded-3xl">
           <div className="w-32 h-32 mb-4 items-center ">
             <img
-              src="public\Images\DEVANSH RAGHAV.jpeg"
+              src=".\Images\mr_devanshnew.jpg"
               className="w-full h-full rounded-full object-cover"
             />
           </div>
@@ -280,7 +222,7 @@ function AboutUs() {
         <div className="flex flex-col md:w-80 h-96 items-center p-7  bg-slate-100 shadow-lg rounded-3xl">
           <div className="w-32 h-32 mb-4 items-center ">
             <img
-              src="public\Images\FARIHA MAM.jpeg"
+              src=".\Images\FARIHA MAM.jpeg"
               className="w-full h-full rounded-full object-cover"
             />
           </div>
@@ -313,15 +255,15 @@ function AboutUs() {
    { /* Our Team*/ }
       
       <div className="bg-white">
-      <h1 className='text-2xl md:text-5xl font-bold text-orange text-center pt-10 py-10'>OUR TEAM</h1>
-      <img src="public\Images\groupnew.png"
+      <h1 className='text-3xl md:text-5xl  text-[#08528e] text-center pt-10 py-10 font-philosopher font-black '>Our Team</h1>
+      <img src="./Images/ourteam.jpeg"
       alt="team pic"
-       className=" mt-5 mb-14 md:h-[550px] md:mb-5 md:ml-[450px]  md:w-[750px]"/>
+       className=" mt-5 mb-14 md:h-[550px] md:mb-5 md:ml-[310px]  md:w-[750px]  lg:ml-[460px]"/>
       </div>
 
 
     </div>
-    </div>
+    </>
 
   );
 }

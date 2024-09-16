@@ -28,6 +28,7 @@ export default {
     extend: {
       fontFamily: {
         'roboto-slab': ['"Roboto Slab"', 'serif'], // Add this line to include Roboto Slab
+        'philosopher': ['"Philosopher"', 'sans-serif']
       },
 
       colors:{
