@@ -103,7 +103,6 @@ const Foot = () => {
                     <h1>Copyright 2024 JKSD infotech Pvt. Ltd.</h1>
                 </div>
                 <div className="flex gap-5 md:gap-10 pr-4 md:pr-12 mt-2 md:mt-0">
-                    <h1>Support Policy</h1>
                   <Link to='/termandcondition'><h1>Terms & Conditions</h1></Link>
                   <Link to='/privacypolicy'><h1>Privacy Policy</h1></Link>
                     
