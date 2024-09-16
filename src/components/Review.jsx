@@ -28,9 +28,9 @@ const Review = () => {
     <h1 className=' md:text-5xl text-[#08528e] text-center pt-10 font-philosopher font-black text-2xl'>Our Happy Customers and Students</h1>
 
         <div className=' md:flex  mr-20 justify-center  items-center'>
-          <img className="w-2/6 mt-12 " src="./Images/RevImg.png" alt="" />
+          <img className="w-[250px] md:w-2/6 mt-12 ml-[100px] md:ml-0 " src="./Images/RevImg.png" alt="" />
     
-            <div className='w-1/2 '>
+            <div className='w-full md:w-1/2 '>
                <Slider{...settings}>
                {data.map((d, index)=>(
                 
@@ -42,7 +42,7 @@ const Review = () => {
                     
                     <img className='rounded-lg  h-32 w-32 ' src={d.image} alt="" />
                     </div>
-                    <div className='p-8 text-xl'>
+                    <div className='p-0 md:p-8 text-xl'>
                         <p className='text-center italic'>{d.review}</p>                      
                     </div>
                     <div className='  '>

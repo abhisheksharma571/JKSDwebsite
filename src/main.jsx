@@ -57,7 +57,6 @@ const router = createBrowserRouter(
       <Route path='graphicdesigning' element={<GraphicDesigning/>} />
       <Route path='iot' element={<Iot/>} />
       <Route path='python' element={<Python/>} />
-      <Route path='robotics' element={<Robotics/>} />
 
       <Route path='404' element={<PageNotFound />} />
       <Route path='*' element={<Navigate to="/404" replace />} />

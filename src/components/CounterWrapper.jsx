@@ -32,7 +32,7 @@ const CounterWrapper = () => {
       <div
         ref={wrapperRef}
 
-        className={`w-[1300px] flex justify-around items-center gap-[9px] p-2 rounded-3xl bg-gradient-to-r from-blue-400 to-purple-400 backdrop-blur-lg bg-opacity-50 ${
+        className={`w-[300px] mt-6 mx-4 md:w-[1300px] flex flex-wrap lg:flex-nowrap justify-around items-center rounded-3xl bg-gradient-to-r from-blue-400 to-purple-400 backdrop-blur-lg bg-opacity-50 ${
 
           isVisible ? 'opacity-100 transition-opacity duration-1000' : 'opacity-0'
         }`}

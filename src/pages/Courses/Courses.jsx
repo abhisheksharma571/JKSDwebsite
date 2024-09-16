@@ -8,7 +8,7 @@ const Courses = () => {
             <CourseHead />
         </div>
         <div className="courses  ">
-            <div className='flex flex-wrap gap-12 justify-evenly mx-24 py-4 '>
+            <div className='flex flex-wrap gap-2 md:gap-12 justify-evenly mx-0 md:mx-24 py-4 '>
                 {
                     data.map((d, index) => (
                         <div className="courseslist flex gap-7 flex-wrap justify-center pt-6 ">

@@ -12,7 +12,7 @@ function HiringPartners() {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        pauseOnHover: true,
+        pauseOnHover: false,
         centerMode: false,
         cssEase: "linear",
         responsive: [
