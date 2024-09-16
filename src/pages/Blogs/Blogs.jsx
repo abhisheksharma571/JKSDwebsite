@@ -20,7 +20,7 @@ function Blogs() {
         </div>
       </div>
     </div>
-    <div className='flex flex-wrap gap-12 h-[70%]  justify-evenly mx-24 py-4 '>
+    <div className='flex flex-wrap gap-12 h-[70%]  justify-center mx-24 py-4 '>
         {
             data.map((d, index) => (
                 <div className="blogslist flex gap-7 flex-wrap justify-center pt-4 ">

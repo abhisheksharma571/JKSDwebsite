@@ -72,13 +72,13 @@ const slides = [
         image1: './Images/slider.jpg',
     },
     {
-        image1: './Images/slider.jpg',
+        image1: './Images/heading2.jpg',
         },
     {
         image1: './Images/slider.jpg', 
        },
     {
-        image1: './Images/slider.jpg',
+        image1: './Images/heading2.jpg',
         }
 ];
 
