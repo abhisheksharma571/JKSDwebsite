@@ -39,6 +39,7 @@ const Type = () => {
                         </Link>
 
                     </div>
+                    </div>
                 </a>
             </div>
             {/* Home image right section */}

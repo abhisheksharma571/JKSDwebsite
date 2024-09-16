@@ -19,7 +19,7 @@ function Nav() {
                 <div>
                     <Link to="/">
                         <img
-                            className="w-24 cursor-pointer"
+                            className="w-32 object-contain cursor-pointer"
                             src="./logo/jksd-logo.png"
                             alt="Logo"
                         />
