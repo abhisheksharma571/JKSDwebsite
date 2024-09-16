@@ -45,8 +45,8 @@ const Enroll = () => {
       if (data.success) {
         setResult(
           <div className="text-orange font-bold text-lg text-center pt-2">
-            <img src="./Images/Thanks.gif" alt="" />
-            Thanks! Payment complete. You're all set to begin!
+            <img src="./Images/digitall.png" alt="" />
+            Details Sent Successfully
           </div>
         );
         event.target.reset();
@@ -59,16 +59,16 @@ const Enroll = () => {
   };
 
   return (
-    <body className="antialiased pt-5 bg-gray-100 pb-5">
+    <body className="antialiased pt-5 pb-5 bg-gray-100">
     
     <div className='flex   gap-1  justify-center '>
-    <div className=" flex gap-12  pt-4 pb-5 w-[60%] rounded-xl bg-[#0A528E]">
+    <div className="flex flex-col md:flex-col lg:flex-row w-full gap-12 pt-4 lg:pt-4 lg:pl-[90px] pb-5 lg:w-[60%] rounded-xl bg-[#0A528E]">
     <div className='bg-[#0A528E]  ' >
-     <form onSubmit={onSubmit} className='  h-[490px] w-[100%] ml-2 space-x-6 space-y-4  '  >
-        <h1 className='text-3xl font-bold text-center  text-white ' >Online Registration Form </h1>
+     <form onSubmit={onSubmit} className='  h-[490px] w-[100%] md:mr-10 space-x-6 space-y-4 md:pr-[30px] '  >
+        <h1 className='text-3xl  p-6 font-bold text-center  text-white  lg:p-1 lg:text-4xl' >Online Registration Form </h1>
         <label for="courses">  </label>
         <select className='text-center rounded-md  h-10 w-72 border-2 ' name="courses" id="courses">
-          <option value="" disabled selected>Select a course</option>
+          <option value="" disabled selected>Select a Course</option>
           <option value="cyber-security">Cyber Security</option>
           <option value="data-analytics">Data Analytics</option>
           <option value="digital-marketing">Digital Marketing</option>
@@ -106,26 +106,27 @@ const Enroll = () => {
         <label for="paymentid"> </label>
         <input className='text-center rounded-md  h-10 w-72 border-2 ' placeholder='Amount ' type="text" name="amount" id="amount" required /> <br />
         <label for="enrollnow"> </label>
+        <div>
  <button 
  type="submit"
- className="inline-block self-center h-10 w-44 bg-orange text-black font-medium   rounded-2xl  focus:outline-none">
+ className="h-10 w-40 bg-orange ml-[80px] text-black font-medium   rounded-2xl  focus:outline-none">
           Enroll Now
         </button>
-       
+        </div>     
 
       </form>
      </div>
-        <div className=' bg-[#0A528E]'  >
-          <h1 className='text-3xl font-bold text-center text-white' >UPI Payment </h1>
+        <div className=' '  >
+          <h1 className='text-3xl font-bold pt-[130px] pb-[20px] text-center text-white  lg:pr-[95px] lg:text-4xl lg:pt-2' >UPI Payment </h1>
           <div className='justify-center flex pt-3 ' >
-            <img className='h-[380px] w-[300px] rounded-xl' src='./Images/qr-code.png' alt="" />
+            <img className=' h-[380px] w-[300px] rounded-xl  lg:mr-[85px]' src='./Images/qr-code.png' alt="" />
           </div>
-         <div className='text-md text-center   text-white w-[105%]' >
-         <h1 className='text-2xl font-bold pt-4 text-center  text-white' >Banking Details</h1>
-          <h1 >Account Name :- JKSD Infotech Private  Limited </h1>
-          <h1>Acoount Number :- 259833276255 </h1>
-          <h1>IFSC Code :- INDB0000162 </h1>
-          <h1>Bank Name :- The IndusInd Bank </h1>
+         <div className='text-md text-center text-white w-[105%] md:w-[120%] p-7 md:p-0' >
+         <h1 className='text-2xl font-bold pt-4 text-center  text-white md:text-xl lg:pr-[165px] lg:text-2xl' >Banking Details</h1>
+          <h1  className='text-lg  md:text-xl lg:pr-[165px] lg:text-lg'>Account Name :- JKSD Infotech Private  Limited </h1>
+          <h1  className='text-lg   md:text-xl lg:pr-[165px] lg:text-lg'>Acoount Number :- 259833276255 </h1>
+          <h1  className='text-lg  md:text-xl lg:pr-[165px] lg:text-lg'>IFSC Code :- INDB0000162 </h1>
+          <h1  className='text-lg   md:text-xl lg:pr-[165px] lg:text-lg'>Bank Name :- The Indusind Bank </h1>
          </div>
         </div>
 

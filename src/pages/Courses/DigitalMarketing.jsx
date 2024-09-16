@@ -296,7 +296,7 @@ const DigitalMarketing = () => {
         <img className='h-5 sm:h-6 w-5 sm:w-6' src={telephone} alt="" />
     </button></Link>
     <Link to ='/enrollnow' >
-    <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-2 px-3 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2" type="button">
+    <button className="font-sans font-bold text-center bg-white text-xs sm:text-sm lg:text-lg py-[10px] px-3 lg:px-12 mt-2 ml-2 rounded-lg text-black flex items-center gap-2" type="button">
         Enroll Now
         {/* <img className='h-4 sm:h-5 w-4 sm:w-5' src={share} alt="" /> */}
     </button>
@@ -318,10 +318,10 @@ const DigitalMarketing = () => {
     <div className='h-auto w-[90%] lg:w-[80%] mx-auto lg:mx-32'>
         <h1 className='text-center text-2xl lg:text-3xl font-bold pt-4'>Digital Marketing: Thrive and Grow</h1>
 
-        <div className='flex flex-col lg:flex-row justify-center pt-5'>
+        <div className='flex flex-col lg:flex-row justify-center pt-5 m-3'>
             {/* Table of Contents */}
             <div className='lg:w-1/2 '>
-                <h1 className='text-xl lg:text-2xl font-medium'>Table of Contents</h1>
+                <h1 className='text-xl lg:text-2xl font-bold text-center'>Table of Contents</h1>
                 {weeks.map((item, index) => (
                     <div key={index} className="border-b border-orange">
                         <button

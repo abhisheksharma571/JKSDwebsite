@@ -88,18 +88,26 @@ function ContactUs() {
               </div>
             </div>
             <div className="flex space-x-9 text-lg">
-              <a href="#">
+              <a 
+                target="_blank"
+                href="https://www.facebook.com/jksdinfotech">
                 <img src="icons/facebook .png" />
               </a>
-              <a href="https://www.instagram.com/jksdinfotech?igsh=YjA5ejRlc21senA1">
+              <a 
+                target="_blank"
+                href="https://www.instagram.com/jksdinfotech?igsh=YjA5ejRlc21senA1">
                 <img src="icons/instagram.png" />
               </a>
-              <a href="https://www.linkedin.com/company/jksdinfotechpvtltd/">
+              <a 
+                target="_blank"
+                href="https://www.linkedin.com/company/jksdinfotechpvtltd/">
                 <img src="icons/linkedin-logo.png" />
               </a>
-              <a href="https://youtube.com/@jksdinfotech01?si=5aCajzAiVoKc0Dm-">
+              <a 
+                target="_blank"
+                href="https://youtube.com/@jksdinfotech01?si=5aCajzAiVoKc0Dm-">
                 <img src="icons\youtube.png"
-                className="md:w-[35px]" />
+                className=" w-[33px] md:w-[35px]" />
               </a>
             </div>
           </div>
@@ -154,7 +162,7 @@ function ContactUs() {
                 </div>
                 <button
                   type="submit"
-                  className="inline-block self-center bg-orange text-black font-bold rounded-2xl px-6 py-2 uppercase text-sm"
+                  className="inline-block self-center   bg-orange text-black font-bold rounded-2xl px-6 py-2 uppercase text-sm"
                 >
                   Send Message
                 </button>

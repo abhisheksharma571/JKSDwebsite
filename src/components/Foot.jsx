@@ -18,8 +18,8 @@ const Foot = () => {
         <footer className="bg-[#08528e] text-white pt-4">
             <div className="flex flex-col md:flex-row justify-around w-full px-4 md:px-0">
                 {/* Logo and Contact Information */}
-                <div className="logo w-full md:w-[30%] mb-8 md:mb-0">
-                    <img className="h-16 pl-6 w-auto mx-auto md:mx-0" src={image1} alt="" />
+                <div className="logo w-full md:w-[30%] mb-0">
+                    <img className="h-16 pl-3 w-auto mx-auto md:mx-0" src={image1} alt="" />
                     <div className="pt-2 pb-4 text-center md:text-left">
                         <h1 className="flex items-center justify-center md:justify-start">
                             <img className="h-6 mr-2" src={supp} alt="" />
@@ -35,7 +35,7 @@ const Foot = () => {
                         </h1>
                     </div>
                     <div className="flex justify-center md:justify-start">
-                        <img className="h-[120px] w-auto" src={msme} alt="" />
+                        <img className="h-[120px]" src={msme} alt="" />
                         <img className="h-[120px]" src={iso} alt="" />
                     </div>
                 </div>
@@ -80,7 +80,7 @@ const Foot = () => {
                 <div className="w-full  mb-4 md:w-[20%]">
                     <h1 className="font-medium text-center  md:text-left">Our Divisions</h1>
                     <div className="bg-orange mt-2  mb-2 h-[3px]  md:w-full"></div>
-                    <div className=" md:text-left ">
+                    <div className=" md:text-left ml-[100px] md:ml-0 ">
                         <li><a href="#">Website Development</a></li>
                         <li><a href="#">HR Consulting</a></li>
                         <li><a href="https://jksdautomation.com/ " target='_blank' >Home Automation</a></li>
@@ -88,7 +88,7 @@ const Foot = () => {
                         <li><a href="#">Digital Marketing</a></li>
                         
                     </div>
-                    <div className='pt-10 text-2xl font-bold'>
+                    <div className='pt-3 md:pt-10 text-2xl font-bold text-center'>
                         <button className='bg-orange text-[#08528e] rounded-lg py-2 px-4 '>
                             <Link to='/enrollnow'>Enroll Now</Link>
                         </button>

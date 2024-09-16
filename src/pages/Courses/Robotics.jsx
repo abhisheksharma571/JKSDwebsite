@@ -156,10 +156,10 @@ const Robotics = () => {
     <div className='h-auto w-[90%] lg:w-[80%] mx-auto lg:mx-32'>
         <h1 className='text-center text-2xl lg:text-3xl font-bold pt-4'>Robotics: Build and Program</h1>
 
-        <div className='flex flex-col lg:flex-row justify-center pt-5'>
+        <div className='flex flex-col lg:flex-row justify-center pt-5 m-2'>
             {/* Table of Contents */}
             <div className='lg:w-1/2 '>
-                <h1 className='text-xl lg:text-2xl font-medium'>Table of Contents</h1>
+                <h1 className='text-xl lg:text-2xl font-bold text-center'>Table of Contents</h1>
                 {weeks.map((item, index) => (
                     <div key={index} className="border-b border-orange">
                         <button
