@@ -15,7 +15,7 @@ function Services() {
         <ServiceHead />
       </div>
       <div className='flex flex-col lg:flex-row '>
-        <div className='p-6 sm:p-10 md:p-16 lg:p-20 w-full lg:w-1/2'>
+        <div className='p-6 sm:p-10 md:p-16 lg:p-20  w-full lg:w-1/2'>
           <div className='text-xs sm:text-sm md:text-base lg:text-lg'>
             S e r v i c e s
           </div>
@@ -38,9 +38,9 @@ function Services() {
             Know More
           </button>
         </div>
-        <div className='w-full lg:w-1/2 flex justify-center items-center h-[400px] sm:h-[500px] lg:h-[600px]'>
+        <div className='w-full lg:w-1/2  mb-4 md:mb-0 flex justify-center items-center h-[400px] sm:h-[500px] lg:h-[600px]'>
           <img
-            className='h-[280px] sm:h-[360px] md:h-[420px] lg:h-[460px]'
+            className='h-[400px] sm:h-[360px]  md:h-[420px] lg:h-[460px]'
             src='./Images/services(1).jpg'
             alt='Service'
           />
