@@ -47,7 +47,9 @@ export default {
       orange: "#ffa75c",
 
       cardscolor: "#eaf3ff"
-      
+    },
+    screens: {
+      'max-w-700': '700px',
     },
   },
   plugins: [],
