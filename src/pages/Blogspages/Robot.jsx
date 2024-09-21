@@ -23,7 +23,7 @@ const Robot = () => {
     <h1 className='text-center pt-4 text-3xl font-bold ' >What Is a Robot?   </h1>
 
     <div className='flex justify-center pt-3' >
-        <div className='h-auto w-[1000px]  items-center  mb-4' >
+        <div className='h-auto w-[1000px]  items-center  mb-4 p-4' >
 
 
             <h1 className='pt-4  text-xl'>A robot can be broadly defined as a programmable machine capable of performing tasks autonomously or semi-autonomously. The key characteristics of robots include:</h1>

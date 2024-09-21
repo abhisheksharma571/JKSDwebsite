@@ -22,7 +22,7 @@ const Iotfiver = () => {
       <h1 className='text-center text-3xl font-bold pt-4 ' >5 Reasons to learn IOT course   </h1>
 
       <div className='flex justify-center pt-3' >
-        <div className='h-auto w-[1000px]  items-center  mb-4' >
+        <div className='h-auto w-[1000px]  items-center  mb-4 p-4' >
 
           <h1 className='text-2xl font-bold pt-4 ' >1. Career Opportunities and Market Demand</h1>
           <h1 className='pt-4 text-xl' >The IoT industry is booming, with billions of devices already connected worldwide and many more projected in the coming years. According to industry reports, the global IoT market is expected to grow to nearly $1.5 trillion by 2027. This rapid expansion has created a vast demand for professionals skilled in IoT technologies.</h1>

@@ -22,7 +22,7 @@ const Top10tool = () => {
     <h1 className='text-center text-3xl font-bold pt-4 ' >Top 10 Free Digital Marketing Tools  </h1>
 
     <div className='flex justify-center pt-3' >
-        <div className='h-auto w-[1000px]  items-center  mb-4' >
+        <div className='h-auto w-[1000px]  items-center  mb-4 p-4' >
 
 
 

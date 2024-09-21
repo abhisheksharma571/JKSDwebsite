@@ -22,7 +22,7 @@ const Topbenefits = () => {
             <h1 className='text-center text-3xl pt-4 font-bold ' >Top Benefits of SEO Tools for Your Website   </h1>
 
             <div className='flex justify-center pt-3' >
-                <div className='h-auto w-[1000px]  items-center  mb-4' >
+                <div className='h-auto w-[1000px]  items-center  mb-4 p-4' >
 
 
 

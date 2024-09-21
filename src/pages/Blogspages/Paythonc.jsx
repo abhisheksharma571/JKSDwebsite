@@ -23,7 +23,7 @@ const Paythonc = () => {
     <h1 className='text-center text-3xl pt-4 font-bold ' >Why Choose a Career in Python?   </h1>
 
     <div className='flex justify-center pt-3' >
-        <div className='h-auto w-[1000px]  items-center  mb-4' >
+        <div className='h-auto w-[1000px]  items-center  mb-4 p-4' >
 
             <h1 className='text-2xl font-bold pt-4 ' >1. Simplicity and Readability</h1>
             <h1 className='pt-4 text-xl' >Python’s syntax is designed to be intuitive and easy to read, making it accessible for beginners. Unlike other programming languages, Python emphasizes readability and simplicity, allowing developers to focus on solving problems rather than struggling with complex syntax. This ease of use not only shortens the learning curve but also enhances productivity, making Python an ideal language for those new to programming as well as seasoned professionals.</h1>

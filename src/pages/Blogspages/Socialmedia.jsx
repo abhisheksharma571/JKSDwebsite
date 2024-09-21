@@ -22,7 +22,7 @@ const Socialmedia = () => {
             <h1 className='text-center text-3xl font-bold pt-4 ' >What is Social Media Marketing?  </h1>
 
             <div className='flex justify-center pt-3' >
-                <div className='h-auto w-[1000px]  items-center  mb-4' >
+                <div className='h-auto w-[1000px]  items-center  mb-4 p-4' >
 
 
                     <h1 className='pt-4 font-bold text-2xl'>What is Social Media Marketing?</h1>

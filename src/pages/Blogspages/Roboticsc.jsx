@@ -24,7 +24,7 @@ const Roboticsc = () => {
             <h1 className='text-center pt-4 text-3xl font-bold ' >How to Start a Career in Robotics? </h1>
 
             <div className='flex justify-center pt-3' >
-                <div className='h-auto w-[1000px]  items-center  mb-4' >
+                <div className='h-auto w-[1000px]  items-center  mb-4 p-4' >
 
 
 
