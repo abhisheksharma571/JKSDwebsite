@@ -13,7 +13,7 @@ function PageNotFound() {
       <p className='text-md md:text-lg text-gray-500 text-center mt-2'>
         It might have been moved or deleted.
       </p>
-      <img className='w-2/3 md:w-1/3 h-auto ' src="/pageNotFound/pnf.gif" alt="Page not found" />
+      <img className='w-2/3 md:w-1/3 h-auto ' src="./pageNotFound/pnf.gif" alt="Page not found" />
       <Link to="/" >
         <button className='bg-orange text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-[#EA580C] transition-all duration-300'>
           Go Back to Home

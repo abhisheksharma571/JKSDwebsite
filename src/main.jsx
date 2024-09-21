@@ -22,7 +22,15 @@ import Python from './pages/Courses/Python.jsx'
 import Robotics from './pages/Courses/Robotics.jsx'
 import TermAndConditions from './pages/Policies/TermAndConditions.jsx'
 import PrivacyPolicy from './pages/Policies/PrivacyPolicy.jsx'
-
+import Topbenefits from './pages/Blogspages/Topbenefits.jsx'
+import Socialmedia from './pages/Blogspages/Socialmedia.jsx'
+import Robot from './pages/Blogspages/Robot.jsx'
+import Top10tool from './pages/Blogspages/Top10tool.jsx'
+import Iotc from './pages/Blogspages/Iotc.jsx'
+import Roboticsc from './pages/Blogspages/Roboticsc.jsx'
+import Paythonc from './pages/Blogspages/Paythonc.jsx'
+import Iotfiver from './pages/Blogspages/Iotfiver.jsx'
+import Clang from './pages/Blogspages/clang.jsx'
 
 
 
@@ -37,8 +45,6 @@ const router = createBrowserRouter(
       <Route path='services' element={<Services />} />
       <Route path='blogs' element={<Blogs />} />
       <Route path='enrollnow' element={<EnrollNow />} />
-      
-
       <Route path='faq' element={<Faq />} />
       <Route path='digitalmarketing' element={<DigitalMarketing />} />
       <Route path='dataanalytics' element={<DataAnalytics />} />
@@ -57,6 +63,19 @@ const router = createBrowserRouter(
       <Route path='graphicdesigning' element={<GraphicDesigning/>} />
       <Route path='iot' element={<Iot/>} />
       <Route path='python' element={<Python/>} />
+      <Route path='topbenefits' element={<Topbenefits/>} />
+      <Route path='top10tool' element={<Top10tool/>} />
+      <Route path='socialmedia' element={<Socialmedia/>} />
+      <Route path='robot' element={<Robot/>} />
+      <Route path='iotc' element={<Iotc/>} />
+      <Route path='roboticsc' element={<Roboticsc/>} />
+      <Route path='paythonc' element={<Paythonc/>} />
+      <Route path='iotfiver' element={<Iotfiver/>} />
+      <Route path='clang' element={<Clang/>} />
+      
+      
+      
+     
 
       <Route path='404' element={<PageNotFound />} />
       <Route path='*' element={<Navigate to="/404" replace />} />

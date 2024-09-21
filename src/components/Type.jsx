@@ -7,7 +7,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const Type = () => {
     const [typewriter] = useTypewriter({
-        words: ['<Training/> ', '<Internship/>', '<IoT Labs/>', '<Marketing/>'],
+        words: ['Training ', 'Internship', 'IoT Labs', 'Marketing'],
         loop: {},
         typeSpeed: 100,
         deleteSpeed: 70,
@@ -17,7 +17,7 @@ const Type = () => {
         <div className="w-full  h-auto md:h-[500px] flex flex-col md:flex-row items-center justify-center">
             <div className="flex flex-col items-center  md:items-start justify-center text-center md:text-left pt-6  md:pt-12 h-auto md:h-[90%] font-bold w-[100%] md:w-[40%] text-3xl md:text-4xl">
                 <div> <h1 className="pb-2">Get a Step Ahead</h1>
-                    with Our
+                    with Our &nbsp;
                     <span className="text-orange">{typewriter}<Cursor /></span>
                     <br />
                     <h1 className="pt-2">Platform.</h1></div>

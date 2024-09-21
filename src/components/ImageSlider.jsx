@@ -31,7 +31,7 @@ function ImageSlider() {
     };
 
     return (
-        <div className='max-w-[1550px] h-[250px] w-full m-auto relative group overflow-hidden'>
+        <div className='max-w-[1550px] h-[300px] w-full m-auto relative group overflow-hidden'>
             <div
                 className='flex w-full h-full transition-transform duration-700'
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -69,16 +69,16 @@ function ImageSlider() {
 
 const slides = [
     {
-        image1: './Images/slider.jpg',
+        image1: './Images/1.png',
     },
     {
-        image1: './Images/heading2.jpg',
+        image1: './Images/2.png',
         },
     {
-        image1: './Images/slider.jpg', 
+        image1: './Images/3.png', 
        },
     {
-        image1: './Images/heading2.jpg',
+        image1: './Images/4.png',
         }
 ];
 
