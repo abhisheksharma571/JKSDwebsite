@@ -61,8 +61,8 @@ const Enroll = () => {
   return (
     <body className="antialiased pt-5 pb-5 bg-gray-100">
     
-    <div className='flex   gap-1  justify-center '>
-    <div className="flex flex-col md:flex-col lg:flex-row w-full gap-12 pt-4 lg:pt-4 lg:pl-[90px] pb-5 lg:w-[60%] rounded-xl bg-[#0A528E]">
+    <div className='flex   gap-1  justify-center'>
+    <div className="flex flex-col md:flex-row lg:flex-row w-full gap-12 pt-4 lg:pt-4 lg:pl-[90px] pb-5 lg:w-[60%] rounded-xl bg-[#0A528E]">
     <div className='bg-[#0A528E]  ' >
      <form onSubmit={onSubmit} className='  h-[490px] w-[100%] md:mr-10 space-x-6 space-y-4 md:pr-[30px] '  >
         <h1 className='text-3xl  p-6 font-bold text-center  text-white  lg:p-1 lg:text-4xl' >Online Registration Form </h1>
@@ -117,11 +117,11 @@ const Enroll = () => {
       </form>
      </div>
         <div className=' '  >
-          <h1 className='text-3xl font-bold pt-[130px] pb-[20px] text-center text-white  lg:pr-[95px] lg:text-4xl lg:pt-2' >UPI Payment </h1>
+          <h1 className='text-3xl font-bold pt-[130px] md:pt-[25px] pb-[20px] text-center text-white  lg:pr-[95px] lg:text-4xl lg:pt-2' >UPI Payment </h1>
           <div className='justify-center flex pt-3 ' >
             <img className=' h-[380px] w-[300px] rounded-xl  lg:mr-[85px]' src='./Images/qr-code.png' alt="" />
           </div>
-         <div className='text-md text-center text-white w-[105%] md:w-[120%] p-7 md:p-0' >
+         <div className='text-md text-center text-white w-[105%] lg:w-[120%] p-7 md:p-0' >
          <h1 className='text-2xl font-bold pt-4 text-center  text-white md:text-xl lg:pr-[165px] lg:text-2xl' >Banking Details</h1>
           <h1  className='text-lg  md:text-xl lg:pr-[165px] lg:text-lg'>Account Name :- JKSD Infotech Private  Limited </h1>
           <h1  className='text-lg   md:text-xl lg:pr-[165px] lg:text-lg'>Acoount Number :- 259833276255 </h1>
