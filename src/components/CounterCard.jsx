@@ -44,10 +44,10 @@ const CounterCard = ({ iconClass, endValue, text }) => {
 
   return (
     <div ref={ref} className="w-full sm:w-[350px] flex items-center p-4 ">
-      <img src={iconClass} alt={text} className="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] mr-4" />
+      <img src={iconClass} alt={text} className="w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] mr-4 ml-3" />
       <div className="flex flex-col justify-center">
-        <span id={`counter-${endValue}`} className="text-white text-center font-bold text-[2em] sm:text-[3em]">0</span>
-        <span className="text-white font-medium text-base sm:text-lg">{text}</span>
+        <span id={`counter-${endValue}`} className="text-white pl-5 font-bold text-[2em] sm:text-[3em]">0</span>
+        <span className="text-white font-medium pl-5 text-base sm:text-lg">{text}</span>
       </div>
     </div>
   );

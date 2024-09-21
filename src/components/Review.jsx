@@ -15,7 +15,11 @@ const Review = () => {
         autoplaySpeed: 5000,
         pauseOnHover: false,
         centerMode: false,
-        
+        appendDots: dots => (
+            <div>
+                <ul className="flex justify-center ml-14">{dots}</ul>
+            </div>
+        ),
 
       };
       
@@ -28,9 +32,9 @@ const Review = () => {
     <h1 className=' md:text-5xl text-[#08528e] text-center pt-10 font-philosopher font-black text-2xl'>Our Happy Customers and Students</h1>
 
         <div className=' md:flex  mr-20 justify-center  items-center'>
-          <img className="w-[250px] md:w-2/6 mt-12 ml-[100px] md:ml-0 " src="./Images/RevImg.png" alt="" />
+          <img className="w-[250px] md:w-2/6 mt-12 ml-[100px] md:ml-0 hidden md:block" src="./Images/RevImg.png" alt="" />
     
-            <div className='w-full md:w-1/2 '>
+            <div className='w-full md:w-1/2 ml-4'>
                <Slider{...settings}>
                {data.map((d, index)=>(
                 
@@ -42,13 +46,13 @@ const Review = () => {
                     
                     <img className='rounded-lg  h-32 w-32 ' src={d.image} alt="" />
                     </div>
-                    <div className='p-0 md:p-8 text-xl'>
-                        <p className='text-center italic'>{d.review}</p>                      
+                    <div className='pt-2 md:p-8 text-xl'>
+                        <p className='text-center italic text-sm md:text-xl'>{d.review}</p>                      
                     </div>
                     <div className='  '>
                         
                         <div className=''>
-                        <p className='text-4xl text-center font-sans font-semibold'>{d.Name}</p>
+                        <p className='text-2xl md:text-4xl text-center font-sans font-semibold pt-2'>{d.Name}</p>
                         
                         </div>
                         
@@ -68,8 +72,8 @@ const Review = () => {
 }
 const data = [
     {
-        Name: 'Abhisek Yadav',
-        review: 'Hello Everyone my name is Abhishek Yadav. I am doing python course from JKSD. My experience is good . They have great teachers.',
+        Name: 'Abhishek Yadav',
+        review: 'Hello Everyone my name is Abhishek Yadav. I am doing python course from JKSD. My experience is good. They have great teachers.',
         image: './Images/AbhishekYadav.jpeg',
         
         
@@ -82,12 +86,12 @@ const data = [
     },
     {
         Name: 'Rohit Sharma',
-        review: 'IoT embedded systems integrate sensors and connectivity into devices, enabling smart, automated functions. They enhance efficiency and data collection across industries. Thanks, Devansh Sir, for your insightful guidance on this topic.',
+        review: 'IoT embedded systems integrate sensors and connectivity into devices, enabling smart, automated functions. They enhance efficiency and data collection across industries.',
         image: './Images/Rohit.jpeg',
     },
     {
         Name: 'Himanshu Sharma',
-        review: 'The IoT embedded systems seamlessly integrates hardware and software to create interconnected devices capable of collecting, transmitting, and processing data. This technology enhances efficiency and automation in various applications, from smart homes to industrial systems. Read more...',
+        review: 'The IoT embedded systems seamlessly integrates hardware and software to create interconnected devices capable of collecting, transmitting, and processing data.',
         image: './Images/HimanshuSharma.jpeg',
     }
 ]

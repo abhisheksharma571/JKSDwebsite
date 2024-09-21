@@ -19,7 +19,7 @@ const Foot = () => {
             <div className="flex flex-col md:flex-row justify-around w-full px-4 md:px-0">
                 {/* Logo and Contact Information */}
                 <div className="logo w-full md:w-[30%] mb-0">
-                    <img className="h-16 pl-3 w-auto mx-auto md:mx-0" src={image1} alt="" />
+                    <img className="h-16 w-auto mx-auto md:mx-0" src={image1} alt="" />
                     <div className="pt-2 pb-4 text-center md:text-left">
                         <h1 className="flex items-center justify-center md:justify-start">
                             <img className="h-6 mr-2" src={supp} alt="" />
