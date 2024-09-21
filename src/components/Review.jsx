@@ -86,12 +86,12 @@ const data = [
     },
     {
         Name: 'Rohit Sharma',
-        review: 'IoT embedded systems integrate sensors and connectivity into devices, enabling smart, automated functions. They enhance efficiency and data collection across industries. Thanks, Devansh Sir, for your insightful guidance on this topic.',
+        review: 'IoT embedded systems integrate sensors and connectivity into devices, enabling smart, automated functions. They enhance efficiency and data collection across industries.',
         image: './Images/Rohit.jpeg',
     },
     {
         Name: 'Himanshu Sharma',
-        review: 'The IoT embedded systems seamlessly integrates hardware and software to create interconnected devices capable of collecting, transmitting, and processing data. This technology enhances efficiency and automation in various applications, from smart homes to industrial systems.',
+        review: 'The IoT embedded systems seamlessly integrates hardware and software to create interconnected devices capable of collecting, transmitting, and processing data.',
         image: './Images/HimanshuSharma.jpeg',
     }
 ]
