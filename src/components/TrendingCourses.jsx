@@ -69,37 +69,37 @@ const data = [
         id: 'iot',
         title: 'IoT (Internet of Things)',
         description: 'Embedded Systems & Robotics',
-        image: './Images/IoT.png'
+        image: './Images/tiot.png'
     },
     {
         id: 'python',
         title: 'Python',
         description: 'Build applications with Python, a versatile language',
-        image: './Images/python.jpg'
+        image: './Images/tpython.png'
     },
     {
         id: 'dataanalytics',
         title: 'Data Analyst',
         description: 'Analyze data for actionable insights',
-        image: './Images/Data.webp'
+        image: './Images/tdata.png'
     },
     {
         id: 'digitalmarketing',
         title: 'Digital Marketing',
         description: 'Drive online growth through SEO, social media, and ads',
-        image: './Images/digitall.png'
+        image: './Images/tdigital.png'
     },
     {
         id: 'businessanalyst',
         title: 'Business Analyst',
         description: 'Analyze data for actionable insights',
-        image: './Images/BusinessAnalyst.jpeg'
+        image: './Images/tbusiness.png'
     },
     {
         id: 'graphicdesigning',
         title: 'Graphic Designing',
         description: 'Design stunning visuals and graphics using modern tools',
-        image: './Images/Graphics.jpg'
+        image: './Images/tgraphic.png'
     }
 ];
 

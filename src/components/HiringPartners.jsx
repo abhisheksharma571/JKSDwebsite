@@ -43,7 +43,7 @@ function HiringPartners() {
                             className="h-[20px] text-black rounded-xl"
                         >
                             <div className="flex justify-center items-center ">
-                                <img src={d} alt="" className="h-20 w-48 object-cover rounded-lg custom-shadow"/>
+                                <img src={d} alt="" className="h-24 w-52 object-contain bg-blend-color-burn rounded-lg custom-shadow"/>
                             </div>
                         </div>
                     ))}
@@ -55,15 +55,11 @@ function HiringPartners() {
 }
 
 const logos = [
-    './companiesLogo/dell.png', 
-    './companiesLogo/hcl.png', 
-    './companiesLogo/icici.png', 
-    './companiesLogo/igate.png', 
-    './companiesLogo/impulsebyte.png', 
-    './companiesLogo/itc.png', 
-    './companiesLogo/lnt.png', 
-    './companiesLogo/nokia.png', 
-    './companiesLogo/samsung.png', 
-    './companiesLogo/techMahindra.png' 
+    './companiesLogo/ats.jpeg', 
+    './companiesLogo/gew.jpeg', 
+    './companiesLogo/hucon.jpeg',   
+    './companiesLogo/subhlakshmi.jpeg', 
+    './companiesLogo/techbrawn.jpeg', 
+    './companiesLogo/tethys.jpeg', 
 ]
 export default HiringPartners

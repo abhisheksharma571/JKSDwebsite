@@ -34,7 +34,7 @@ function Services() {
             JKSD is a dynamic company specializing in website development, home automation, HR consulting, digital marketing, IoT solutions, and innovative lab setups. Our expert team is committed to delivering customized services that drive growth and innovation for your business.
             </p>
           </div>
-          <button className='bg-[#08528e] text-white h-10 w-24 sm:w-28 md:w-32 rounded-xl rounded-r-full text-sm sm:text-base md:text-lg font-normal font-sans'>
+          <button className='bg-orange text-white h-10 w-24 sm:w-28 md:w-32 rounded-xl rounded-r-full text-sm sm:text-base md:text-lg font-normal font-sans'>
             Know More
           </button>
         </div>

@@ -6,7 +6,7 @@ function AboutHome() {
     <img src="./Images/abouthome.jpeg" alt="Image is not showing" className="w-full h-auto" />
     <div className="absolute inset-0 flex flex-col items-center justify-center">
         <h2 className="text-white text-2xl md:text-6xl font-bold">
-            A b o u t U s
+            A b o u t  &nbsp;  U s
        </h2>    
             <div className='text-white flex '>
             <span className='text-2xl font-normal text-center '>
