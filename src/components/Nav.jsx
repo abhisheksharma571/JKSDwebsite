@@ -83,10 +83,10 @@ function Nav() {
 
 const menuItems = [
     { name: 'Home', path: '/' },
+    { name: 'About Us', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Courses', path: '/courses' },
     { name: 'Blogs', path: '/blogs' },
-    { name: 'About Us', path: '/about' },
     { name: 'Contact Us', path: '/contact' },
 
 ];
