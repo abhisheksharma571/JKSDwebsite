@@ -18,7 +18,7 @@ function DigitalMarketing() {
            </div>
             <p className='text-lg mt-4'>Click here to explore further</p>
             <img className='h-10 animate-bounce m-6' src="./Images/arrow-down.png" alt="" />
-            <button className='text-lg font-light h-10 w-32  bg-white rounded-lg text-black'>Explore More</button>
+            <button className='text-lg font-light h-10 w-32  bg-orange  rounded-lg text-white'>Explore More</button>
             </div>
             <div className='flex items-center justify-center'>
           <div className='absolute h-[240px] w-[240px] bg-[#4f4f4f] rounded-full flex items-center justify-center text-white z-10'>

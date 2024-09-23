@@ -3,7 +3,22 @@ import React from 'react'
 const Socialmedia = () => {
     return (
         <div>
-            <img src="./Images/bloggg.jpeg" alt="Image is not showing" className="w-full h-auto" />
+           <div className="relative">
+                <img src="./Images/bloggg.jpeg" alt="Image is not showing" className="w-full h-auto" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                    <h2 className="text-white text-2xl md:text-6xl font-bold">
+                        B l o g s
+                    </h2>
+                    <div className='text-white flex  pt-2 '>
+                        <span className='text-2xl font-normal text-center '>
+                            <a href="/" className="text-2xl font-normal  pr-3">Home </a>
+                        </span>
+                        <h1 className='text-2xl '>&gt;</h1>
+                        <a href="/Blogs" className='text-2xl font-normal pl-3  '> Blogs </a>
+
+                    </div>
+                </div>
+            </div>
 
             <div className='justify-center flex mt-4 bg-[#FCFAF6]'>
                 <div className='flex flex-col pt-0 md:flex-row h-auto gap-6 w-full md:w-[1200px] p-4'>

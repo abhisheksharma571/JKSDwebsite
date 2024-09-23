@@ -36,7 +36,7 @@ function WebDev() {
         </div>
 
         <div className='pt-10 pb-10 md:pt-14 text-center md:text-left'>
-          <button className='text-base md:text-lg font-light h-10 w-36 md:w-32 bg-[#08528e] rounded-lg text-white'>
+          <button className='text-base md:text-lg font-light h-10 w-36 md:w-32 bg-orange rounded-lg text-white'>
             Explore More
           </button>
         </div>
