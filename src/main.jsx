@@ -31,6 +31,7 @@ import Roboticsc from './pages/Blogspages/Roboticsc.jsx'
 import Paythonc from './pages/Blogspages/Paythonc.jsx'
 import Iotfiver from './pages/Blogspages/Iotfiver.jsx'
 import Clang from './pages/Blogspages/clang.jsx'
+import JobAssistance from './pages/JobAssistance/JobAssistance.jsx'
 
 
 
@@ -72,6 +73,7 @@ const router = createBrowserRouter(
       <Route path='paythonc' element={<Paythonc/>} />
       <Route path='iotfiver' element={<Iotfiver/>} />
       <Route path='clang' element={<Clang/>} />
+      <Route path='jobassistance' element={<JobAssistance/>} />
       
       
       

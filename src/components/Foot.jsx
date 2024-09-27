@@ -51,7 +51,7 @@ const Foot = () => {
                             <li><Link to="faq">FAQ</Link></li>
                         </div>
                         <div>
-                            <li><a href="#">Job Assistance</a></li>
+                            <li><Link to="jobassistance">Job Assistance</Link></li>
                             <li><Link to="privacypolicy">Privacy Policy</Link></li>
                             <li><Link to="termandcondition">Terms and Condition</Link></li>
                         </div>
