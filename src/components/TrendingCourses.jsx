@@ -55,24 +55,24 @@ function TrendingCourses() {
 
             {isMobile ? (
                 // Render slider for mobile devices
-                <div className="mt-5 md:mt-10 px-10">
+                <div className="mt-3 md:mt-10 px-4 md:px-10">
                     <Slider {...sliderSettings}>
                         {data.map((course, index) => (
                             <div
                                 key={index}
-                                className="h-[250px] md:h-[400px] text-black rounded-xl"
+                                className="h-[270px] md:h-[400px] text-black rounded-xl"
                             >
                                 <div className="flex flex-col justify-center items-center bg-[#08528e] rounded-lg shadow-[2px_2px_10px_0px_rgba(0,0,0,0.5)] p-0 md:p-5 h-full">
                                     <img
                                         src={course.image}
                                         alt={course.title}
-                                        className="h-[120px] md:h-[250px] w-[220px] md:w-full object-cover rounded-md mb-4"
+                                        className="h-[140px] md:h-[200px] w-[250px] md:w-full object-cover rounded-md mb-4"
                                     />
-                                    <h4 className="uppercase text-sm md:text-lg font-bold text-white">
+                                    <h4 className="uppercase text-lg font-bold text-white">
                                         {course.title}
                                     </h4>
                                     <Link to={`/${course.id}`}>
-                                        <button className="text-white font-semibold text-sm md:text-md py-2 px-4 bg-orange rounded hover:bg-orange-600 mt-2">
+                                        <button className="text-white font-semibold text-sm md:text-md py-2 px-4 bg-orange rounded hover:bg-orange-600 mt-5">
                                             Explore More
                                         </button>
                                     </Link>

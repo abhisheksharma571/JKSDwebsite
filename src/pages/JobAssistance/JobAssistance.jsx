@@ -67,7 +67,7 @@ function JobAssistance() {
     <div className="h-[200px] w-[300px] md:w-[300px] bg-blue-300 rounded-md shadow-xl flex flex-col justify-center items-center">
       <img className="w-16 md:w-20 mt-3" src="./icons/analysis-icon.png" alt="" />
       <p className="font-bold">Data Analyst</p>
-      <p>Rs. 3-4.5 LPA</p>
+      <p className="pb-1">Rs. 3-4.5 LPA</p>
       <div className="flex gap-2 w-[120px] md:w-[150px] bg-[#08528e] px-2 py-1 rounded-md text-white justify-center">
         <img className="w-4 md:w-5" src="./icons/right-up.png" alt="" />
         <p>30 %</p>
@@ -77,7 +77,7 @@ function JobAssistance() {
     <div className="h-[200px] w-[300px] md:w-[300px] bg-blue-300 rounded-md shadow-xl flex flex-col justify-center items-center">
       <img className="w-16 md:w-20 mt-3" src="./icons/python-icon.png" alt="" />
       <p className="font-bold">Python Engineer</p>
-      <p>Rs. 3-4 LPA</p>
+      <p className="pb-1">Rs. 3-4 LPA</p>
       <div className="flex gap-2 w-[120px] md:w-[150px] bg-[#08528e] px-2 py-1 rounded-md text-white justify-center">
         <img className="w-4 md:w-5" src="./icons/right-up.png" alt="" />
         <p>25 %</p>
@@ -87,7 +87,7 @@ function JobAssistance() {
     <div className="h-[200px] w-[300px] md:w-[300px] bg-blue-300 rounded-md shadow-xl flex flex-col justify-center items-center">
       <img className="w-16 md:w-20 mt-3" src="./icons/iot-icon.png" alt="" />
       <p className="font-bold">IoT Engineer</p>
-      <p>Rs. 4-5 LPA</p>
+      <p className="pb-1">Rs. 4-5 LPA</p>
       <div className="flex gap-2 w-[120px] md:w-[150px] bg-[#08528e] px-2 py-1 rounded-md text-white justify-center">
         <img className="w-4 md:w-5" src="./icons/right-up.png" alt="" />
         <p>20 %</p>
@@ -95,9 +95,9 @@ function JobAssistance() {
     </div>
     {/* Card 4 */}
     <div className="h-[200px] w-[300px] md:w-[300px] bg-blue-300 rounded-md shadow-xl flex flex-col justify-center items-center">
-      <img className="w-16 md:w-20 mt-3" src="./icons/java-icon.png" alt="" />
-      <p className="font-bold">Java Developer</p>
-      <p>Rs. 4-5 LPA</p>
+      <img className="w-16 md:w-20 mt-3" src="./icons/digital-marketing-icon.png" alt="" />
+      <p className="font-bold">Digital Marketing</p>
+      <p className="pb-1">Rs. 4-5 LPA</p>
       <div className="flex gap-2 w-[120px] md:w-[150px] bg-[#08528e] px-2 py-1 rounded-md text-white justify-center">
         <img className="w-4 md:w-5" src="./icons/right-up.png" alt="" />
         <p>35 %</p>

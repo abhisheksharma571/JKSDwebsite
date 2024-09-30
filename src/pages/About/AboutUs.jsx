@@ -254,12 +254,14 @@ function AboutUs() {
 
         { /* Our Team*/}
 
-        <div className="bg-white">
-          <h1 className='text-3xl md:text-5xl  text-[#08528e] text-center pt-4 py-4 font-philosopher font-black '>Our Team</h1>
-         
-<div>         <img className=" w-[1000px] lg:ml-auto lg:mr-auto  rounded-2xl mb-4" src="./Images/team.jpg" alt="team pic" />
+        <div className="bg-[#f2f2f2]">
+          {/* <h1 className='text-3xl md:text-5xl  text-[#08528e] text-center pt-4 py-4 font-philosopher font-black '>Our Team</h1> */}
 
-  </div>        </div>
+          <div>
+            <img className=" w-[1000px] lg:ml-auto lg:mr-auto  rounded-2xl " src=" ./Images/team.jpeg" alt="team pic" />
+
+          </div>
+        </div>
 
 
       </div>
