@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import AllInternship from "../Internship/AllInternship";
 
 function TrainingP() {
   const settings = {
@@ -61,7 +62,7 @@ function TrainingP() {
                   </h1>
                   <p className="pt-2 text-white font-light">{d.Discription}</p>
                   <div className="flex justify-center lg:justify-end pt-4">
-                    <Link to="/courses">
+                  <Link to={`/${d.id}`}>
                       <button className="bg-orange hover:bg-[#d97706] mt-3 h-10 w-36 text-center font-light text-sm lg:text-lg">
                         Explore More
                       </button>
@@ -83,18 +84,21 @@ const data = [
     Discription:
       "Kickstart your career with JKSD Infotech Pvt. Ltd. Discover our internship programs designed to give you real-world experience. Click below for more details.",
     image: "./Images/Internship.jpg",
+    id: 'AllInternship',
   },
   {
     Heading: "Short Term Courses",
     Discription:
       "Unlock more opportunities with JKSD Infotech Pvt. Ltd. Click below to explore all our detailed courses and take the next step in your learning journey!",
     image: "./Images/ShortTerm.jpg",
+    id: 'Courses',
   },
   {
     Heading: "Job Oriented Courses",
     Discription:
       "Get career-ready with JKSD Infotech Pvt. Ltd. Explore our job-oriented courses and fast-track your path to success. Click below for full course details.",
     image: "./Images/LongTerm.jpg",
+    id: 'Courses',
   },
 ];
 

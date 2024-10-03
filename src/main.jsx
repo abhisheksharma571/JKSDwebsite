@@ -32,6 +32,11 @@ import Paythonc from './pages/Blogspages/Paythonc.jsx'
 import Iotfiver from './pages/Blogspages/Iotfiver.jsx'
 import Clang from './pages/Blogspages/clang.jsx'
 import JobAssistance from './pages/JobAssistance/JobAssistance.jsx'
+import AllInternship from './pages/Internship/AllInternship.jsx'
+import SummerTrInfo from './pages/Internship/SummerTrInfo.jsx'
+import WinterTrInfo from './pages/Internship/WinterTrInfo.jsx'
+import CorporateTrInfo from './pages/Internship/CorporateTrInfo.jsx'
+import ProjectTrInfo from './pages/Internship/ProjectTrInfo.jsx'
 
 
 
@@ -74,11 +79,11 @@ const router = createBrowserRouter(
       <Route path='iotfiver' element={<Iotfiver/>} />
       <Route path='clang' element={<Clang/>} />
       <Route path='jobassistance' element={<JobAssistance/>} />
-      
-      
-      
-     
-
+      <Route path='allinternship' element={<AllInternship/>} />
+      <Route path='summerTrInfo' element={<SummerTrInfo/>} />
+      <Route path='winterTrInfo' element={<WinterTrInfo/>} />
+      <Route path='corporateTrInfo' element={<CorporateTrInfo/>} />
+      <Route path='projectTrInfo' element={<ProjectTrInfo/>} />
       <Route path='404' element={<PageNotFound />} />
       <Route path='*' element={<Navigate to="/404" replace />} />
     </Route>
