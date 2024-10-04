@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 function CorporateTrInfo() {
   return (
-    <div className='bg-[#FBFAF6] w-full sm:h-screen flex h-auto'>
-        <div className='w-full text-white sm:text-start text-center px-2 pt-14 lg:pl-[100px]'>
+    <div className='bg-[#FBFAF6] w-full h-[530px] md:h-screen flex   px-3'>
+        <div className='w-full text-white sm:text-start text-center px-3 pt-4 md:pt-14 lg:pl-[100px]'>
         
         <h1 className='sm:text-5xl  text-[#08528e] font-philosopher  text-3xl lg:font-bold lg:text-6xl '>Corporate Training</h1>
        <p className='text-sm sm:text-lg mt-8 sm:w-[80%] text-black lg:text-3xl '>This version shifts the focus to corporate training while maintaining a dynamic and motivating tone. Let me know if you'd like further tweaks!</p>
@@ -13,9 +13,9 @@ function CorporateTrInfo() {
         <li>Duration: 3/6 Months</li>
         <li>Paid/Un Paid</li>
        </div >
-       <div className='pt-14 '>   
+       <div className='pt-5 md:pt-14 '>   
        <Link to='/contact'>    
-           <button className='text-lg font-light h-10 w-32 bg-[#08528e] rounded-lg text-white '>Enroll Now</button>
+           <button className='text-sm  md:text-lg font-light h-10 w-32 md:h-10 md:w-32 bg-[#08528e] rounded-lg text-white'>Enroll Now</button>
            </Link>
         </div>
         </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 function SummerTrInfo() {
   return (
     <div className='bg-[#FBFAF6] w-full sm:h-screen flex h-auto'>
-        <div className='w-full text-white sm:text-start text-center px-2 pt-14 lg:pl-[100px]'>
+        <div className='w-full text-white sm:text-start text-center px-2 pt-4 md:pt-14 lg:pl-[100px]'>
         
         <h1 className='sm:text-5xl  text-[#08528e] font-philosopher  text-3xl lg:font-bold lg:text-6xl '>Summer Training</h1>
        <p className='text-sm sm:text-lg mt-8 sm:w-[80%] text-black lg:text-3xl '>Kickstart Your Career with a Summer Internship Experience!</p>
@@ -12,9 +12,9 @@ function SummerTrInfo() {
         <li>Duration: 3/6 Months</li>
         <li>Paid/Un Paid</li>
        </div >
-       <div className='pt-14 '>  
-       <Link to='/contact'>     
-           <button className='text-lg font-light h-10 w-32 bg-[#08528e] rounded-lg text-white '>Enroll Now</button></Link>
+       <div className='pt-3  md:pt-14 '>  
+       <Link to='/enroll'>     
+           <button className='text-sm mb-5 md:text-lg font-light h-7 w-24 md:h-10 md:w-32 bg-[#08528e] rounded-lg text-white '>Enroll Now</button></Link>
         </div>
         </div>
         
