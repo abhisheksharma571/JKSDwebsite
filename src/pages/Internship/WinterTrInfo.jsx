@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function WinterTrInfo() {
   return (
-    <div className='h-[570px] w-full md:w-full md:h-screen bg-[#08528e] flex  justify-center text-center'>
+    <div className='h-[570px] w-full md:w-full md:h-screen bg-[#08528e] flex  justify-center text-center md:text-left'>
        <div className=' object-contain  md:pl-12  flex h-screen'>
           <img className='hidden md:block object-contain h-full mr-16' src="./Images/WinterIntern.jpg" alt="" />
        </div>

@@ -24,7 +24,7 @@ function TrainingServices() {
       </div>
 
       {/* Card Layout for larger devices */}
-      <div className=' hidden w-[60%] md:w-[70%] md:h-full md:columns-3 mt-10 items-center '>
+      <div className='hidden md:block w-[60%] md:w-[70%] md:h-full md:columns-3 mt-10 items-center '>
         
         <div className='h-64 w-80 bg-[#ffffff] rounded-xl shadow-cyan-500/50 p-7 '>
         <div className='h-12 w-12 rounded-xl '>
