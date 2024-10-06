@@ -2,34 +2,43 @@ import React from 'react'
 
 function DigitalMarketing() {
   return (
-    <div className='w-full h-auto  bg-[#08528e]'>
-        <div className='relative'>
-        <img className='h-screen w-1/2 ' src="./Images/DigitalBack.jpg" alt="Where is image" />
-        <div className='absolute inset-0 flex '>
-            <div className='w-1/2 pl-16 text-white'>
-            <h1 className='text-orange md:text-5xl pt-16 font-philosopher font-black text-2xl'>Digital Marketing</h1>
-            {/* <h1 className='text-white text-2xl md:text-3xl font-medium pt-8'>Transform Your Online Presence <br /> with Expert <span className='text-orange'>Digital Marketing</span></h1> */}
-            <p className='text-lg w-[68%] pt-10'>JKSD Info. Tech provides expert digital marketing services to help businesses grow their online presence and reach their target audience. From SEO to social media strategies, we offer tailored solutions designed to maximize your digital impact and drive results. Explore more.</p>
-            <div className='mt-10 font-normal text-lg text-orange'>
+    <>
+     <div className='flex h-auto sm:h-screen'>
+     <div className="sm:h-screen h-[570px] bg-black w-full sm:w-1/2 relative">
+  <img className="w-full h-[570px] sm:h-full object-cover" src="./Images/DigitalBack.jpg" alt="" />
+  
+  <div className="absolute inset-0 flex flex-col p-4 sm:text-start text-center sm:pt-14 sm:pl-16">
+    <h2 className="sm:text-5xl pt-10 text-orange font-philosopher font-black text-3xl">
+      Digital Marketing</h2>
+      <p className='text-sm sm:text-lg mt-10 sm:w-[70%] text-white'>JKSD Info. Tech offers professional digital marketing and web development services designed to drive your business’s online growth. Whether it's crafting compelling websites or executing focused marketing campaigns, we ensure your brand captures attention and delivers measurable success.</p>
+      <div className='mt-10 font-normal text-sm sm:text-lg text-orange'>
           <li>Website Development</li>
           <li>Search Engien Optimisation</li>
           <li>Socail Media Optimisor</li>
           <li>E-mail Marketing</li>
-           </div>
-            <p className='text-lg mt-4'>Click here to explore further</p>
-            <img className='h-10 animate-bounce m-6' src="./Images/arrow-down.png" alt="" />
-            <button className='text-lg font-light h-10 w-32  bg-orange  rounded-lg text-white'>Explore More</button>
+        </div>
+        <div  className='lg:flex justify-start'>
+        <p className='text-lg mt-4 text-white sm:text-center '>Click here to explore further</p>
+        </div>  
+        <div>
+            <img className=' sm:block mt-6 ml-auto mr-auto h-10 animate-bounce sm:m-6 object-contain ' src="./Images/arrow-down.png" alt="" />
             </div>
-            <div className='flex items-center justify-center'>
-          <div className='absolute h-[240px] w-[240px] bg-[#4f4f4f] rounded-full flex items-center justify-center text-white z-10'>
-            <h1 className='text-xl text-center text-orange font-medium'>"Boost Your Business<br />with Powerful Digital<br />Marketing Strategies"</h1>
-          </div>
+           <div>
+             <button className='text-lg font-light h-10 w-32 bg-white rounded-lg text-black  '>Explore More</button>
+         </div>
+  </div>
+</div>
+      <div className='sm:flex items-center justify-center hidden '>
+        <div className='absolute h-[240px] w-[240px] bg-[#302f33] rounded-full flex items-center justify-center text-white z-10'>
+          <h1 className='text-xl text-center font-medium '>"Boost Your Business<br />with Powerful Digital<br />Marketing Strategies"</h1>
         </div>
-            <img className='w-1/2 h-full' src="./Images/Digital.png" alt="" />
         </div>
-        </div>
-        
-    </div>
+      <div className='w-1/2 h-screen hidden sm:block '>
+        <img className='w-full h-full ' src="./Images/Digital.png" alt="" />
+      </div>
+     </div>
+
+    </>
   )
 }
 

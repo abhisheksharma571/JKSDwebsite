@@ -254,11 +254,132 @@ function AboutUs() {
 
         { /* Our Team*/}
 
-        <div className="bg-[#f2f2f2]">
-          {/* <h1 className='text-3xl md:text-5xl  text-[#08528e] text-center pt-4 py-4 font-philosopher font-black '>Our Team</h1> */}
 
+
+        <h1 className="text-center  text-5xl font-bold p-4  bg-white font-philosopher"  >Meet the Team </h1>
+        <div className="bg-[#f2f2f2]   ">
           <div>
-            <img className=" w-[1000px] lg:ml-auto lg:mr-auto  rounded-2xl " src=" ./Images/team.jpeg" alt="team pic" />
+            <div className="flex mt-6 mb-3 items-center justify-center bg-backgound ">
+              <div className="flex flex-wrap gap-4 justify-center">
+                {/* first line started */}
+                <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 ">
+                <div className="group relative w-64 h-[350px] rounded-tl-[80px]  cursor-pointer rounded-xl items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                  <div className="h-96 w-72">
+                    <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-105" src="./Teampic/abhii.png" alt="" />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                  <div className="absolute hover:pt-28  inset-0 flex translate-y-[60%]  flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+
+                    <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity  duration-300 group-hover:opacity-100"><b>Abhishek Kumar </b><br />(Web Developer)</p>
+
+                    <a href="" target="_blank" rel="noopener noreferrer">
+                      <img className="sm:h-6 h-3" src="./Teampic/linkedin.png" alt="LinkedIn" />
+                    </a>
+                  </div>
+                </div>
+
+                <div className="group relative w-64 h-[350px]  cursor-pointer rounded-xl items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                  <div className="h-96 w-72  ">
+                    <img className="h-full w-full object-cover  transition-transform duration-500 group-hover:rotate-1 group-hover:scale-125" src="./Teampic/ayushf.jpeg" alt="Ayush shakya" />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                  <div className="absolute  hover:pt-28 inset-0 flex translate-y-[60%]  flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+
+                    <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"><b>Ayush Shakya</b><br />(Web Developer)</p>
+
+                    <a href="https://www.linkedin.com/in/ayush-shakya-632189258/" target="_blank" rel="noopener noreferrer">
+                      <img className="sm:h-6 h-3" src="./Teampic/linkedin.png" alt="LinkedIn" />
+                    </a>
+
+                  </div>
+                </div>
+
+                <div className="group relative w-64 h-[350px]  cursor-pointer rounded-xl items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                  <div className="h-96 w-72">
+                    <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./Teampic/chopf.jpeg" alt="" />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                  <div className="absolute hover:pt-28 inset-0 flex translate-y-[60%]  flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+
+                    <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"><b>Abhishek Sharma</b><br />(Web Developer)</p>
+                    <a href="https://www.linkedin.com/in/abhishek-sharma-b3569b295/" target="_blank" rel="noopener noreferrer">
+                      <img className="sm:h-6 h-3" src="./Teampic/linkedin.png" alt="LinkedIn" />
+                    </a>
+
+                  </div>
+                </div>
+
+
+                <div className="group relative w-64 h-[350px]  rounded-br-[80px] cursor-pointer rounded-xl items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                  <div className="h-96 w-72">
+                    <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./Teampic/mahimaa.jpeg" alt="" />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                  <div className="absolute hover:pt-28 inset-0 flex translate-y-[60%]  flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+
+                    <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"><b>Mahima </b><br />(Web Developer)</p>
+
+                    <a href="https://www.linkedin.com/in/mahima-singh-46307a317/" target="_blank" rel="noopener noreferrer">
+                      <img className="sm:h-6 h-3" src="./Teampic/linkedin.png" alt="LinkedIn" />
+                    </a>
+
+                  </div>
+                </div>
+                </div>
+                {/* new line started */}
+                <div className="flex flex-col md:flex md:flex-row justify-center gap-5  ">
+                <div className="group relative w-64 h-[350px] rounded-tl-[80px]  cursor-pointer rounded-xl items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                  <div className="h-96 w-72">
+                    <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./Teampic/shreju.png" alt="" />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                  <div className="absolute  hover:pt-28 inset-0 flex translate-y-[60%]  flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+
+                    <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"><b>Shrejal Chauhan</b><br />(Web developer)</p>
+                    <a href="https://www.linkedin.com/in/shrejal-chauhan-3a3686263/" target="_blank" rel="noopener noreferrer">
+                      <img className="sm:h-6 h-3" src="./Teampic/linkedin.png" alt="LinkedIn" />
+                    </a>
+
+                  </div>
+
+                </div>
+
+                <div className="group relative w-64 h-[350px]  cursor-pointer rounded-xl items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                  <div className="h-96 w-72">
+                    <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./Teampic/palak.jpeg" alt="" />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                  <div className="absolute hover:pt-28 inset-0 flex translate-y-[60%]  flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+
+                    <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"><b>Palak Bansal</b><br />(Web developer)</p>
+                    <a href="https://www.linkedin.com/in/palak-bansal-084363284/" target="_blank" rel="noopener noreferrer">
+                      <img className="sm:h-6 h-3" src="./Teampic/linkedin.png" alt="LinkedIn" />
+                    </a>
+
+                  </div>
+                </div>
+
+                <div className="group relative w-64 h-[350px]  rounded-br-[80px] cursor-pointer rounded-xl items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                  <div className="h-96 w-72">
+                    <img className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./Teampic/sankalp.jpeg" alt="" />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                  <div className="absolute hover:pt-28 inset-0 flex translate-y-[60%]  flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+
+                    <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"><b>Sankalp</b><br />(Human Resources)</p>
+
+                    <a href="https://www.linkedin.com/in/sankalp-choudhary-a664332b6/" target="_blank" rel="noopener noreferrer">
+                      <img className="sm:h-6 h-3" src="./Teampic/linkedin.png" alt="LinkedIn" />
+                    </a>
+
+                  </div>
+                </div>
+
+                </div>
+
+              </div>
+
+            </div>
 
           </div>
         </div>
