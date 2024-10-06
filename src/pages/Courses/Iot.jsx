@@ -467,7 +467,7 @@ const Iot = () => {
 </div>
 {/* Modal for Form */}
             <Modal isOpen={isModalOpen} closeModal={closeModal}>
-                <Form pdfUrl={pdfUrl}/>
+                <Form pdfUrl={pdfUrl} label="IoT Brochure"/>
             </Modal>
 
         </div>

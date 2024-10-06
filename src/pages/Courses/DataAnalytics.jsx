@@ -754,7 +754,7 @@ const DataAnalytics = () => {
 </div>
 {/* Modal for Form */}
 <Modal isOpen={isModalOpen} closeModal={closeModal}>
-                <Form pdfUrl={dataAnalystBrochureUrl}/>
+                <Form pdfUrl={dataAnalystBrochureUrl} label="Data Analytics Brochure"/>
             </Modal>
         </div>
     

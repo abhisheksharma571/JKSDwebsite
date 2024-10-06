@@ -396,7 +396,7 @@ const BusinessAnalyst = () => {
 </div>
 {/* Modal for Form */}
 <Modal isOpen={isModalOpen} closeModal={closeModal}>
-                <Form pdfUrl={bussinessanalystBrochureUrl}/>
+                <Form pdfUrl={bussinessanalystBrochureUrl} label="Bussiness Analytics Brochure"/>
             </Modal>
         </div>
     

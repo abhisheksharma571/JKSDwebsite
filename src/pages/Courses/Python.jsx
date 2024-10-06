@@ -386,7 +386,7 @@ const Python = () => {
 
             {/* Modal for Form */}
             <Modal isOpen={isModalOpen} closeModal={closeModal}>
-                <Form pdfUrl={pythonBrochureUrl}/>
+                <Form pdfUrl={pythonBrochureUrl} label="Python Brochure"/>
             </Modal>
         </div>
     );

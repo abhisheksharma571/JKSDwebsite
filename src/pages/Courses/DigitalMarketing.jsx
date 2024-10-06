@@ -420,7 +420,7 @@ const DigitalMarketing = () => {
 </div>
 {/* Modal for Form */}
 <Modal isOpen={isModalOpen} closeModal={closeModal}>
-                <Form pdfUrl={digitalBrochureUrl}/>
+                <Form pdfUrl={digitalBrochureUrl} label="Digital Marketing Brochure"/>
             </Modal>
         </div>
     
