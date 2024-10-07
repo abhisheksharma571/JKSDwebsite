@@ -9,7 +9,7 @@ function SummerTrInfo() {
        <p className='text-sm sm:text-lg mt-8 sm:w-[80%] text-black lg:text-3xl '>Kickstart Your Career with a Summer Internship Experience!</p>
        <p className='text-sm sm:text-lg mt-8 sm:w-[90%] text-black lg:text-xl '>JKSD's Summer Internship program is designed for students across IT and Engineering domains, including BE/BTECH, BSC(IT), BCA, MCA, MSC(IT), and Diploma holders. With experienced trainers and senior programmers guiding you, you'll gain practical knowledge and industry-relevant skills. Our commitment to excellence has resulted in 100% placement support, and we take pride in delivering an unmatched learning experience—reflected by our consistent positive feedback with no negative reviews. This is your opportunity to elevate your career and work with the best in the field!</p>
        <div className='mt-8 font-normal text-black text-lg lg:text-xl text-center md:text-left'>
-        <li>Duration: 3/6 Months</li>
+        <li>Duration: 4/6 Weeks</li>
         <li>Paid/Un Paid</li>
        </div >
        <div className='pt-3  md:pt-14 '>  

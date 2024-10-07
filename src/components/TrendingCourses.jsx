@@ -164,13 +164,13 @@ const data = [
         id: 'businessanalyst',
         title: 'Business Analyst',
         description: 'Analyze data for actionable insights',
-        image: './Images/tbusiness.png'
+        image: './Images/b-analyst.png'
     },
     {
         id: 'graphicdesigning',
         title: 'Graphic Designing',
         description: 'Design stunning visuals and graphics using modern tools',
-        image: './Images/tgraphic.png'
+        image: './Images/g-designing.png'
     }
 ];
 

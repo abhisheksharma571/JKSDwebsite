@@ -5,7 +5,7 @@ function IoT() {
     <div className='w-full h-auto md:h-screen bg-[#FCFAF6] flex flex-col md:flex-row'>
       {/* Image Section */}
       <div className='w-full md:w-1/2 flex justify-center md:pl-12 pt-6 md:pt-12 pb-6 md:pb-8'>
-        <img className='object-contain h-[350px] sm:h-72 md:h-[700px]' src="./Images/IOT2 (2).jpg" alt="IoT Lab Setup" />
+        <img className='object-contain h-[350px] sm:h-72 md:h-[600px]' src="./Images/IOT2 (2).jpg" alt="IoT Lab Setup" />
       </div>
 
       {/* Text Content Section */}

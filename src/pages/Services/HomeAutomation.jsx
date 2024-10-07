@@ -2,7 +2,7 @@ import React from 'react';
 
 function HomeAutomation() {
   return (
-    <div className='flex flex-col md:flex-row h-auto md:h-screen bg-[#FBFAF6] w-full'>
+    <div className='flex flex-col md:flex-row h-auto md:h-[800px] bg-[#FBFAF6] w-full'>
       {/* Image Section */}
       <div className='w-full md:w-[55%] px-6 pt-6 md:pt-16 flex justify-center'>
         <img className='object-contain h-60 sm:h-72 md:h-full' src="./Images/HomeAutomation2.jpg" alt="Home Automation" />

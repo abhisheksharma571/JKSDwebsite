@@ -164,7 +164,7 @@ function SummerTraining() {
           {/* Corporate training  */}
         
         <div className='bg-[#FCFAF6] md:mt-7 md:h-[45%] md:w-[45%] rounded-lg flex flex-col shadow-2xl '>
-                  <img className='w-full h-[60%] rounded-t-md' src="./public/Images/PROJECT.png" alt="" />
+                  <img className='w-full h-[60%] rounded-t-md' src="./Images/PROJECT.png" alt="" />
                   <div className='flex justify-between'>
                   <h1 className='text-xl md:text-2xl font-philosopher ml-3'>Project Training</h1>
                   {/* <img className='object-contain w-7 mr-5 mt-2' src="./Images/share.png" alt="" /> */}
