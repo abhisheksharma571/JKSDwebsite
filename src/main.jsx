@@ -62,12 +62,7 @@ const router = createBrowserRouter(
       <Route path='termandcondition' element={<TermAndConditions />} />
       <Route path='Privacypolicy' element={<PrivacyPolicy />} />
       <Route path='faq' element={<Faq />} />
-      <Route path='digitalmarketing' element={<DigitalMarketing/>} />
-      <Route path='dataanalytics' element={<DataAnalytics/>} />
       <Route path='businessanalyst' element={<BusinessAnalyst/>} />
-      <Route path='embedded' element={<Embedded/>} />
-      <Route path='graphicdesigning' element={<GraphicDesigning/>} />
-      <Route path='iot' element={<Iot/>} />
       <Route path='python' element={<Python/>} />
       <Route path='topbenefits' element={<Topbenefits/>} />
       <Route path='top10tool' element={<Top10tool/>} />
