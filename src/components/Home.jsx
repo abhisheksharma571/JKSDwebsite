@@ -18,10 +18,8 @@ function Home() {
       <Services />
       <TrendingCourses/>
       <Review/>
-
       <HiringPartners />
       <Adviser />
-
       </div>
     </div>
   )

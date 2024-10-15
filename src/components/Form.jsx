@@ -16,7 +16,7 @@ function Form({ pdfUrl, brochureName }) {
     const message = document.getElementById("message").value;
 
     // Add Web3forms access key and the brochure identifier
-    formData.append("access_key", "859752b6-f538-4101-9d21-5eebd9ed7d0b");
+    formData.append("access_key", "05091ded-e625-4901-bcd2-cc8fe65c4711");
     formData.append("brochure_name", brochureName);  // Add the brochure name or ID
 
     // Construct subject and body
